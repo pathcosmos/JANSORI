@@ -2018,7 +2018,7 @@
    },
    {
     "path": "tests/conftest.py",
-    "reason": "Original-run integration skip list for tests that read excluded run records"
+    "reason": "Skip lists for added tests: ORIGINAL_RUN_NODES (read excluded run records) unless --run-original-integrations; HOST_REQUIREMENT_NODES (two filesystems, fully inspectable /proc, >=210 GiB TMPDIR free, isolated run for the observer RSS budget) skipped only when the current host lacks that condition"
    },
    {
     "path": "requirements-cpu.txt",
