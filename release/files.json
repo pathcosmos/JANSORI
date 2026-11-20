@@ -3709,8 +3709,8 @@
   },
   {
    "path": "release/public_changes.json",
-   "bytes": 81234,
-   "sha256": "050f48d30316e1c173ed362cf5d49c1212f7ffecdd1b17981ecd7dab8fe9286f"
+   "bytes": 81456,
+   "sha256": "61bbdea6e882930115023dbe83ccc80008b7fe7396a33b48878c86a925e319f0"
   },
   {
    "path": "release/source_inventory.json",
@@ -4909,8 +4909,8 @@
   },
   {
    "path": "tests/conftest.py",
-   "bytes": 6363,
-   "sha256": "64dd37608b3d0c4c056fb8550fb270a76e3e6af9f209ab782763e8b336618664"
+   "bytes": 22739,
+   "sha256": "bda9b7391507d0e3ea8473edbf810ae948bcd1f92b26e0a8dadca5d0501d5d39"
   },
   {
    "path": "tests/test_activate_horizon_training.py",
