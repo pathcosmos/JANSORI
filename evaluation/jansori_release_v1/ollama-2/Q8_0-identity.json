@@ -1,0 +1,14 @@
+{
+  "template": "{{ .Prompt }}",
+  "details": {
+    "parent_model": "",
+    "format": "gguf",
+    "family": "llama",
+    "families": [
+      "llama"
+    ],
+    "parameter_size": "3.22B",
+    "quantization_level": "Q8_0"
+  },
+  "context": 4096
+}

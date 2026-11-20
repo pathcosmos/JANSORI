@@ -1,0 +1,4 @@
+sp normalizer spec: name nfkc add_dummy_prefix True remove_extra_ws True byte_fallback False
+ksp vs frh differ: 92/1802; of which ksp contains <unk>: 92
+ksp == frh after collapsing byte runs to <unk>: 92 / 92
+ksp vs SP differ: 69/1802; equal after NFKC on ksp input: 53; texts with double/edge whitespace: 16

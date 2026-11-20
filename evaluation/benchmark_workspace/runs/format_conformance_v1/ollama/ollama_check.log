@@ -1,0 +1,23 @@
+frankenstallm (train-format template):
+   {'last': '한국의 수도는 어디인가요?', 'n_msgs': 1, 'ollama_prompt_eval_count': 26, 'train_len': 23}
+   {'last': 'What is the capital ', 'n_msgs': 1, 'ollama_prompt_eval_count': 25, 'train_len': 24}
+   {'last': '한국어와 English가 섞인 문장입', 'n_msgs': 1, 'ollama_prompt_eval_count': 25, 'train_len': 24}
+   {'last': '  앞에 공백 두 칸', 'n_msgs': 1, 'ollama_prompt_eval_count': 22, 'train_len': 21}
+   {'last': '뒤에 공백 ', 'n_msgs': 1, 'ollama_prompt_eval_count': 20, 'train_len': 19}
+   {'last': '중간에  공백  두 칸씩', 'n_msgs': 1, 'ollama_prompt_eval_count': 25, 'train_len': 24}
+   {'last': '안녕하세요', 'n_msgs': 2, 'ollama_prompt_eval_count': 19, 'train_len': 18}
+   {'last': '두 번째 질문', 'n_msgs': 3, 'ollama_prompt_eval_count': 41, 'train_len': 40}
+   {'last': '사용자 메시지', 'n_msgs': 2, 'ollama_prompt_eval_count': 23, 'train_len': 21}
+   {'last': 'e  ', 'n_msgs': 5, 'ollama_prompt_eval_count': 65, 'train_len': 64}
+   {'last': '질문', 'n_msgs': 2, 'ollama_prompt_eval_count': 19, 'train_len': 18}
+jansori ({{ .Prompt }}):
+   {'text': '한국의 수도는 어디인가요?', 'ollama_prompt_eval_count': 6, 'train_len': 6}
+   {'text': 'What is the capital ', 'ollama_prompt_eval_count': 8, 'train_len': 8}
+   {'text': '한국어와 English가 섞인 문장입', 'ollama_prompt_eval_count': 8, 'train_len': 8}
+   {'text': '  앞에 공백 두 칸', 'ollama_prompt_eval_count': 5, 'train_len': 5}
+   {'text': '뒤에 공백 ', 'ollama_prompt_eval_count': 3, 'train_len': 3}
+   {'text': '중간에  공백  두 칸씩', 'ollama_prompt_eval_count': 8, 'train_len': 8}
+   {'text': '첫 줄\n둘째 줄\n\n넷째 줄', 'ollama_prompt_eval_count': 10, 'train_len': 10}
+   {'text': '\t탭으로 시작\t중간 탭', 'ollama_prompt_eval_count': 7, 'train_len': 7}
+Go template vs raw training string: equal prompt_eval_count 28/29
+[('사용자 메시지', 23, 22)]

@@ -1,0 +1,246 @@
+/home/work/llm-dense/llm-test/ko-llm-bench-suite/kobench/standard/run.py:176: DeprecationWarning: get_task_dict is deprecated. Use TaskManager.load() instead.
+  get_task_dict([t.task], tm)
+[data] kobest_dev 준비됨
+/home/work/llm-dense/llm-test/ko-llm-bench-suite/kobench/standard/run.py:176: DeprecationWarning: get_task_dict is deprecated. Use TaskManager.load() instead.
+  get_task_dict([t.task], tm)
+[data] kmmlu_dev 준비됨
+[data] global_mmlu_ko_dev 준비됨
+W1119 11:46:34.305000 358292 torch/_opaque_base.py:6] torch._opaque_base is deprecated, use torch._custom_class_base instead
+W1119 11:46:34.306000 358292 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1119 11:46:34.307000 358292 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+(MainProcess pid=358292) INFO 11-19 11:46:36 [startup.py:96] non-default args: {'dtype': 'bfloat16', 'seed': 1234, 'max_model_len': 4096, 'gpu_memory_utilization': 0.85, 'disable_log_stats': True, 'revision': '6a5d7889964c4c590299d16e309eabab1f73f8a9', 'model': 'kakaocorp/kanana-2-3b-instruct'}
+[transformers] The explicitly set RoPE scaling factor (config.rope_parameters['factor'] = 40.0) does not match the ratio implicitly set by other parameters (implicit factor = post-yarn context length / pre-yarn context length = config.max_position_embeddings / config.rope_parameters['original_max_position_embeddings'] = 8.0). Using the explicit factor (40.0) in YaRN. This may cause unexpected behaviour in model usage, please correct the 'original_max_position_embeddings' fields in the model config.
+(MainProcess pid=358292) INFO 11-19 11:46:37 [model.py:744] Resolved architecture: Qwen3ForCausalLM
+(MainProcess pid=358292) INFO 11-19 11:46:37 [model.py:2170] Using max model len 4096
+(MainProcess pid=358292) INFO 11-19 11:46:37 [scheduler.py:310] Chunked prefill is enabled with max_num_batched_tokens=16384.
+Parse safetensors files: 100%|██████████| 2/2 [00:01<00:00,  1.18it/s]
+(MainProcess pid=358292) INFO 11-19 11:46:39 [kernel.py:480] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'], gelu_and_mul_sparse=['triton', 'native'])
+Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 13.02it/s]
+(EngineCore pid=358694) INFO 11-19 11:46:41 [core.py:139] Initializing a V1 LLM engine (v0.33.0) with config: model='kakaocorp/kanana-2-3b-instruct', speculative_config=None, tokenizer='kakaocorp/kanana-2-3b-instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=6a5d7889964c4c590299d16e309eabab1f73f8a9, tokenizer_revision=6a5d7889964c4c590299d16e309eabab1f73f8a9, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, quantization_config=None, enforce_eager=False, aux_output_config=AuxOutputConfig(enable_return_routed_experts=False, max_bytes=None), kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, per_request_spec_decode_metrics='none', kv_cache_metrics=False, kv_cache_metrics_sample=0.01, custom_histogram_buckets=None, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=1234, served_model_name=kakaocorp/kanana-2-3b-instruct, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.VLLM_COMPILE: 3>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['none'], 'ir_enable_torch_wrap': True, 'splitting_ops': ['vllm::unified_attention_with_output', 'vllm::unified_mla_attention_with_output', 'vllm::mamba_mixer2', 'vllm::mamba_mixer', 'vllm::short_conv', 'vllm::qwen4_exp_ple_short_conv', 'vllm::qwen4_exp_qsa_with_output', 'vllm::qwen4_exp_qsa_prepare_with_output', 'vllm::linear_attention', 'vllm::qwen_gdn_attention_core', 'vllm::qwen_gdn_attention_core_fused_norm_packed', 'vllm::gdn_attention_core_xpu', 'vllm::olmo_hybrid_gdn_full_forward', 'vllm::sparse_attn_indexer', 'vllm::rocm_aiter_sparse_attn_indexer', 'vllm::deepseek_v4_attention', 'vllm::hpc_rope_norm_forward', 'vllm::unified_kv_cache_update', 'vllm::unified_mla_kv_cache_update'], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'cudagraph_decoder_replay': True, 'decoder_replay_cudagraph_capture_sizes': [], 'decoder_replay_trim_threshold': 768, 'compile_sizes': [], 'compile_ranges_endpoints': [16384], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.FULL_AND_PIECEWISE: (2, 1)>, 'cudagraph_num_of_warmups': 1, 'cudagraph_capture_sizes': [1, 2, 4, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136, 144, 152, 160, 168, 176, 184, 192, 200, 208, 216, 224, 232, 240, 248, 256, 272, 288, 304, 320, 336, 352, 368, 384, 400, 416, 432, 448, 464, 480, 496, 512], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': False, 'fuse_act_quant': False, 'fuse_attn_quant': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 512, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'], gelu_and_mul_sparse=['triton', 'native']), enable_flashinfer_autotune=True, enable_rocm_segmented_attn_autotune=False, enable_cutedsl_warmup=True, enable_jit_warmup=True, monokernel=False, moe_backend='auto', sparse_indexer_topk_backend='auto', linear_backend='auto', linear_backend_per_quant=None)
+(EngineCore pid=358694) INFO 11-19 11:46:43 [parallel_state.py:1929] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_a214aba45ee6440285004a0477712743 backend=nccl
+(EngineCore pid=358694) INFO 11-19 11:46:43 [parallel_state.py:2385] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, ETP rank 0, EP rank N/A, EPLB rank N/A
+(EngineCore pid=358694) INFO 11-19 11:46:43 [gpu_worker.py:513] Using V2 Model Runner
+(EngineCore pid=358694) WARNING 11-19 11:46:43 [flashinfer.py:143] FlashInfer's precompiled kernels are missing or do not match flashinfer-python 0.7.2.post1 (flashinfer-cubin not installed, flashinfer-jit-cache not installed). FlashInfer then downloads and compiles kernels at startup, which can take several minutes, or fails to import mismatched ones. Run `vllm download-kernels` in this Python environment to install them.
+(EngineCore pid=358694) INFO 11-19 11:46:44 [model_runner.py:399] Loading model from scratch...
+(EngineCore pid=358694) INFO 11-19 11:46:45 [cuda.py:508] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].
+(EngineCore pid=358694) INFO 11-19 11:46:45 [flash_attn.py:1122] Using FlashAttention version 3
+(EngineCore pid=358694) INFO 11-19 11:46:45 [base_loader.py:82] Initializing model took 0.944911 seconds
+(EngineCore pid=358694) INFO 11-19 11:46:45 [weight_utils.py:1144] Filesystem type for checkpoints: OVERLAY. Checkpoint size: 6.54 GiB. Available RAM: 38.72 GiB.
+(EngineCore pid=358694) INFO 11-19 11:46:45 [weight_utils.py:1167] Auto-prefetch is disabled because the filesystem (OVERLAY) is not a recognized network FS (NFS/Lustre). If you want to force prefetching, start vLLM with --safetensors-load-strategy=prefetch.
+Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:01<00:01,  1.93s/it]
+Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.32s/it]
+Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.41s/it]
+
+(EngineCore pid=358694) INFO 11-19 11:46:48 [default_loader.py:506] Loading weights took 2.88 seconds
+(EngineCore pid=358694) INFO 11-19 11:46:50 [model_runner.py:428] Model loading took 5.98 GiB memory and 6.424295 seconds
+(EngineCore pid=358694) INFO 11-19 11:46:50 [topk_topp_sampler.py:149] Using FlashInfer for top-p & top-k sampling.
+(EngineCore pid=358694) WARNING 11-19 11:46:50 [torch_utils.py:269] OMP_NUM_THREADS=12 is set; leaving Torch threads at 12 for serving. Multi-threaded torch CPU ops during serving can degrade performance through spin-wait contention and cgroup CPU-quota throttling.
+(EngineCore pid=358694) INFO 11-19 11:46:50 [utils.py:381] Using LBNHC KV cache layout.
+(EngineCore pid=358694) INFO 11-19 11:46:51 [monitor.py:40] [backbone] Starting torch.compile
+(EngineCore pid=358694) INFO 11-19 11:46:57 [backends.py:1125] [backbone] Using cache directory: /workspace/llm-test/cache/vllm/torch_compile_cache/7d1b143a5b/rank_0_0/backbone for vLLM's torch.compile
+(EngineCore pid=358694) INFO 11-19 11:46:57 [backends.py:1187] [backbone] Dynamo bytecode transform time: 5.85 s
+(EngineCore pid=358694) INFO 11-19 11:47:06 [backends.py:417] [backbone] Compiling a graph for compile range (1, 16384) takes 9.43 s
+(EngineCore pid=358694) INFO 11-19 11:47:10 [backends.py:948] collected artifacts: 33 entries, 3 artifacts, 6053890 bytes total
+(EngineCore pid=358694) INFO 11-19 11:47:10 [decorators.py:752] [backbone] saved AOT compiled function to /workspace/llm-test/cache/vllm/torch_compile_cache/torch_aot_compile/3b60092c746e053e65b86b0be41189dc0d371ec669f2da983b4b0e199f3d1a17/rank_0_0/model
+(EngineCore pid=358694) INFO 11-19 11:47:10 [monitor.py:62] [backbone] torch.compile took 19.19 s in total
+(EngineCore pid=358694) INFO 11-19 11:47:10 [monitor.py:91] [backbone] Initial profiling/warmup run took 0.01 s
+Capturing CUDA graphs (PIECEWISE): 100%|██████████| 51/51 [00:03<00:00, 15.04it/s]
+Capturing CUDA graphs (FULL): 100%|██████████| 2/2 [00:00<00:00, 37.85it/s]
+(EngineCore pid=358694) INFO 11-19 11:47:19 [model_runner.py:1163] Graph capturing finished in 4 secs, took 0.60 GiB
+(EngineCore pid=358694) INFO 11-19 11:47:19 [gpu_worker.py:772] Available KV cache memory: 109.52 GiB
+(EngineCore pid=358694) INFO 11-19 11:47:19 [gpu_worker.py:787] CUDA graph memory profiling is enabled (default since v0.21.0). The current --gpu-memory-utilization=0.8500 is equivalent to --gpu-memory-utilization=0.8435 without CUDA graph memory profiling. To maintain the same effective KV cache size as before, increase --gpu-memory-utilization to 0.8565. To disable, set VLLM_MEMORY_PROFILER_ESTIMATE_CUDAGRAPHS=0.
+(EngineCore pid=358694) INFO 11-19 11:47:19 [kv_cache_utils.py:1147] GPU KV cache size: 897,136 tokens, Maximum concurrency for 4,096 tokens per request: 219.03x
+(EngineCore pid=358694) INFO 11-19 11:47:19 [kernel_warmup.py:179] JIT kernel warmup starting.
+(EngineCore pid=358694) INFO 11-19 11:47:19 [kernel_warmup.py:192] JIT kernel warmup finished in 0.00s.
+(EngineCore pid=358694) INFO 11-19 11:47:20 [kernel_warmup.py:485] Using FlashInfer managed autotune cache (root=flashinfer default). Pass --disable-flashinfer-autotune to skip autotuning.
+2026-11-19 11:47:20,076 - INFO - autotuner.py:1048 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
+2026-11-19 11:47:20,241 - INFO - autotune_cache.py:495 - flashinfer.jit: [Autotuner]: Managed autotune cache attached for this process: ManagedAutotuneCache(env_dir='/home/work/.cache/flashinfer/autotune/v2/00489633d6a11293', hits=0, misses=0)
+(EngineCore pid=358694) INFO 11-19 11:47:20 [kernel_warmup.py:371] Running FlashInfer autotune with 16384 tokens and token buckets (1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 768, 1024, 1280, 1536, 1792, 2048, 2560, 3072, 3584, 4096, 8192, 16384).
+2026-11-19 11:47:20,264 - INFO - autotuner.py:1071 - flashinfer.jit: [Autotuner]: Autotuning process ends
+Capturing CUDA graphs (PIECEWISE): 100%|██████████| 51/51 [00:02<00:00, 17.12it/s]
+Capturing CUDA graphs (FULL): 100%|██████████| 51/51 [00:01<00:00, 39.42it/s]
+(EngineCore pid=358694) INFO 11-19 11:47:27 [model_runner.py:1163] Graph capturing finished in 5 secs, took 0.44 GiB
+(EngineCore pid=358694) INFO 11-19 11:47:27 [gpu_worker.py:1003] CUDA graph pool memory: 0.44 GiB (actual), 0.91 GiB (estimated), difference: 0.47 GiB (105.7%).
+(EngineCore pid=358694) INFO 11-19 11:47:27 [gpu_worker.py:1066] Free memory on device (139.1/139.8 GiB) on startup. Desired GPU memory utilization is (0.85, 118.83 GiB). Actual usage is 6.59 GiB for consumed memory (weights + non-torch), 2.73 GiB for peak activation, and 0.44 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=116957645312` (108.93 GiB) to fit into requested memory, or `--kv-cache-memory=138722494976` (129.2 GiB) to fully utilize gpu memory. Current kv cache memory in use is 109.52 GiB.
+(EngineCore pid=358694) INFO 11-19 11:47:28 [jit_monitor.py:84] Kernel JIT monitor activated; monitored JIT compilations during inference will use mode=warn.
+(EngineCore pid=358694) INFO 11-19 11:47:28 [core.py:405] init engine (profile, create kv cache, warmup model) took 38.07 s (compilation: 19.19 s)
+(EngineCore pid=358694) INFO 11-19 11:47:28 [kernel.py:480] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'], gelu_and_mul_sparse=['triton', 'native'])
+(MainProcess pid=358292) INFO 11-19 11:47:29 [hf.py:736] Detected the chat template content format to be 'openai'. You can set `--chat-template-content-format` to override this.
+Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 1439.75it/s]
+[kanana-2-3b|A] kobest_dev (5-shot)
+Overwriting default num_fewshot of kobest_boolq_dev from None to 5
+Overwriting default num_fewshot of kobest_copa_dev from None to 5
+Overwriting default num_fewshot of kobest_hellaswag_dev from None to 5
+Overwriting default num_fewshot of kobest_sentineg_dev from None to 5
+Overwriting default num_fewshot of kobest_wic_dev from None to 5
+100%|██████████| 700/700 [00:02<00:00, 254.26it/s]
+100%|██████████| 500/500 [00:00<00:00, 42064.18it/s]
+100%|██████████| 500/500 [00:01<00:00, 253.62it/s]
+100%|██████████| 400/400 [00:00<00:00, 584.32it/s]
+100%|██████████| 610/610 [00:00<00:00, 625.11it/s]
+Tokenizing inputs: 100%|██████████| 6420/6420 [00:06<00:00, 920.66it/s] 
+Rendering prompts: 100%|██████████| 6420/6420 [00:00<00:00, 8232.26it/s]
+
+Processed prompts: 100%|██████████| 6420/6420 [00:25<00:00, 250.80it/s, est. speed input: 81159.02 toks/s, output: 250.80 toks/s] 
+Running loglikelihood requests: 100%|██████████| 6420/6420 [00:27<00:00, 236.55it/s]
+Group 'kobest_dev': metric 'acc_norm,none' is missing in 4/5 tasks. Missing in: kobest_boolq_dev, kobest_copa_dev, kobest_sentineg_dev, kobest_wic_dev
+[kanana-2-3b|A] kmmlu_dev (5-shot)
+Overwriting default num_fewshot of kmmlu_accounting_dev from None to 5
+Overwriting default num_fewshot of kmmlu_agricultural_sciences_dev from None to 5
+Overwriting default num_fewshot of kmmlu_aviation_engineering_and_maintenance_dev from None to 5
+Overwriting default num_fewshot of kmmlu_biology_dev from None to 5
+Overwriting default num_fewshot of kmmlu_chemical_engineering_dev from None to 5
+Overwriting default num_fewshot of kmmlu_chemistry_dev from None to 5
+Overwriting default num_fewshot of kmmlu_civil_engineering_dev from None to 5
+Overwriting default num_fewshot of kmmlu_computer_science_dev from None to 5
+Overwriting default num_fewshot of kmmlu_construction_dev from None to 5
+Overwriting default num_fewshot of kmmlu_criminal_law_dev from None to 5
+Overwriting default num_fewshot of kmmlu_ecology_dev from None to 5
+Overwriting default num_fewshot of kmmlu_economics_dev from None to 5
+Overwriting default num_fewshot of kmmlu_education_dev from None to 5
+Overwriting default num_fewshot of kmmlu_electrical_engineering_dev from None to 5
+Overwriting default num_fewshot of kmmlu_electronics_engineering_dev from None to 5
+Overwriting default num_fewshot of kmmlu_energy_management_dev from None to 5
+Overwriting default num_fewshot of kmmlu_environmental_science_dev from None to 5
+Overwriting default num_fewshot of kmmlu_fashion_dev from None to 5
+Overwriting default num_fewshot of kmmlu_food_processing_dev from None to 5
+Overwriting default num_fewshot of kmmlu_gas_technology_and_engineering_dev from None to 5
+Overwriting default num_fewshot of kmmlu_geomatics_dev from None to 5
+Overwriting default num_fewshot of kmmlu_health_dev from None to 5
+Overwriting default num_fewshot of kmmlu_industrial_engineer_dev from None to 5
+Overwriting default num_fewshot of kmmlu_information_technology_dev from None to 5
+Overwriting default num_fewshot of kmmlu_interior_architecture_and_design_dev from None to 5
+Overwriting default num_fewshot of kmmlu_korean_history_dev from None to 5
+Overwriting default num_fewshot of kmmlu_law_dev from None to 5
+Overwriting default num_fewshot of kmmlu_machine_design_and_manufacturing_dev from None to 5
+Overwriting default num_fewshot of kmmlu_management_dev from None to 5
+Overwriting default num_fewshot of kmmlu_maritime_engineering_dev from None to 5
+Overwriting default num_fewshot of kmmlu_marketing_dev from None to 5
+Overwriting default num_fewshot of kmmlu_materials_engineering_dev from None to 5
+Overwriting default num_fewshot of kmmlu_math_dev from None to 5
+Overwriting default num_fewshot of kmmlu_mechanical_engineering_dev from None to 5
+Overwriting default num_fewshot of kmmlu_nondestructive_testing_dev from None to 5
+Overwriting default num_fewshot of kmmlu_patent_dev from None to 5
+Overwriting default num_fewshot of kmmlu_political_science_and_sociology_dev from None to 5
+Overwriting default num_fewshot of kmmlu_psychology_dev from None to 5
+Overwriting default num_fewshot of kmmlu_public_safety_dev from None to 5
+Overwriting default num_fewshot of kmmlu_railway_and_automotive_engineering_dev from None to 5
+Overwriting default num_fewshot of kmmlu_real_estate_dev from None to 5
+Overwriting default num_fewshot of kmmlu_refrigerating_machinery_dev from None to 5
+Overwriting default num_fewshot of kmmlu_social_welfare_dev from None to 5
+Overwriting default num_fewshot of kmmlu_taxation_dev from None to 5
+Overwriting default num_fewshot of kmmlu_telecommunications_and_wireless_technology_dev from None to 5
+100%|██████████| 40/40 [00:00<00:00, 150.09it/s]
+100%|██████████| 40/40 [00:00<00:00, 158.18it/s]
+100%|██████████| 40/40 [00:00<00:00, 157.43it/s]
+100%|██████████| 40/40 [00:00<00:00, 157.86it/s]
+100%|██████████| 40/40 [00:00<00:00, 158.75it/s]
+100%|██████████| 40/40 [00:00<00:00, 152.26it/s]
+100%|██████████| 40/40 [00:00<00:00, 159.34it/s]
+100%|██████████| 40/40 [00:00<00:00, 160.85it/s]
+100%|██████████| 40/40 [00:00<00:00, 160.63it/s]
+100%|██████████| 40/40 [00:00<00:00, 161.00it/s]
+100%|██████████| 40/40 [00:00<00:00, 160.83it/s]
+100%|██████████| 40/40 [00:00<00:00, 161.48it/s]
+100%|██████████| 2/2 [00:00<00:00, 129.99it/s]
+100%|██████████| 40/40 [00:00<00:00, 158.02it/s]
+100%|██████████| 40/40 [00:00<00:00, 153.33it/s]
+100%|██████████| 40/40 [00:00<00:00, 159.91it/s]
+100%|██████████| 40/40 [00:00<00:00, 159.32it/s]
+100%|██████████| 40/40 [00:00<00:00, 159.66it/s]
+100%|██████████| 40/40 [00:00<00:00, 160.04it/s]
+100%|██████████| 40/40 [00:00<00:00, 160.15it/s]
+100%|██████████| 40/40 [00:00<00:00, 147.81it/s]
+100%|██████████| 3/3 [00:00<00:00, 159.60it/s]
+100%|██████████| 40/40 [00:00<00:00, 159.95it/s]
+100%|██████████| 40/40 [00:00<00:00, 159.71it/s]
+100%|██████████| 40/40 [00:00<00:00, 159.48it/s]
+100%|██████████| 1/1 [00:00<00:00, 153.47it/s]
+100%|██████████| 40/40 [00:00<00:00, 159.61it/s]
+100%|██████████| 40/40 [00:00<00:00, 159.55it/s]
+100%|██████████| 40/40 [00:00<00:00, 154.12it/s]
+100%|██████████| 40/40 [00:00<00:00, 154.02it/s]
+100%|██████████| 40/40 [00:00<00:00, 160.07it/s]
+100%|██████████| 40/40 [00:00<00:00, 160.34it/s]
+100%|██████████| 40/40 [00:00<00:00, 159.54it/s]
+100%|██████████| 40/40 [00:00<00:00, 160.28it/s]
+100%|██████████| 40/40 [00:00<00:00, 160.27it/s]
+100%|██████████| 25/25 [00:00<00:00, 150.88it/s]
+100%|██████████| 40/40 [00:00<00:00, 160.30it/s]
+100%|██████████| 40/40 [00:00<00:00, 160.71it/s]
+100%|██████████| 40/40 [00:00<00:00, 160.88it/s]
+100%|██████████| 40/40 [00:00<00:00, 160.96it/s]
+100%|██████████| 40/40 [00:00<00:00, 161.43it/s]
+100%|██████████| 40/40 [00:00<00:00, 160.75it/s]
+100%|██████████| 40/40 [00:00<00:00, 150.42it/s]
+100%|██████████| 15/15 [00:00<00:00, 161.09it/s]
+100%|██████████| 40/40 [00:00<00:00, 161.43it/s]
+Tokenizing inputs: 100%|██████████| 6584/6584 [00:09<00:00, 680.78it/s]
+Rendering prompts: 100%|██████████| 6584/6584 [00:00<00:00, 7802.13it/s]
+
+Processed prompts: 100%|██████████| 6584/6584 [00:38<00:00, 172.91it/s, est. speed input: 80492.12 toks/s, output: 172.91 toks/s]
+Running loglikelihood requests: 100%|██████████| 6584/6584 [00:39<00:00, 164.65it/s] 
+[kanana-2-3b|A] global_mmlu_ko_dev (0-shot)
+Overwriting default num_fewshot of global_mmlu_ko_dev from None to 0
+100%|██████████| 215/215 [00:00<00:00, 1449.90it/s]
+Tokenizing inputs: 100%|██████████| 860/860 [00:00<00:00, 2271.75it/s]
+Rendering prompts: 100%|██████████| 860/860 [00:00<00:00, 8650.02it/s]
+
+Processed prompts: 100%|██████████| 860/860 [00:01<00:00, 673.62it/s, est. speed input: 66593.46 toks/s, output: 673.73 toks/s]
+Running loglikelihood requests: 100%|██████████| 860/860 [00:01<00:00, 606.53it/s]
+(MainProcess pid=358292) INFO 11-19 11:50:49 [utils.py:628] [shutdown] Process manager: send sigterm to process EngineCore
+(EngineCore pid=358694) INFO 11-19 11:50:49 [core.py:1525] [shutdown] EngineCore: trigger received signal=SIGTERM
+(EngineCore pid=358694) INFO 11-19 11:50:49 [core.py:1712] [shutdown] EngineCore: start mode=abort timeout=0s
+(EngineCore pid=358694) INFO 11-19 11:50:49 [core.py:1743] [shutdown] EngineCore: request processing complete; starting resource teardown
+(EngineCore pid=358694) INFO 11-19 11:50:49 [core.py:1573] [shutdown] EngineCore: exiting busy loop
+[
+ {
+  "model": "kanana-2-3b",
+  "variant": "A",
+  "task": "kobest_dev",
+  "wall_s": 57.9,
+  "results": {
+   "alias": "kobest_dev",
+   "name": "kobest_dev",
+   "sample_len": 2710,
+   "acc,none": 0.7055350553505535,
+   "acc_stderr,none": 0.008069135427227451,
+   "acc_norm,none": 0.562,
+   "acc_norm_stderr,none": 0.022210326363977382,
+   "sample_count": {
+    "acc,none": 2710,
+    "acc_norm,none": 500
+   }
+  }
+ },
+ {
+  "model": "kanana-2-3b",
+  "variant": "A",
+  "task": "kmmlu_dev",
+  "wall_s": 127.8,
+  "results": {
+   "alias": "kmmlu_dev",
+   "name": "kmmlu_dev",
+   "sample_len": 1646,
+   "acc,none": 0.5504252733900364,
+   "acc_stderr,none": "N/A",
+   "sample_count": {
+    "acc,none": 1646
+   }
+  }
+ },
+ {
+  "model": "kanana-2-3b",
+  "variant": "A",
+  "task": "global_mmlu_ko_dev",
+  "wall_s": 5.6,
+  "results": {
+   "name": "global_mmlu_ko_dev",
+   "alias": "global_mmlu_ko_dev",
+   "sample_len": 215,
+   "acc,none": 0.5488372093023256,
+   "acc_stderr,none": 0.034015865387679235
+  }
+ }
+]

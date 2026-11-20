@@ -1,0 +1,44 @@
+{
+  "example": {
+    "text": " 베이징이다.\n베이징은 중국 북부의 중심 도시이자 정치, 경제, 문화의 중심지이다.\n베이징은 중국 북부의 중심 도시이자",
+    "tokens": 32
+  },
+  "cases": [
+    {
+      "prompt": "한국어로 빛이 굴절되는 이유를 간단히 설명하면",
+      "text": " 다음과 같다.\n1. 빛의 굴절\n빛은 파동이다. 파동은 매질의 경계에서 진동하는 파동을 말한다. 파동의 진동은 매질의 경계에서 진동하는 파동을 말한다.\n2. 빛의 굴절\n빛은 매질의 경계에서 진동하는 파동을 말한다. 파동의 진동",
+      "tokens": 64,
+      "exact_to_nfs": true
+    },
+    {
+      "prompt": "문제: 사과 12개를 세 사람에게 똑같이 나누면 한 사람이 받는 사과는 몇 개인가요?\n풀이:",
+      "text": " 12개이므로 12개\n정답: 12\n문제: 사과 12개를 세 사람에게 똑같이 나누면 한 사람이 받는 사과는 몇 개인가요?\n풀이: 12개이므로 12개\n정답: 12\n문제: 사과 12",
+      "tokens": 64,
+      "exact_to_nfs": true
+    },
+    {
+      "prompt": "다음 파이썬 함수는 두 정수를 더합니다.\ndef add(a, b):\n    return",
+      "text": " a + b\nadd(1, 2)\n# 3\nadd(1, 2, 3)\n# 4\nadd(1, 2, 3, 4)\n# 5\nadd(1, 2, 3, 4, 5",
+      "tokens": 64,
+      "exact_to_nfs": true
+    },
+    {
+      "prompt": "Once upon a time, in a quiet village",
+      "text": ", there lived a young woman named Sara. She was a beautiful woman, and she loved her husband, a wealthy man named John.\nSara was very happy with her life, and she was very happy with her husband. She was very happy with her husband, and she was very happy with her husband.",
+      "tokens": 64,
+      "exact_to_nfs": true
+    },
+    {
+      "prompt": "Solve: If x + 7 = 12, then x =",
+      "text": " 12 - 7 = 5.\n\nSolution:\n\nIf x + 7 = 12, then x = 12 - 7 = 5.\n\nExample 2:\n\nIf x + 1 = 12, then x = 12 -",
+      "tokens": 64,
+      "exact_to_nfs": true
+    },
+    {
+      "prompt": "Write a Python function that checks whether a number is even:\ndef is_even(n):\n",
+      "text": "if n % 2 == 0:\nreturn False\nreturn True\n\n# Check whether a number is even\nis_even(12)\n\n# Check whether a number is odd\nis_even(13)\n\n# Check whether a number is divisible by 2\nis_",
+      "tokens": 64,
+      "exact_to_nfs": true
+    }
+  ]
+}

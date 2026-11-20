@@ -1,0 +1,118 @@
+{
+ "data/clean/fineweb2_ko/000_00000.parquet": {
+  "size": 4583253567,
+  "xxh64": "208c02ce81abed36"
+ },
+ "data/clean/fineweb2_ko/000_00001.parquet": {
+  "size": 4584534784,
+  "xxh64": "360a4c0ca6633e47"
+ },
+ "data/clean/fineweb2_ko/000_00002.parquet": {
+  "size": 4585643647,
+  "xxh64": "07c80e6365699cde"
+ },
+ "data/clean/fineweb2_ko/000_00003.parquet": {
+  "size": 4584475016,
+  "xxh64": "606c596097ab7e06"
+ },
+ "data/clean/fineweb2_ko/000_00004.parquet": {
+  "size": 4587328521,
+  "xxh64": "8d6a861bb3a34803"
+ },
+ "data/clean/fineweb2_ko/001_00000.parquet": {
+  "size": 4577386528,
+  "xxh64": "8d6a7f9056f5447c"
+ },
+ "data/clean/fineweb2_ko/001_00001.parquet": {
+  "size": 4576724429,
+  "xxh64": "ed4cccd9ee750795"
+ },
+ "data/clean/fineweb2_ko/001_00002.parquet": {
+  "size": 4576016873,
+  "xxh64": "762f7976065178bf"
+ },
+ "data/clean/fineweb2_ko/001_00003.parquet": {
+  "size": 4579099380,
+  "xxh64": "00d635c688344495"
+ },
+ "data/clean/fineweb2_ko/001_00004.parquet": {
+  "size": 4576783061,
+  "xxh64": "3d8b661855180556"
+ },
+ "data/clean/fineweb2_ko/002_00000.parquet": {
+  "size": 4570641812,
+  "xxh64": "8e645688b5d35a69"
+ },
+ "data/clean/fineweb2_ko/002_00001.parquet": {
+  "size": 4569285913,
+  "xxh64": "a72485e65872e9a2"
+ },
+ "data/clean/fineweb2_ko/002_00002.parquet": {
+  "size": 4570549296,
+  "xxh64": "aefe0b54b341b664"
+ },
+ "data/clean/fineweb2_ko/002_00003.parquet": {
+  "size": 4573240672,
+  "xxh64": "56c824297b973849"
+ },
+ "data/clean/fineweb2_ko/002_00004.parquet": {
+  "size": 4570188351,
+  "xxh64": "10817b0c3f51cd3b"
+ },
+ "data/clean/fineweb2_ko/003_00000.parquet": {
+  "size": 4557903002,
+  "xxh64": "22d4aaab37cffecb"
+ },
+ "data/clean/fineweb2_ko/003_00001.parquet": {
+  "size": 4557576482,
+  "xxh64": "b104236c9d1c8487"
+ },
+ "data/clean/fineweb2_ko/003_00002.parquet": {
+  "size": 4559217954,
+  "xxh64": "c7f80d868c6ef677"
+ },
+ "data/clean/fineweb2_ko/003_00003.parquet": {
+  "size": 4557902328,
+  "xxh64": "0a70b7785d914f96"
+ },
+ "data/clean/fineweb2_ko/003_00004.parquet": {
+  "size": 4562278074,
+  "xxh64": "edaeb193965ea592"
+ },
+ "data/clean/fineweb2_ko/004_00000.parquet": {
+  "size": 1791765015,
+  "xxh64": "7b832a7b747cfd44"
+ },
+ "data/clean/fineweb2_ko/004_00001.parquet": {
+  "size": 1727416906,
+  "xxh64": "6666138c38e800e4"
+ },
+ "data/clean/fineweb2_ko/004_00002.parquet": {
+  "size": 1658490978,
+  "xxh64": "6aa230118f163d06"
+ },
+ "data/clean/fineweb2_ko/004_00003.parquet": {
+  "size": 1614677685,
+  "xxh64": "5902f47238addd0e"
+ },
+ "data/clean/fineweb2_ko/004_00004.parquet": {
+  "size": 1552196166,
+  "xxh64": "a46c890caf5496d5"
+ },
+ "data/clean/wiki_ko/train-00000-of-00003.parquet": {
+  "size": 280343382,
+  "xxh64": "f6bc651eb8cee17f"
+ },
+ "data/clean/wiki_ko/train-00001-of-00003.parquet": {
+  "size": 134727670,
+  "xxh64": "67d420254afb87a7"
+ },
+ "data/clean/wiki_ko/train-00002-of-00003.parquet": {
+  "size": 114404978,
+  "xxh64": "ad61e0929a46aaaa"
+ },
+ "tokenizer/tokenizer_test200mb.json": {
+  "size": 5865582,
+  "xxh64": "ab32df3fa5bcc8bc"
+ }
+}

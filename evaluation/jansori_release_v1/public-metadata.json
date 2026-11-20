@@ -1,0 +1,19 @@
+{
+  "commit": "e68bfa3cb31e9589f4481a2e31d6d75c731fec9d",
+  "repo": "pathcosmos/JANSORI",
+  "private": false,
+  "license": "apache-2.0",
+  "files": 18,
+  "registry_tags": {
+    "Q8_0": {
+      "filename": "dense-3b-47k-Q8_0.gguf",
+      "bytes": 3426185184,
+      "sha256": "eb7053112886dab60d6012d4635dc2c7cdd07c902317e202a91ba36da33fed41"
+    },
+    "Q4_K_M": {
+      "filename": "dense-3b-47k-Q4_K_M.gguf",
+      "bytes": 1969663968,
+      "sha256": "21f8c90ade582967a8acb1991f73bea5f62757ae2d430500da41ba458f0f52a0"
+    }
+  }
+}

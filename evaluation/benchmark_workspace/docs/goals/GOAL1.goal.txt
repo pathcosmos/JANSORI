@@ -1,0 +1,37 @@
+[GOAL 1 — Opus 5.5 / xhigh] 사용자 모델 실행 정합성 검증 + EVAFRILL 증분 디코딩 엔진
+
+먼저 /home/work/llm-dense/llm-test/CLAUDE.md, 그다음 상세 사양 docs/goals/GOAL1.md를 읽고 그대로 따른다. 이 Goal에서는 벤치 점수를 내거나 비교하지 않는다.
+
+## 환경
+- 모든 셸에서 source env/paths.sh, 실행은 $LT_VENV/bin/python. 벤치 수트는 ko-llm-bench-suite/(feat/standard-benchmarks, 미커밋)
+- H200 1장: GPU 작업은 하나씩. 시작 시 nvidia-smi로 다른 GPU 작업이 있으면 끝날 때까지 CPU 작업을 먼저 한다
+
+## A. 학습 형식 정합성 (JANSORI, frankenstallm, EVAFRILL)
+1. 학습 코드에서 사전학습 문서 구분, BOS/EOS, SFT/ORPO/DPO 템플릿(멀티턴·시스템 메시지·공백/개행 포함), 손실 구간을 확인해 근거 파일:줄로 기록
+2. 학습 코드의 토큰화 결과와 평가 경로(vLLM chat 템플릿, lm-eval 로그우도 인코딩, llama.cpp/Ollama 템플릿)의 토큰 ID가 입력 20개 이상(한/영/공백/개행/특수문자)에서 정확히 일치함을 검증
+3. 산출물: configs/standard/formats.yaml(템플릿·시작/종료 토큰·근거), 로컬 chat 템플릿 덮어쓰기(HF 원본 수정 안 함), 수정한 Ollama Modelfile, 토큰 일치 pytest
+4. 기존 수트(Modelfile TEMPLATE {{ .Prompt }}, evafrill_runner "{system}\n{prompt}")와 학습 형식의 실제 토큰 차이 예시 기록
+
+## B. EVAFRILL 증분 디코딩 엔진
+- 원본 소스는 수정하지 않고 래퍼로 구현(kobench/standard/evafrill_engine.py). 블록 구조는 CLAUDE.md 참고(conv는 x에만, y·silu(z) 게이트, 블록 내 SwiGLU, A층 12·24, GQA 24/8, RoPE 500000)
+- prefill은 원본 커널로 계산하고 SSM·conv·KV 최종 상태 반환. decode는 causal_conv1d_update + selective_state_update + KV 캐시. 길이가 다른 배치 지원. 정적 배치 decode는 CUDA graph
+- 검증 (허용 오차는 측정 전에 정해 기록하고 사후에 바꾸지 않는다. 바꿔야 하면 근거와 함께 사용자에게 묻는다)
+  1. pretrain·sft-v2·slerp에서 길이 1/17/512/4000 prefill 로짓이 원본 전체 forward와 일치
+  2. 이후 256토큰 decode 매 단계 로짓이 같은 시퀀스의 원본 전체 forward와 일치 (BF16 허용 오차 + FP32 기준선)
+  3. greedy 토큰열이 원본 방식과 6개 이상 프롬프트에서 동일. 다르면 첫 분기 위치와 원인(로짓 동률 여부) 분석
+  4. 배치 8·32 결과가 배치 1과 동일 (패딩 영향 없음)
+- 성능: 원본 대비 TTFT, decode tok/s, 배치 처리량, VRAM (입력 128/1024/3968 × 출력 128/512 × 배치 1/8/32, CUDA graph on/off)
+- EvafrillLM.generate_until을 엔진으로 구현(종료 문자열·EOS·max_gen_toks). 엔진 단독 결과와의 일치 테스트
+- 산출물: runs/evafrill_engine_v1/{verification.json, perf.csv, REPORT.md}
+
+## 규칙
+- 사실대로 보고. 실패 기록 보존, 재시도는 새 run. 새 패키지는 공개 2주 이상(uv --exclude-newer), 환경 변경은 env/setup.sh에 반영
+- 기존 테스트 535개 유지
+- 사용자 확인 필요: git commit/push, HF 업로드, ../llm-traditional 수정·삭제, 외부 게시
+- 끝나면 CLAUDE.md에 결과·사용법·허용 오차·한계 기록 (Goal 2가 이어받음)
+
+## 완료 기준
+1. formats.yaml과 토큰 일치 테스트가 있고 3종 모두 학습 형식과 일치함이 검증됨
+2. 엔진이 검증 1–4를 통과했고 runs/evafrill_engine_v1/REPORT.md가 있음
+3. EvafrillLM이 생성을 지원하고 원본 대비 속도 향상이 수치로 기록됨
+4. 전체 테스트 통과, CLAUDE.md 갱신

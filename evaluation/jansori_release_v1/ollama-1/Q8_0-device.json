@@ -1,0 +1,22 @@
+[
+  {
+    "name": "hf.co/pathcosmos/JANSORI:Q8_0",
+    "model": "hf.co/pathcosmos/JANSORI:Q8_0",
+    "size": 3924484422,
+    "digest": "3164a73f34f773d23e11282e178d03d9f52bb7874026163a2c024235058a7ace",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "llama",
+      "families": [
+        "llama"
+      ],
+      "parameter_size": "3.22B",
+      "quantization_level": "unknown"
+    },
+    "expires_at": "2026-11-16T22:23:38.991616065+09:00",
+    "size_vram": 3924484422,
+    "context_length": 4096,
+    "runner": "llamacpp"
+  }
+]

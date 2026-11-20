@@ -1,0 +1,555 @@
+{
+ "jansori-bf16": {
+  "n": 24,
+  "tokens_evaluated_equals_len": 24,
+  "output_differs_when_bos_added": 24,
+  "rows": [
+   {
+    "kind": "text",
+    "n_ids": 6,
+    "tokens_evaluated": 6,
+    "prompt_n": 6,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 8,
+    "tokens_evaluated": 8,
+    "prompt_n": 8,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 8,
+    "tokens_evaluated": 8,
+    "prompt_n": 8,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 5,
+    "tokens_evaluated": 5,
+    "prompt_n": 5,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 3,
+    "tokens_evaluated": 3,
+    "prompt_n": 3,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 8,
+    "tokens_evaluated": 8,
+    "prompt_n": 8,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 10,
+    "tokens_evaluated": 10,
+    "prompt_n": 10,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 7,
+    "tokens_evaluated": 7,
+    "prompt_n": 7,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 5,
+    "tokens_evaluated": 5,
+    "prompt_n": 5,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 38,
+    "tokens_evaluated": 38,
+    "prompt_n": 38,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 17,
+    "tokens_evaluated": 17,
+    "prompt_n": 17,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 17,
+    "tokens_evaluated": 17,
+    "prompt_n": 17,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 13,
+    "tokens_evaluated": 13,
+    "prompt_n": 13,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 23,
+    "tokens_evaluated": 23,
+    "prompt_n": 23,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 28,
+    "tokens_evaluated": 28,
+    "prompt_n": 28,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 11,
+    "tokens_evaluated": 11,
+    "prompt_n": 11,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 21,
+    "tokens_evaluated": 21,
+    "prompt_n": 21,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 8,
+    "tokens_evaluated": 8,
+    "prompt_n": 8,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 6,
+    "tokens_evaluated": 6,
+    "prompt_n": 6,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 12,
+    "tokens_evaluated": 12,
+    "prompt_n": 12,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 11,
+    "tokens_evaluated": 11,
+    "prompt_n": 11,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 17,
+    "tokens_evaluated": 17,
+    "prompt_n": 17,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 5,
+    "tokens_evaluated": 5,
+    "prompt_n": 5,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 12,
+    "tokens_evaluated": 12,
+    "prompt_n": 12,
+    "differs_from_bos_prefixed": true
+   }
+  ]
+ },
+ "frankenstallm-bf16": {
+  "n": 53,
+  "tokens_evaluated_equals_len": 53,
+  "output_differs_when_bos_added": 53,
+  "rows": [
+   {
+    "kind": "text",
+    "n_ids": 6,
+    "tokens_evaluated": 6,
+    "prompt_n": 6,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 8,
+    "tokens_evaluated": 8,
+    "prompt_n": 8,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 8,
+    "tokens_evaluated": 8,
+    "prompt_n": 8,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 5,
+    "tokens_evaluated": 5,
+    "prompt_n": 5,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 3,
+    "tokens_evaluated": 3,
+    "prompt_n": 3,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 7,
+    "tokens_evaluated": 7,
+    "prompt_n": 7,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 10,
+    "tokens_evaluated": 10,
+    "prompt_n": 10,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 8,
+    "tokens_evaluated": 8,
+    "prompt_n": 8,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 5,
+    "tokens_evaluated": 5,
+    "prompt_n": 5,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 21,
+    "tokens_evaluated": 21,
+    "prompt_n": 21,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 15,
+    "tokens_evaluated": 15,
+    "prompt_n": 15,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 15,
+    "tokens_evaluated": 15,
+    "prompt_n": 15,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 5,
+    "tokens_evaluated": 5,
+    "prompt_n": 5,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 5,
+    "tokens_evaluated": 5,
+    "prompt_n": 5,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 30,
+    "tokens_evaluated": 30,
+    "prompt_n": 30,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 15,
+    "tokens_evaluated": 15,
+    "prompt_n": 15,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 24,
+    "tokens_evaluated": 24,
+    "prompt_n": 24,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 7,
+    "tokens_evaluated": 7,
+    "prompt_n": 7,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 4,
+    "tokens_evaluated": 4,
+    "prompt_n": 4,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 11,
+    "tokens_evaluated": 11,
+    "prompt_n": 11,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 16,
+    "tokens_evaluated": 16,
+    "prompt_n": 16,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 18,
+    "tokens_evaluated": 18,
+    "prompt_n": 18,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 7,
+    "tokens_evaluated": 7,
+    "prompt_n": 7,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "text",
+    "n_ids": 12,
+    "tokens_evaluated": 12,
+    "prompt_n": 12,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "chat",
+    "n_ids": 23,
+    "tokens_evaluated": 23,
+    "prompt_n": 23,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "chat",
+    "n_ids": 24,
+    "tokens_evaluated": 24,
+    "prompt_n": 24,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "chat",
+    "n_ids": 24,
+    "tokens_evaluated": 24,
+    "prompt_n": 24,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "chat",
+    "n_ids": 21,
+    "tokens_evaluated": 21,
+    "prompt_n": 21,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "chat",
+    "n_ids": 19,
+    "tokens_evaluated": 19,
+    "prompt_n": 19,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "chat",
+    "n_ids": 24,
+    "tokens_evaluated": 24,
+    "prompt_n": 24,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "chat",
+    "n_ids": 26,
+    "tokens_evaluated": 26,
+    "prompt_n": 26,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "chat",
+    "n_ids": 22,
+    "tokens_evaluated": 22,
+    "prompt_n": 22,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "chat",
+    "n_ids": 20,
+    "tokens_evaluated": 20,
+    "prompt_n": 20,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "chat",
+    "n_ids": 37,
+    "tokens_evaluated": 37,
+    "prompt_n": 37,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "chat",
+    "n_ids": 31,
+    "tokens_evaluated": 31,
+    "prompt_n": 31,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "chat",
+    "n_ids": 29,
+    "tokens_evaluated": 29,
+    "prompt_n": 29,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "chat",
+    "n_ids": 22,
+    "tokens_evaluated": 22,
+    "prompt_n": 22,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "chat",
+    "n_ids": 19,
+    "tokens_evaluated": 19,
+    "prompt_n": 19,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "chat",
+    "n_ids": 45,
+    "tokens_evaluated": 45,
+    "prompt_n": 45,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "chat",
+    "n_ids": 31,
+    "tokens_evaluated": 31,
+    "prompt_n": 31,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "chat",
+    "n_ids": 39,
+    "tokens_evaluated": 39,
+    "prompt_n": 39,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "chat",
+    "n_ids": 24,
+    "tokens_evaluated": 24,
+    "prompt_n": 24,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "chat",
+    "n_ids": 20,
+    "tokens_evaluated": 20,
+    "prompt_n": 20,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "chat",
+    "n_ids": 27,
+    "tokens_evaluated": 27,
+    "prompt_n": 27,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "chat",
+    "n_ids": 32,
+    "tokens_evaluated": 32,
+    "prompt_n": 32,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "chat",
+    "n_ids": 34,
+    "tokens_evaluated": 34,
+    "prompt_n": 34,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "chat",
+    "n_ids": 23,
+    "tokens_evaluated": 23,
+    "prompt_n": 23,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "chat",
+    "n_ids": 26,
+    "tokens_evaluated": 26,
+    "prompt_n": 26,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "chat",
+    "n_ids": 18,
+    "tokens_evaluated": 18,
+    "prompt_n": 18,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "chat",
+    "n_ids": 40,
+    "tokens_evaluated": 40,
+    "prompt_n": 40,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "chat",
+    "n_ids": 21,
+    "tokens_evaluated": 21,
+    "prompt_n": 21,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "chat",
+    "n_ids": 64,
+    "tokens_evaluated": 64,
+    "prompt_n": 64,
+    "differs_from_bos_prefixed": true
+   },
+   {
+    "kind": "chat",
+    "n_ids": 18,
+    "tokens_evaluated": 18,
+    "prompt_n": 18,
+    "differs_from_bos_prefixed": true
+   }
+  ]
+ }
+}

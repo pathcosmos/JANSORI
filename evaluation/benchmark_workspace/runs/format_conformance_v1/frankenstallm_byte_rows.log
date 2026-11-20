@@ -1,0 +1,6 @@
+['model.embed_tokens.weight']
+embed shape (64256, 3072)
+rows 4..63999 norm: mean 2.3287 std 0.2037 min 1.3744 max 3.0741
+rows 64000..64255 (byte tokens) norm: mean 0.8553 std 0.0091 min 0.8302 max 0.8826
+byte rows all identical? False  byte rows zero? False
+<unk>(3) norm 1.8990360498428345 <pad>(0) 2.0947272777557373 <s>(1) 2.659177541732788 </s>(2) 2.8954708576202393

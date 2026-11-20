@@ -1,0 +1,49 @@
+[GOAL 2 — Opus 5.5 / high] 최적 설정 탐색·적용 → 시중 모델 비교 벤치 → 벤치 수트 업그레이드 → 보고
+
+먼저 /home/work/llm-dense/llm-test/CLAUDE.md, 그다음 상세 사양 docs/goals/GOAL2.md를 읽고 그대로 따른다.
+
+## 시작 조건
+- Goal 1 산출물(configs/standard/formats.yaml, kobench/standard/evafrill_engine.py, runs/evafrill_engine_v1/REPORT.md) 확인. 없으면 EVAFRILL을 생성·성능 평가에서 빼고 그 사실을 기록
+- source env/paths.sh, 실행은 $LT_VENV/bin/python. 벤치 수트 ko-llm-bench-suite/(feat/standard-benchmarks, 미커밋)
+- 공개 모델 30종 revision 고정·다운로드 완료(Llama 포함). KMMLU-Redux/Pro 접근 승인 완료
+- runs/standard_v1/의 JANSORI ko_mc_v1은 유효. frankenstallm 결과(results/standard/frankenstallm-bf16)는 배포 토크나이저로 실행된 '기존 방식' 기준선이므로 results/standard_baseline_release_tokenizer/로 옮긴 뒤 formats.yaml 토크나이저로 재실행(실행기는 결과 파일이 있으면 건너뜀)
+- GGUF 평가: JANSORI는 배포 GGUF, frankenstallm은 학습 토크나이저 GGUF($LT_LOCAL/gguf/*.train-tokenizer.gguf)+formats.llamacpp_text 또는 토큰 ID 입력. EVAFRILL 생성은 엔진 기본값(batch_invariant=True)
+
+## 대상 모델 (base/instruct는 다른 표, 총/활성 파라미터 표시)
+- 사용자: JANSORI(base, BF16/Q8_0/Q4_K_M), frankenstallm(instruct, BF16/GGUF v2), EVAFRILL(slerp, pretrain, dev로 선택한 단계)
+- 1순위: llama-3.2-3b(+instruct), qwen2.5-3b(+instruct), kanana-1.5-2.1b(base/instruct), kanana-2-3b(base/instruct), qwen3-4b(base/2507), smollm3-3b(base/instruct), exaone-3.5-2.4b, qwen3-30b-a3b(base/2507), kanana-2-30b-a3b(base/instruct), nemotron-3-nano-30b-a3b(base/instruct)
+- 2순위(1순위 후): qwen3.5-4b(base/instruct), gemma-4-e4b(base/it, 총 8B 표시), phi-4-mini, qwen3.5-35b-a3b(base/instruct), qwen3.6-35b-a3b, nemotron-3.5-lightning-30b-a3b, ernie-4.5-21b-a3b(base/instruct)
+
+## 1단계: 최적 설정 (dev/validation에서만 선택)
+- formats.yaml 적용. 로그우도 시작 토큰(EOS 유무), few-shot 수, 디코딩(greedy vs 모델 카드 권장), EVAFRILL 체크포인트를 dev에서 비교·채택
+- 공개 모델도 공식 chat 템플릿·권장 설정에 같은 절차 적용
+- 기존 방식 대비 효과를 dev·test에서 CI와 함께 기록(선택은 dev로만). 산출물: configs/standard/best_settings.yaml
+
+## 2단계: 벤치 수트 업그레이드
+- A 표(공통 프로토콜: 같은 프롬프트·shot·greedy)와 B 표(best_settings 적용)
+- MC(로그우도): ko_mc_v1, en_mc_v1, KoBALT-700, KMMLU-Redux/Pro(lm-eval에 없음·test만 → 0-shot 커스텀 태스크, 선택지 수 확인, revision 고정, 비상업 표시)
+- GGUF Q8/Q4 로그우도·PPL은 llama.cpp로 BF16과 비교. PPL은 bits-per-byte, 중립 코퍼스 + JANSORI holdout 별도 표시
+- 생성: HRM8K/GSM8K-ko, IFEval-Ko, KoMT-Bench, LogicKor, ko-arena-hard, K2-Eval, KoSimpleQA, KorMedMCQA, KoBBQ, ko_truthful_qa. 정답 있는 문항은 규칙 채점, 형식 실패와 오답 분리, thinking on/off 구분
+- Judge: 로컬 Qwen3.6-35B-A3B급을 vLLM 고동시성으로, 위치 교차, 같은 계열 표시
+- 코드: HumanEval+/MBPP+를 격리 실행(자원·파일·네트워크 제한)
+- 성능: 클라이언트 측 TTFT·TPOT·처리량, 동시 1–64, prefix caching, VRAM, 기동·예열 분리, EVAFRILL은 Goal 1 엔진
+- T2–T7의 Ollama 전용 경로를 백엔드 추상화(vLLM/llama.cpp/EVAFRILL 엔진)로 이전, 자체 문항은 custom 표시
+- 문항별 결과 저장, bootstrap 95% CI, 사용자 모델 대비 paired 차이, revision·설정·버전 기록, 새 기능마다 단위 테스트
+
+## 3단계: 실행과 보고
+- 순서: 사용자 모델 → 1순위 → 2순위. 공개 벤치 오염 가능성 명시
+- 한국어 최종 보고서(표·차트): A·B 표, 모델별 강약점, 최적 설정 효과(CI), 양자화 손실, 속도·메모리, 실패·미확인 항목. 공유용 페이지로 게시(공개 범위는 사용자 확인)
+
+## 규칙
+- test 결과로 설정을 고르거나 문항에 맞춰 프롬프트를 조정하지 않는다
+- 사실대로 보고, 실패 보존, 재시도는 새 run, 장시간 작업은 재개 가능하게
+- GPU는 하나씩, 다운로드·빌드는 CPU에서 병행, OOM은 /sys/fs/cgroup/memory.events 확인
+- 새 패키지는 공개 2주 이상(uv --exclude-newer), 재구성은 env/setup.sh만으로
+- 사용자 확인 필요: git commit/push, HF 업로드·모델 카드 수정, ../llm-traditional 수정·삭제, 외부 게시
+- 진행 상황과 결정은 CLAUDE.md에 계속 반영
+
+## 완료 기준
+1. best_settings.yaml이 있고 사용자 모델의 최적 설정 효과가 CI와 함께 제시됨
+2. 1순위 전체에 대해 MC(KMMLU-Redux/Pro 포함), PPL, 생성, 성능 벤치 완료, A·B 표 생성(로드·실행이 불가능한 모델·태스크는 재현 가능한 원인을 기록하면 완료로 본다). 2순위는 실행 범위 명시
+3. 벤치 수트에 새 기능과 테스트가 반영되고 전체 테스트 통과
+4. 한국어 최종 보고서 게시, 재현 명령과 남은 과제 정리

@@ -1,0 +1,286 @@
+/home/work/llm-dense/llm-test/ko-llm-bench-suite/kobench/standard/run.py:176: DeprecationWarning: get_task_dict is deprecated. Use TaskManager.load() instead.
+  get_task_dict([t.task], tm)
+[data] mmlu 준비됨
+/home/work/llm-dense/llm-test/ko-llm-bench-suite/kobench/standard/run.py:176: DeprecationWarning: get_task_dict is deprecated. Use TaskManager.load() instead.
+  get_task_dict([t.task], tm)
+[data] arc_challenge 준비됨
+[data] hellaswag 준비됨
+[data] winogrande 준비됨
+W1119 15:46:49.444000 397738 torch/_opaque_base.py:6] torch._opaque_base is deprecated, use torch._custom_class_base instead
+W1119 15:46:49.444000 397738 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1119 15:46:49.445000 397738 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+(MainProcess pid=397738) INFO 11-19 15:46:54 [startup.py:96] non-default args: {'dtype': 'bfloat16', 'seed': 1234, 'max_model_len': 4096, 'gpu_memory_utilization': 0.85, 'disable_log_stats': True, 'revision': 'cdbee75f17c01a7cc42f958dc650907174af0554', 'model': 'Qwen/Qwen3-4B-Instruct-2507'}
+(MainProcess pid=397738) INFO 11-19 15:46:55 [model.py:744] Resolved architecture: Qwen3ForCausalLM
+(MainProcess pid=397738) INFO 11-19 15:46:55 [model.py:2170] Using max model len 4096
+(MainProcess pid=397738) INFO 11-19 15:46:55 [scheduler.py:310] Chunked prefill is enabled with max_num_batched_tokens=16384.
+Parse safetensors files: 100%|██████████| 3/3 [00:00<00:00,  3.81it/s]
+(MainProcess pid=397738) INFO 11-19 15:46:56 [kernel.py:480] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'], gelu_and_mul_sparse=['triton', 'native'])
+Fetching 10 files: 100%|██████████| 10/10 [00:00<00:00, 1671.97it/s]
+(EngineCore pid=398194) INFO 11-19 15:46:59 [core.py:139] Initializing a V1 LLM engine (v0.33.0) with config: model='Qwen/Qwen3-4B-Instruct-2507', speculative_config=None, tokenizer='Qwen/Qwen3-4B-Instruct-2507', skip_tokenizer_init=False, tokenizer_mode=auto, revision=cdbee75f17c01a7cc42f958dc650907174af0554, tokenizer_revision=cdbee75f17c01a7cc42f958dc650907174af0554, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, quantization_config=None, enforce_eager=False, aux_output_config=AuxOutputConfig(enable_return_routed_experts=False, max_bytes=None), kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, per_request_spec_decode_metrics='none', kv_cache_metrics=False, kv_cache_metrics_sample=0.01, custom_histogram_buckets=None, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=1234, served_model_name=Qwen/Qwen3-4B-Instruct-2507, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.VLLM_COMPILE: 3>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['none'], 'ir_enable_torch_wrap': True, 'splitting_ops': ['vllm::unified_attention_with_output', 'vllm::unified_mla_attention_with_output', 'vllm::mamba_mixer2', 'vllm::mamba_mixer', 'vllm::short_conv', 'vllm::qwen4_exp_ple_short_conv', 'vllm::qwen4_exp_qsa_with_output', 'vllm::qwen4_exp_qsa_prepare_with_output', 'vllm::linear_attention', 'vllm::qwen_gdn_attention_core', 'vllm::qwen_gdn_attention_core_fused_norm_packed', 'vllm::gdn_attention_core_xpu', 'vllm::olmo_hybrid_gdn_full_forward', 'vllm::sparse_attn_indexer', 'vllm::rocm_aiter_sparse_attn_indexer', 'vllm::deepseek_v4_attention', 'vllm::hpc_rope_norm_forward', 'vllm::unified_kv_cache_update', 'vllm::unified_mla_kv_cache_update'], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'cudagraph_decoder_replay': True, 'decoder_replay_cudagraph_capture_sizes': [], 'decoder_replay_trim_threshold': 768, 'compile_sizes': [], 'compile_ranges_endpoints': [16384], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.FULL_AND_PIECEWISE: (2, 1)>, 'cudagraph_num_of_warmups': 1, 'cudagraph_capture_sizes': [1, 2, 4, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136, 144, 152, 160, 168, 176, 184, 192, 200, 208, 216, 224, 232, 240, 248, 256, 272, 288, 304, 320, 336, 352, 368, 384, 400, 416, 432, 448, 464, 480, 496, 512], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': False, 'fuse_act_quant': False, 'fuse_attn_quant': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 512, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'], gelu_and_mul_sparse=['triton', 'native']), enable_flashinfer_autotune=True, enable_rocm_segmented_attn_autotune=False, enable_cutedsl_warmup=True, enable_jit_warmup=True, monokernel=False, moe_backend='auto', sparse_indexer_topk_backend='auto', linear_backend='auto', linear_backend_per_quant=None)
+(EngineCore pid=398194) INFO 11-19 15:47:01 [parallel_state.py:1929] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_8a581d153138492b8bed074db68de4bb backend=nccl
+(EngineCore pid=398194) INFO 11-19 15:47:01 [parallel_state.py:2385] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, ETP rank 0, EP rank N/A, EPLB rank N/A
+(EngineCore pid=398194) INFO 11-19 15:47:01 [gpu_worker.py:513] Using V2 Model Runner
+(EngineCore pid=398194) WARNING 11-19 15:47:01 [flashinfer.py:143] FlashInfer's precompiled kernels are missing or do not match flashinfer-python 0.7.2.post1 (flashinfer-cubin not installed, flashinfer-jit-cache not installed). FlashInfer then downloads and compiles kernels at startup, which can take several minutes, or fails to import mismatched ones. Run `vllm download-kernels` in this Python environment to install them.
+(EngineCore pid=398194) INFO 11-19 15:47:02 [model_runner.py:399] Loading model from scratch...
+(EngineCore pid=398194) INFO 11-19 15:47:02 [cuda.py:508] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].
+(EngineCore pid=398194) INFO 11-19 15:47:02 [flash_attn.py:1122] Using FlashAttention version 3
+(EngineCore pid=398194) INFO 11-19 15:47:03 [base_loader.py:82] Initializing model took 0.948056 seconds
+(EngineCore pid=398194) INFO 11-19 15:47:03 [weight_utils.py:1144] Filesystem type for checkpoints: OVERLAY. Checkpoint size: 7.49 GiB. Available RAM: 44.70 GiB.
+(EngineCore pid=398194) INFO 11-19 15:47:03 [weight_utils.py:1167] Auto-prefetch is disabled because the filesystem (OVERLAY) is not a recognized network FS (NFS/Lustre). If you want to force prefetching, start vLLM with --safetensors-load-strategy=prefetch.
+Loading safetensors checkpoint shards:   0% Completed | 0/3 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  33% Completed | 1/3 [00:00<00:01,  1.47it/s]
+Loading safetensors checkpoint shards:  67% Completed | 2/3 [00:01<00:00,  1.33it/s]
+Loading safetensors checkpoint shards: 100% Completed | 3/3 [00:01<00:00,  2.12it/s]
+Loading safetensors checkpoint shards: 100% Completed | 3/3 [00:01<00:00,  1.85it/s]
+
+(EngineCore pid=398194) INFO 11-19 15:47:05 [default_loader.py:506] Loading weights took 1.63 seconds
+(EngineCore pid=398194) INFO 11-19 15:47:06 [model_runner.py:428] Model loading took 7.64 GiB memory and 4.433563 seconds
+(EngineCore pid=398194) INFO 11-19 15:47:06 [topk_topp_sampler.py:149] Using FlashInfer for top-p & top-k sampling.
+(EngineCore pid=398194) WARNING 11-19 15:47:06 [torch_utils.py:269] OMP_NUM_THREADS=12 is set; leaving Torch threads at 12 for serving. Multi-threaded torch CPU ops during serving can degrade performance through spin-wait contention and cgroup CPU-quota throttling.
+(EngineCore pid=398194) INFO 11-19 15:47:06 [utils.py:381] Using LBNHC KV cache layout.
+(EngineCore pid=398194) INFO 11-19 15:47:07 [caching.py:342] reconstructed serializable fn from standalone compile artifacts. num_artifacts=3 num_submods=37
+(EngineCore pid=398194) INFO 11-19 15:47:07 [decorators.py:326] [backbone] Directly load AOT compilation from path /workspace/llm-test/cache/vllm/torch_compile_cache/torch_aot_compile/c6d033bd6de15480364beae99b42592f2928f46546713139ceaad4b13d08bd11/rank_0_0/model
+(EngineCore pid=398194) INFO 11-19 15:47:07 [monitor.py:62] [backbone] torch.compile took 0.26 s in total
+(EngineCore pid=398194) INFO 11-19 15:47:07 [monitor.py:91] [backbone] Initial profiling/warmup run took 0.02 s
+Capturing CUDA graphs (PIECEWISE): 100%|██████████| 51/51 [00:03<00:00, 13.26it/s]
+Capturing CUDA graphs (FULL): 100%|██████████| 2/2 [00:00<00:00, 35.09it/s]
+(EngineCore pid=398194) INFO 11-19 15:47:13 [model_runner.py:1163] Graph capturing finished in 5 secs, took 0.62 GiB
+(EngineCore pid=398194) INFO 11-19 15:47:13 [gpu_worker.py:772] Available KV cache memory: 107.42 GiB
+(EngineCore pid=398194) INFO 11-19 15:47:13 [gpu_worker.py:787] CUDA graph memory profiling is enabled (default since v0.21.0). The current --gpu-memory-utilization=0.8500 is equivalent to --gpu-memory-utilization=0.8433 without CUDA graph memory profiling. To maintain the same effective KV cache size as before, increase --gpu-memory-utilization to 0.8567. To disable, set VLLM_MEMORY_PROFILER_ESTIMATE_CUDAGRAPHS=0.
+(EngineCore pid=398194) INFO 11-19 15:47:13 [kv_cache_utils.py:1147] GPU KV cache size: 782,176 tokens, Maximum concurrency for 4,096 tokens per request: 190.96x
+(EngineCore pid=398194) INFO 11-19 15:47:13 [kernel_warmup.py:179] JIT kernel warmup starting.
+(EngineCore pid=398194) INFO 11-19 15:47:13 [kernel_warmup.py:192] JIT kernel warmup finished in 0.00s.
+(EngineCore pid=398194) INFO 11-19 15:47:13 [kernel_warmup.py:485] Using FlashInfer managed autotune cache (root=flashinfer default). Pass --disable-flashinfer-autotune to skip autotuning.
+2026-11-19 15:47:13,749 - INFO - autotuner.py:1048 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
+2026-11-19 15:47:13,921 - INFO - autotune_cache.py:495 - flashinfer.jit: [Autotuner]: Managed autotune cache attached for this process: ManagedAutotuneCache(env_dir='/home/work/.cache/flashinfer/autotune/v2/00489633d6a11293', hits=0, misses=0)
+(EngineCore pid=398194) INFO 11-19 15:47:13 [kernel_warmup.py:371] Running FlashInfer autotune with 16384 tokens and token buckets (1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 768, 1024, 1280, 1536, 1792, 2048, 2560, 3072, 3584, 4096, 8192, 16384).
+2026-11-19 15:47:13,944 - INFO - autotuner.py:1071 - flashinfer.jit: [Autotuner]: Autotuning process ends
+Capturing CUDA graphs (PIECEWISE): 100%|██████████| 51/51 [00:03<00:00, 14.90it/s]
+Capturing CUDA graphs (FULL): 100%|██████████| 51/51 [00:01<00:00, 35.39it/s]
+(EngineCore pid=398194) INFO 11-19 15:47:19 [model_runner.py:1163] Graph capturing finished in 6 secs, took 0.44 GiB
+(EngineCore pid=398194) INFO 11-19 15:47:19 [gpu_worker.py:1003] CUDA graph pool memory: 0.44 GiB (actual), 0.93 GiB (estimated), difference: 0.49 GiB (110.6%).
+(EngineCore pid=398194) INFO 11-19 15:47:19 [gpu_worker.py:1066] Free memory on device (139.1/139.8 GiB) on startup. Desired GPU memory utilization is (0.85, 118.83 GiB). Actual usage is 8.35 GiB for consumed memory (weights + non-torch), 3.06 GiB for peak activation, and 0.44 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=114705304064` (106.83 GiB) to fit into requested memory, or `--kv-cache-memory=136470153728` (127.1 GiB) to fully utilize gpu memory. Current kv cache memory in use is 107.42 GiB.
+(EngineCore pid=398194) INFO 11-19 15:47:20 [jit_monitor.py:84] Kernel JIT monitor activated; monitored JIT compilations during inference will use mode=warn.
+(EngineCore pid=398194) INFO 11-19 15:47:20 [core.py:405] init engine (profile, create kv cache, warmup model) took 14.42 s (compilation: 0.26 s)
+(EngineCore pid=398194) INFO 11-19 15:47:20 [kernel.py:480] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'], gelu_and_mul_sparse=['triton', 'native'])
+(MainProcess pid=397738) INFO 11-19 15:47:21 [hf.py:736] Detected the chat template content format to be 'string'. You can set `--chat-template-content-format` to override this.
+Fetching 10 files: 100%|██████████| 10/10 [00:00<00:00, 1420.16it/s]
+[qwen3-4b-2507|A] mmlu (5-shot)
+Overwriting default num_fewshot of mmlu_abstract_algebra from None to 5
+Overwriting default num_fewshot of mmlu_anatomy from None to 5
+Overwriting default num_fewshot of mmlu_astronomy from None to 5
+Overwriting default num_fewshot of mmlu_college_biology from None to 5
+Overwriting default num_fewshot of mmlu_college_chemistry from None to 5
+Overwriting default num_fewshot of mmlu_college_computer_science from None to 5
+Overwriting default num_fewshot of mmlu_college_mathematics from None to 5
+Overwriting default num_fewshot of mmlu_college_physics from None to 5
+Overwriting default num_fewshot of mmlu_computer_security from None to 5
+Overwriting default num_fewshot of mmlu_conceptual_physics from None to 5
+Overwriting default num_fewshot of mmlu_electrical_engineering from None to 5
+Overwriting default num_fewshot of mmlu_elementary_mathematics from None to 5
+Overwriting default num_fewshot of mmlu_high_school_biology from None to 5
+Overwriting default num_fewshot of mmlu_high_school_chemistry from None to 5
+Overwriting default num_fewshot of mmlu_high_school_computer_science from None to 5
+Overwriting default num_fewshot of mmlu_high_school_mathematics from None to 5
+Overwriting default num_fewshot of mmlu_high_school_physics from None to 5
+Overwriting default num_fewshot of mmlu_high_school_statistics from None to 5
+Overwriting default num_fewshot of mmlu_machine_learning from None to 5
+Overwriting default num_fewshot of mmlu_business_ethics from None to 5
+Overwriting default num_fewshot of mmlu_clinical_knowledge from None to 5
+Overwriting default num_fewshot of mmlu_college_medicine from None to 5
+Overwriting default num_fewshot of mmlu_global_facts from None to 5
+Overwriting default num_fewshot of mmlu_human_aging from None to 5
+Overwriting default num_fewshot of mmlu_management from None to 5
+Overwriting default num_fewshot of mmlu_marketing from None to 5
+Overwriting default num_fewshot of mmlu_medical_genetics from None to 5
+Overwriting default num_fewshot of mmlu_miscellaneous from None to 5
+Overwriting default num_fewshot of mmlu_nutrition from None to 5
+Overwriting default num_fewshot of mmlu_professional_accounting from None to 5
+Overwriting default num_fewshot of mmlu_professional_medicine from None to 5
+Overwriting default num_fewshot of mmlu_virology from None to 5
+Overwriting default num_fewshot of mmlu_econometrics from None to 5
+Overwriting default num_fewshot of mmlu_high_school_geography from None to 5
+Overwriting default num_fewshot of mmlu_high_school_government_and_politics from None to 5
+Overwriting default num_fewshot of mmlu_high_school_macroeconomics from None to 5
+Overwriting default num_fewshot of mmlu_high_school_microeconomics from None to 5
+Overwriting default num_fewshot of mmlu_high_school_psychology from None to 5
+Overwriting default num_fewshot of mmlu_human_sexuality from None to 5
+Overwriting default num_fewshot of mmlu_professional_psychology from None to 5
+Overwriting default num_fewshot of mmlu_public_relations from None to 5
+Overwriting default num_fewshot of mmlu_security_studies from None to 5
+Overwriting default num_fewshot of mmlu_sociology from None to 5
+Overwriting default num_fewshot of mmlu_us_foreign_policy from None to 5
+Overwriting default num_fewshot of mmlu_formal_logic from None to 5
+Overwriting default num_fewshot of mmlu_high_school_european_history from None to 5
+Overwriting default num_fewshot of mmlu_high_school_us_history from None to 5
+Overwriting default num_fewshot of mmlu_high_school_world_history from None to 5
+Overwriting default num_fewshot of mmlu_international_law from None to 5
+Overwriting default num_fewshot of mmlu_jurisprudence from None to 5
+Overwriting default num_fewshot of mmlu_logical_fallacies from None to 5
+Overwriting default num_fewshot of mmlu_moral_disputes from None to 5
+Overwriting default num_fewshot of mmlu_moral_scenarios from None to 5
+Overwriting default num_fewshot of mmlu_philosophy from None to 5
+Overwriting default num_fewshot of mmlu_prehistory from None to 5
+Overwriting default num_fewshot of mmlu_professional_law from None to 5
+Overwriting default num_fewshot of mmlu_world_religions from None to 5
+100%|██████████| 100/100 [00:00<00:00, 177.53it/s]
+100%|██████████| 135/135 [00:00<00:00, 176.63it/s]
+100%|██████████| 152/152 [00:00<00:00, 181.29it/s]
+100%|██████████| 144/144 [00:00<00:00, 178.01it/s]
+100%|██████████| 100/100 [00:00<00:00, 178.01it/s]
+100%|██████████| 100/100 [00:00<00:00, 181.42it/s]
+100%|██████████| 100/100 [00:00<00:00, 177.48it/s]
+100%|██████████| 102/102 [00:00<00:00, 177.33it/s]
+100%|██████████| 100/100 [00:00<00:00, 180.97it/s]
+100%|██████████| 235/235 [00:01<00:00, 178.54it/s]
+100%|██████████| 145/145 [00:00<00:00, 180.32it/s]
+100%|██████████| 378/378 [00:02<00:00, 179.41it/s]
+100%|██████████| 310/310 [00:01<00:00, 180.93it/s]
+100%|██████████| 203/203 [00:01<00:00, 177.37it/s]
+100%|██████████| 100/100 [00:00<00:00, 182.63it/s]
+100%|██████████| 270/270 [00:01<00:00, 179.34it/s]
+100%|██████████| 151/151 [00:00<00:00, 177.09it/s]
+100%|██████████| 216/216 [00:01<00:00, 181.94it/s]
+100%|██████████| 112/112 [00:00<00:00, 174.36it/s]
+100%|██████████| 100/100 [00:00<00:00, 183.25it/s]
+100%|██████████| 265/265 [00:01<00:00, 180.13it/s]
+100%|██████████| 173/173 [00:00<00:00, 182.25it/s]
+100%|██████████| 100/100 [00:00<00:00, 178.13it/s]
+100%|██████████| 223/223 [00:01<00:00, 182.18it/s]
+100%|██████████| 103/103 [00:00<00:00, 179.55it/s]
+100%|██████████| 234/234 [00:01<00:00, 181.14it/s]
+100%|██████████| 100/100 [00:00<00:00, 178.46it/s]
+100%|██████████| 783/783 [00:04<00:00, 181.69it/s]
+100%|██████████| 306/306 [00:01<00:00, 183.12it/s]
+100%|██████████| 282/282 [00:01<00:00, 143.18it/s]
+100%|██████████| 272/272 [00:01<00:00, 182.21it/s]
+100%|██████████| 166/166 [00:00<00:00, 181.69it/s]
+100%|██████████| 114/114 [00:00<00:00, 184.26it/s]
+100%|██████████| 198/198 [00:01<00:00, 181.22it/s]
+100%|██████████| 193/193 [00:01<00:00, 184.21it/s]
+100%|██████████| 390/390 [00:02<00:00, 181.85it/s]
+100%|██████████| 238/238 [00:01<00:00, 182.97it/s]
+100%|██████████| 545/545 [00:02<00:00, 182.51it/s]
+100%|██████████| 131/131 [00:00<00:00, 184.77it/s]
+100%|██████████| 612/612 [00:03<00:00, 183.47it/s]
+100%|██████████| 110/110 [00:00<00:00, 184.90it/s]
+100%|██████████| 245/245 [00:01<00:00, 181.38it/s]
+100%|██████████| 201/201 [00:01<00:00, 183.07it/s]
+100%|██████████| 100/100 [00:00<00:00, 184.92it/s]
+100%|██████████| 126/126 [00:00<00:00, 181.81it/s]
+100%|██████████| 165/165 [00:00<00:00, 182.12it/s]
+100%|██████████| 204/204 [00:01<00:00, 183.76it/s]
+100%|██████████| 237/237 [00:01<00:00, 182.45it/s]
+100%|██████████| 121/121 [00:00<00:00, 181.26it/s]
+100%|██████████| 108/108 [00:00<00:00, 184.60it/s]
+100%|██████████| 163/163 [00:00<00:00, 182.74it/s]
+100%|██████████| 346/346 [00:01<00:00, 184.82it/s]
+100%|██████████| 895/895 [00:04<00:00, 182.28it/s]
+100%|██████████| 311/311 [00:01<00:00, 183.12it/s]
+100%|██████████| 324/324 [00:01<00:00, 183.09it/s]
+100%|██████████| 1534/1534 [00:08<00:00, 183.32it/s]
+100%|██████████| 171/171 [00:00<00:00, 182.69it/s]
+Tokenizing inputs: 100%|██████████| 56168/56168 [02:20<00:00, 400.40it/s] 
+Rendering prompts: 100%|██████████| 56168/56168 [00:08<00:00, 6503.97it/s]
+
+Processed prompts: 100%|█████████▉| 55888/56168 [10:15<00:01, 255.32it/s, est. speed input: 63489.73 toks/s, output: 90.77 toks/s]
+Processed prompts: 100%|█████████▉| 55953/56168 [10:15<00:00, 260.82it/s, est. speed input: 63491.85 toks/s, output: 90.84 toks/s]
+Processed prompts: 100%|█████████▉| 56019/56168 [10:16<00:00, 209.36it/s, est. speed input: 63471.01 toks/s, output: 90.88 toks/s]
+Processed prompts: 100%|██████████| 56168/56168 [10:16<00:00, 91.11it/s, est. speed input: 63524.71 toks/s, output: 91.11 toks/s] 
+Running loglikelihood requests: 100%|██████████| 56168/56168 [10:40<00:00, 87.68it/s]   
+[qwen3-4b-2507|A] arc_challenge (25-shot)
+Overwriting default num_fewshot of arc_challenge from None to 25
+100%|██████████| 1172/1172 [00:35<00:00, 32.92it/s]
+Tokenizing inputs: 100%|██████████| 4687/4687 [00:17<00:00, 262.56it/s]
+Rendering prompts: 100%|██████████| 4687/4687 [00:00<00:00, 6914.19it/s]
+
+Processed prompts: 100%|██████████| 4687/4687 [01:11<00:00, 65.47it/s, est. speed input: 61647.74 toks/s, output: 65.47 toks/s]
+Running loglikelihood requests: 100%|██████████| 4687/4687 [01:13<00:00, 63.53it/s]  
+[qwen3-4b-2507|A] hellaswag (10-shot)
+Overwriting default num_fewshot of hellaswag from None to 10
+100%|██████████| 10042/10042 [00:57<00:00, 175.31it/s]
+Tokenizing inputs: 100%|██████████| 40168/40168 [02:10<00:00, 308.81it/s]
+Rendering prompts: 100%|██████████| 40168/40168 [00:05<00:00, 7138.14it/s]
+
+Processed prompts: 100%|█████████▉| 39977/40168 [08:50<00:01, 108.73it/s, est. speed input: 63713.18 toks/s, output: 75.39 toks/s]
+Processed prompts: 100%|█████████▉| 40005/40168 [08:50<00:01, 108.61it/s, est. speed input: 63713.03 toks/s, output: 75.41 toks/s]
+Processed prompts: 100%|█████████▉| 40033/40168 [08:50<00:01, 108.65it/s, est. speed input: 63712.82 toks/s, output: 75.42 toks/s]
+Processed prompts: 100%|█████████▉| 40062/40168 [08:51<00:00, 111.64it/s, est. speed input: 63715.01 toks/s, output: 75.44 toks/s]
+Processed prompts: 100%|█████████▉| 40091/40168 [08:51<00:00, 113.15it/s, est. speed input: 63716.16 toks/s, output: 75.46 toks/s]
+Processed prompts: 100%|█████████▉| 40120/40168 [08:51<00:00, 96.07it/s, est. speed input: 63697.70 toks/s, output: 75.46 toks/s] 
+Processed prompts: 100%|██████████| 40168/40168 [08:51<00:00, 75.54it/s, est. speed input: 63741.86 toks/s, output: 75.54 toks/s]
+Running loglikelihood requests: 100%|██████████| 40168/40168 [09:09<00:00, 73.03it/s]  
+[qwen3-4b-2507|A] winogrande (5-shot)
+Overwriting default num_fewshot of winogrande from None to 5
+100%|██████████| 1267/1267 [00:00<00:00, 27786.58it/s]
+Tokenizing inputs: 100%|██████████| 2534/2534 [00:01<00:00, 1856.07it/s]
+Rendering prompts: 100%|██████████| 2534/2534 [00:00<00:00, 8260.06it/s]
+
+Processed prompts: 100%|██████████| 2534/2534 [00:04<00:00, 514.26it/s, est. speed input: 66903.98 toks/s, output: 514.28 toks/s]
+Running loglikelihood requests: 100%|██████████| 2534/2534 [00:05<00:00, 472.27it/s]
+(MainProcess pid=397738) INFO 11-19 16:18:20 [utils.py:628] [shutdown] Process manager: send sigterm to process EngineCore
+(EngineCore pid=398194) INFO 11-19 16:18:20 [core.py:1525] [shutdown] EngineCore: trigger received signal=SIGTERM
+(EngineCore pid=398194) INFO 11-19 16:18:20 [core.py:1712] [shutdown] EngineCore: start mode=abort timeout=0s
+(EngineCore pid=398194) INFO 11-19 16:18:20 [core.py:1743] [shutdown] EngineCore: request processing complete; starting resource teardown
+(EngineCore pid=398194) INFO 11-19 16:18:20 [core.py:1573] [shutdown] EngineCore: exiting busy loop
+[
+ {
+  "model": "qwen3-4b-2507",
+  "variant": "A",
+  "task": "mmlu",
+  "wall_s": 940.7,
+  "results": {
+   "alias": "mmlu",
+   "name": "mmlu",
+   "sample_len": 14042,
+   "acc,none": 0.7264634667426293,
+   "acc_stderr,none": 0.00358227669271344,
+   "sample_count": {
+    "acc,none": 14042
+   }
+  }
+ },
+ {
+  "model": "qwen3-4b-2507",
+  "variant": "A",
+  "task": "arc_challenge",
+  "wall_s": 132.5,
+  "results": {
+   "name": "arc_challenge",
+   "alias": "arc_challenge",
+   "sample_len": 1172,
+   "acc,none": 0.6203071672354948,
+   "acc_stderr,none": 0.01418211986697471,
+   "acc_norm,none": 0.6638225255972696,
+   "acc_norm_stderr,none": 0.013804855026205884
+  }
+ },
+ {
+  "model": "qwen3-4b-2507",
+  "variant": "A",
+  "task": "hellaswag",
+  "wall_s": 756.6,
+  "results": {
+   "name": "hellaswag",
+   "alias": "hellaswag",
+   "sample_len": 10042,
+   "acc,none": 0.5316669986058554,
+   "acc_stderr,none": 0.004979763862135122,
+   "acc_norm,none": 0.7029476199960167,
+   "acc_norm_stderr,none": 0.004560259083197043
+  }
+ },
+ {
+  "model": "qwen3-4b-2507",
+  "variant": "A",
+  "task": "winogrande",
+  "wall_s": 10.2,
+  "results": {
+   "name": "winogrande",
+   "alias": "winogrande",
+   "sample_len": 1267,
+   "acc,none": 0.6606156274664562,
+   "acc_stderr,none": 0.01330771492894184
+  }
+ }
+]

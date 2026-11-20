@@ -1,0 +1,345 @@
+=== 2026-11-19T00:10:54+09:00 START evafrill-mo-3b-pretrain docstart=eos
+/home/work/llm-dense/llm-test/ko-llm-bench-suite/kobench/standard/run.py:153: DeprecationWarning: get_task_dict is deprecated. Use TaskManager.load() instead.
+  get_task_dict([t.task], tm)
+[data] kobest_dev 준비됨
+/home/work/llm-dense/llm-test/ko-llm-bench-suite/kobench/standard/run.py:153: DeprecationWarning: get_task_dict is deprecated. Use TaskManager.load() instead.
+  get_task_dict([t.task], tm)
+[data] kmmlu_dev 준비됨
+[data] global_mmlu_ko_dev 준비됨
+Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 1416.60it/s]
+[evafrill-mo-3b-pretrain|docstart_eos] kobest_dev (5-shot)
+Overwriting default num_fewshot of kobest_boolq_dev from None to 5
+Overwriting default num_fewshot of kobest_copa_dev from None to 5
+Overwriting default num_fewshot of kobest_hellaswag_dev from None to 5
+Overwriting default num_fewshot of kobest_sentineg_dev from None to 5
+Overwriting default num_fewshot of kobest_wic_dev from None to 5
+100%|██████████| 700/700 [00:02<00:00, 258.11it/s]
+100%|██████████| 500/500 [00:00<00:00, 41976.62it/s]
+100%|██████████| 500/500 [00:01<00:00, 320.60it/s]
+100%|██████████| 400/400 [00:00<00:00, 623.15it/s]
+100%|██████████| 610/610 [00:00<00:00, 617.10it/s]
+Tokenizing inputs: 100%|██████████| 6420/6420 [00:05<00:00, 1283.99it/s]
+evafrill loglikelihood: 100%|██████████| 6420/6420 [00:59<00:00, 108.32it/s]
+Group 'kobest_dev': metric 'acc_norm,none' is missing in 4/5 tasks. Missing in: kobest_boolq_dev, kobest_copa_dev, kobest_sentineg_dev, kobest_wic_dev
+[evafrill-mo-3b-pretrain|docstart_eos] kmmlu_dev (5-shot)
+Overwriting default num_fewshot of kmmlu_accounting_dev from None to 5
+Overwriting default num_fewshot of kmmlu_agricultural_sciences_dev from None to 5
+Overwriting default num_fewshot of kmmlu_aviation_engineering_and_maintenance_dev from None to 5
+Overwriting default num_fewshot of kmmlu_biology_dev from None to 5
+Overwriting default num_fewshot of kmmlu_chemical_engineering_dev from None to 5
+Overwriting default num_fewshot of kmmlu_chemistry_dev from None to 5
+Overwriting default num_fewshot of kmmlu_civil_engineering_dev from None to 5
+Overwriting default num_fewshot of kmmlu_computer_science_dev from None to 5
+Overwriting default num_fewshot of kmmlu_construction_dev from None to 5
+Overwriting default num_fewshot of kmmlu_criminal_law_dev from None to 5
+Overwriting default num_fewshot of kmmlu_ecology_dev from None to 5
+Overwriting default num_fewshot of kmmlu_economics_dev from None to 5
+Overwriting default num_fewshot of kmmlu_education_dev from None to 5
+Overwriting default num_fewshot of kmmlu_electrical_engineering_dev from None to 5
+Overwriting default num_fewshot of kmmlu_electronics_engineering_dev from None to 5
+Overwriting default num_fewshot of kmmlu_energy_management_dev from None to 5
+Overwriting default num_fewshot of kmmlu_environmental_science_dev from None to 5
+Overwriting default num_fewshot of kmmlu_fashion_dev from None to 5
+Overwriting default num_fewshot of kmmlu_food_processing_dev from None to 5
+Overwriting default num_fewshot of kmmlu_gas_technology_and_engineering_dev from None to 5
+Overwriting default num_fewshot of kmmlu_geomatics_dev from None to 5
+Overwriting default num_fewshot of kmmlu_health_dev from None to 5
+Overwriting default num_fewshot of kmmlu_industrial_engineer_dev from None to 5
+Overwriting default num_fewshot of kmmlu_information_technology_dev from None to 5
+Overwriting default num_fewshot of kmmlu_interior_architecture_and_design_dev from None to 5
+Overwriting default num_fewshot of kmmlu_korean_history_dev from None to 5
+Overwriting default num_fewshot of kmmlu_law_dev from None to 5
+Overwriting default num_fewshot of kmmlu_machine_design_and_manufacturing_dev from None to 5
+Overwriting default num_fewshot of kmmlu_management_dev from None to 5
+Overwriting default num_fewshot of kmmlu_maritime_engineering_dev from None to 5
+Overwriting default num_fewshot of kmmlu_marketing_dev from None to 5
+Overwriting default num_fewshot of kmmlu_materials_engineering_dev from None to 5
+Overwriting default num_fewshot of kmmlu_math_dev from None to 5
+Overwriting default num_fewshot of kmmlu_mechanical_engineering_dev from None to 5
+Overwriting default num_fewshot of kmmlu_nondestructive_testing_dev from None to 5
+Overwriting default num_fewshot of kmmlu_patent_dev from None to 5
+Overwriting default num_fewshot of kmmlu_political_science_and_sociology_dev from None to 5
+Overwriting default num_fewshot of kmmlu_psychology_dev from None to 5
+Overwriting default num_fewshot of kmmlu_public_safety_dev from None to 5
+Overwriting default num_fewshot of kmmlu_railway_and_automotive_engineering_dev from None to 5
+Overwriting default num_fewshot of kmmlu_real_estate_dev from None to 5
+Overwriting default num_fewshot of kmmlu_refrigerating_machinery_dev from None to 5
+Overwriting default num_fewshot of kmmlu_social_welfare_dev from None to 5
+Overwriting default num_fewshot of kmmlu_taxation_dev from None to 5
+Overwriting default num_fewshot of kmmlu_telecommunications_and_wireless_technology_dev from None to 5
+100%|██████████| 40/40 [00:00<00:00, 145.23it/s]
+100%|██████████| 40/40 [00:00<00:00, 157.35it/s]
+100%|██████████| 40/40 [00:00<00:00, 156.59it/s]
+100%|██████████| 40/40 [00:00<00:00, 156.56it/s]
+100%|██████████| 40/40 [00:00<00:00, 156.96it/s]
+100%|██████████| 40/40 [00:00<00:00, 157.43it/s]
+100%|██████████| 40/40 [00:00<00:00, 150.11it/s]
+100%|██████████| 40/40 [00:00<00:00, 151.22it/s]
+100%|██████████| 40/40 [00:00<00:00, 157.08it/s]
+100%|██████████| 40/40 [00:00<00:00, 157.39it/s]
+100%|██████████| 40/40 [00:00<00:00, 158.29it/s]
+100%|██████████| 40/40 [00:00<00:00, 159.70it/s]
+100%|██████████| 2/2 [00:00<00:00, 153.59it/s]
+100%|██████████| 40/40 [00:00<00:00, 159.53it/s]
+100%|██████████| 40/40 [00:00<00:00, 154.37it/s]
+100%|██████████| 40/40 [00:00<00:00, 155.22it/s]
+100%|██████████| 40/40 [00:00<00:00, 160.14it/s]
+100%|██████████| 40/40 [00:00<00:00, 160.30it/s]
+100%|██████████| 40/40 [00:00<00:00, 160.39it/s]
+100%|██████████| 40/40 [00:00<00:00, 160.42it/s]
+100%|██████████| 40/40 [00:00<00:00, 160.98it/s]
+100%|██████████| 3/3 [00:00<00:00, 157.56it/s]
+100%|██████████| 40/40 [00:00<00:00, 154.84it/s]
+100%|██████████| 40/40 [00:00<00:00, 160.70it/s]
+100%|██████████| 40/40 [00:00<00:00, 154.50it/s]
+100%|██████████| 1/1 [00:00<00:00, 155.07it/s]
+100%|██████████| 40/40 [00:00<00:00, 160.59it/s]
+100%|██████████| 40/40 [00:00<00:00, 160.02it/s]
+100%|██████████| 40/40 [00:00<00:00, 160.58it/s]
+100%|██████████| 40/40 [00:00<00:00, 161.21it/s]
+100%|██████████| 40/40 [00:00<00:00, 161.12it/s]
+100%|██████████| 40/40 [00:00<00:00, 155.28it/s]
+100%|██████████| 40/40 [00:00<00:00, 154.85it/s]
+100%|██████████| 40/40 [00:00<00:00, 161.25it/s]
+100%|██████████| 40/40 [00:00<00:00, 161.32it/s]
+100%|██████████| 25/25 [00:00<00:00, 160.91it/s]
+100%|██████████| 40/40 [00:00<00:00, 160.66it/s]
+100%|██████████| 40/40 [00:00<00:00, 161.24it/s]
+100%|██████████| 40/40 [00:00<00:00, 155.39it/s]
+100%|██████████| 40/40 [00:00<00:00, 160.17it/s]
+100%|██████████| 40/40 [00:00<00:00, 153.46it/s]
+100%|██████████| 40/40 [00:00<00:00, 160.14it/s]
+100%|██████████| 40/40 [00:00<00:00, 161.02it/s]
+100%|██████████| 15/15 [00:00<00:00, 160.90it/s]
+100%|██████████| 40/40 [00:00<00:00, 160.72it/s]
+Tokenizing inputs: 100%|██████████| 6584/6584 [00:07<00:00, 915.51it/s]
+evafrill loglikelihood: 100%|██████████| 6584/6584 [00:46<00:00, 143.06it/s]
+[evafrill-mo-3b-pretrain|docstart_eos] global_mmlu_ko_dev (0-shot)
+Overwriting default num_fewshot of global_mmlu_ko_dev from None to 0
+100%|██████████| 215/215 [00:00<00:00, 1449.57it/s]
+Tokenizing inputs: 100%|██████████| 860/860 [00:00<00:00, 3425.90it/s]
+evafrill loglikelihood: 100%|██████████| 860/860 [00:02<00:00, 416.31it/s]
+[
+ {
+  "model": "evafrill-mo-3b-pretrain",
+  "variant": "docstart_eos",
+  "task": "kobest_dev",
+  "wall_s": 87.3,
+  "results": {
+   "alias": "kobest_dev",
+   "name": "kobest_dev",
+   "sample_len": 2710,
+   "acc,none": 0.5302583025830259,
+   "acc_stderr,none": 0.009470156652672318,
+   "acc_norm,none": 0.49,
+   "acc_norm_stderr,none": 0.02237859698923086,
+   "sample_count": {
+    "acc,none": 2710,
+    "acc_norm,none": 500
+   }
+  }
+ },
+ {
+  "model": "evafrill-mo-3b-pretrain",
+  "variant": "docstart_eos",
+  "task": "kmmlu_dev",
+  "wall_s": 130.8,
+  "results": {
+   "alias": "kmmlu_dev",
+   "name": "kmmlu_dev",
+   "sample_len": 1646,
+   "acc,none": 0.24908869987849333,
+   "acc_stderr,none": "N/A",
+   "sample_count": {
+    "acc,none": 1646
+   }
+  }
+ },
+ {
+  "model": "evafrill-mo-3b-pretrain",
+  "variant": "docstart_eos",
+  "task": "global_mmlu_ko_dev",
+  "wall_s": 6.0,
+  "results": {
+   "name": "global_mmlu_ko_dev",
+   "alias": "global_mmlu_ko_dev",
+   "sample_len": 215,
+   "acc,none": 0.2372093023255814,
+   "acc_stderr,none": 0.029077808059912683
+  }
+ }
+]
+=== 2026-11-19T00:19:35+09:00 END evafrill-mo-3b-pretrain docstart=eos exit=0
+=== 2026-11-19T00:19:35+09:00 START evafrill-mo-3b-pretrain shots=0
+/home/work/llm-dense/llm-test/ko-llm-bench-suite/kobench/standard/run.py:153: DeprecationWarning: get_task_dict is deprecated. Use TaskManager.load() instead.
+  get_task_dict([t.task], tm)
+[data] kobest_dev 준비됨
+/home/work/llm-dense/llm-test/ko-llm-bench-suite/kobench/standard/run.py:153: DeprecationWarning: get_task_dict is deprecated. Use TaskManager.load() instead.
+  get_task_dict([t.task], tm)
+[data] kmmlu_dev 준비됨
+[data] global_mmlu_ko_dev 준비됨
+Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 1851.93it/s]
+[evafrill-mo-3b-pretrain|shots0] kobest_dev (0-shot)
+Overwriting default num_fewshot of kobest_boolq_dev from None to 0
+Overwriting default num_fewshot of kobest_copa_dev from None to 0
+Overwriting default num_fewshot of kobest_hellaswag_dev from None to 0
+Overwriting default num_fewshot of kobest_sentineg_dev from None to 0
+Overwriting default num_fewshot of kobest_wic_dev from None to 0
+100%|██████████| 700/700 [00:00<00:00, 1516.36it/s]
+100%|██████████| 500/500 [00:00<00:00, 129198.62it/s]
+100%|██████████| 500/500 [00:00<00:00, 1855.34it/s]
+100%|██████████| 400/400 [00:00<00:00, 3519.27it/s]
+100%|██████████| 610/610 [00:00<00:00, 3549.67it/s]
+Tokenizing inputs: 100%|██████████| 6420/6420 [00:00<00:00, 7616.22it/s]
+evafrill loglikelihood: 100%|██████████| 6420/6420 [00:13<00:00, 464.38it/s]
+Group 'kobest_dev': metric 'acc_norm,none' is missing in 4/5 tasks. Missing in: kobest_boolq_dev, kobest_copa_dev, kobest_sentineg_dev, kobest_wic_dev
+[evafrill-mo-3b-pretrain|shots0] kmmlu_dev (0-shot)
+Overwriting default num_fewshot of kmmlu_accounting_dev from None to 0
+Overwriting default num_fewshot of kmmlu_agricultural_sciences_dev from None to 0
+Overwriting default num_fewshot of kmmlu_aviation_engineering_and_maintenance_dev from None to 0
+Overwriting default num_fewshot of kmmlu_biology_dev from None to 0
+Overwriting default num_fewshot of kmmlu_chemical_engineering_dev from None to 0
+Overwriting default num_fewshot of kmmlu_chemistry_dev from None to 0
+Overwriting default num_fewshot of kmmlu_civil_engineering_dev from None to 0
+Overwriting default num_fewshot of kmmlu_computer_science_dev from None to 0
+Overwriting default num_fewshot of kmmlu_construction_dev from None to 0
+Overwriting default num_fewshot of kmmlu_criminal_law_dev from None to 0
+Overwriting default num_fewshot of kmmlu_ecology_dev from None to 0
+Overwriting default num_fewshot of kmmlu_economics_dev from None to 0
+Overwriting default num_fewshot of kmmlu_education_dev from None to 0
+Overwriting default num_fewshot of kmmlu_electrical_engineering_dev from None to 0
+Overwriting default num_fewshot of kmmlu_electronics_engineering_dev from None to 0
+Overwriting default num_fewshot of kmmlu_energy_management_dev from None to 0
+Overwriting default num_fewshot of kmmlu_environmental_science_dev from None to 0
+Overwriting default num_fewshot of kmmlu_fashion_dev from None to 0
+Overwriting default num_fewshot of kmmlu_food_processing_dev from None to 0
+Overwriting default num_fewshot of kmmlu_gas_technology_and_engineering_dev from None to 0
+Overwriting default num_fewshot of kmmlu_geomatics_dev from None to 0
+Overwriting default num_fewshot of kmmlu_health_dev from None to 0
+Overwriting default num_fewshot of kmmlu_industrial_engineer_dev from None to 0
+Overwriting default num_fewshot of kmmlu_information_technology_dev from None to 0
+Overwriting default num_fewshot of kmmlu_interior_architecture_and_design_dev from None to 0
+Overwriting default num_fewshot of kmmlu_korean_history_dev from None to 0
+Overwriting default num_fewshot of kmmlu_law_dev from None to 0
+Overwriting default num_fewshot of kmmlu_machine_design_and_manufacturing_dev from None to 0
+Overwriting default num_fewshot of kmmlu_management_dev from None to 0
+Overwriting default num_fewshot of kmmlu_maritime_engineering_dev from None to 0
+Overwriting default num_fewshot of kmmlu_marketing_dev from None to 0
+Overwriting default num_fewshot of kmmlu_materials_engineering_dev from None to 0
+Overwriting default num_fewshot of kmmlu_math_dev from None to 0
+Overwriting default num_fewshot of kmmlu_mechanical_engineering_dev from None to 0
+Overwriting default num_fewshot of kmmlu_nondestructive_testing_dev from None to 0
+Overwriting default num_fewshot of kmmlu_patent_dev from None to 0
+Overwriting default num_fewshot of kmmlu_political_science_and_sociology_dev from None to 0
+Overwriting default num_fewshot of kmmlu_psychology_dev from None to 0
+Overwriting default num_fewshot of kmmlu_public_safety_dev from None to 0
+Overwriting default num_fewshot of kmmlu_railway_and_automotive_engineering_dev from None to 0
+Overwriting default num_fewshot of kmmlu_real_estate_dev from None to 0
+Overwriting default num_fewshot of kmmlu_refrigerating_machinery_dev from None to 0
+Overwriting default num_fewshot of kmmlu_social_welfare_dev from None to 0
+Overwriting default num_fewshot of kmmlu_taxation_dev from None to 0
+Overwriting default num_fewshot of kmmlu_telecommunications_and_wireless_technology_dev from None to 0
+100%|██████████| 40/40 [00:00<00:00, 746.90it/s]
+100%|██████████| 40/40 [00:00<00:00, 926.83it/s]
+100%|██████████| 40/40 [00:00<00:00, 928.73it/s]
+100%|██████████| 40/40 [00:00<00:00, 922.86it/s]
+100%|██████████| 40/40 [00:00<00:00, 745.23it/s]
+100%|██████████| 40/40 [00:00<00:00, 929.06it/s]
+100%|██████████| 40/40 [00:00<00:00, 937.04it/s]
+100%|██████████| 40/40 [00:00<00:00, 934.13it/s]
+100%|██████████| 40/40 [00:00<00:00, 940.00it/s]
+100%|██████████| 40/40 [00:00<00:00, 928.30it/s]
+100%|██████████| 40/40 [00:00<00:00, 917.19it/s]
+100%|██████████| 40/40 [00:00<00:00, 931.62it/s]
+100%|██████████| 2/2 [00:00<00:00, 856.16it/s]
+100%|██████████| 40/40 [00:00<00:00, 933.05it/s]
+100%|██████████| 40/40 [00:00<00:00, 940.28it/s]
+100%|██████████| 40/40 [00:00<00:00, 948.10it/s]
+100%|██████████| 40/40 [00:00<00:00, 936.42it/s]
+100%|██████████| 40/40 [00:00<00:00, 941.54it/s]
+100%|██████████| 40/40 [00:00<00:00, 938.97it/s]
+100%|██████████| 40/40 [00:00<00:00, 926.86it/s]
+100%|██████████| 40/40 [00:00<00:00, 938.09it/s]
+100%|██████████| 3/3 [00:00<00:00, 877.71it/s]
+100%|██████████| 40/40 [00:00<00:00, 939.63it/s]
+100%|██████████| 40/40 [00:00<00:00, 945.39it/s]
+100%|██████████| 40/40 [00:00<00:00, 943.74it/s]
+100%|██████████| 1/1 [00:00<00:00, 812.06it/s]
+100%|██████████| 40/40 [00:00<00:00, 940.77it/s]
+100%|██████████| 40/40 [00:00<00:00, 933.37it/s]
+100%|██████████| 40/40 [00:00<00:00, 939.91it/s]
+100%|██████████| 40/40 [00:00<00:00, 941.74it/s]
+100%|██████████| 40/40 [00:00<00:00, 936.34it/s]
+100%|██████████| 40/40 [00:00<00:00, 943.03it/s]
+100%|██████████| 40/40 [00:00<00:00, 937.50it/s]
+100%|██████████| 40/40 [00:00<00:00, 940.56it/s]
+100%|██████████| 40/40 [00:00<00:00, 948.47it/s]
+100%|██████████| 25/25 [00:00<00:00, 941.57it/s]
+100%|██████████| 40/40 [00:00<00:00, 949.25it/s]
+100%|██████████| 40/40 [00:00<00:00, 942.04it/s]
+100%|██████████| 40/40 [00:00<00:00, 938.92it/s]
+100%|██████████| 40/40 [00:00<00:00, 941.67it/s]
+100%|██████████| 40/40 [00:00<00:00, 755.54it/s]
+100%|██████████| 40/40 [00:00<00:00, 948.27it/s]
+100%|██████████| 40/40 [00:00<00:00, 939.10it/s]
+100%|██████████| 15/15 [00:00<00:00, 916.79it/s]
+100%|██████████| 40/40 [00:00<00:00, 942.45it/s]
+Tokenizing inputs: 100%|██████████| 6584/6584 [00:01<00:00, 5818.97it/s]
+evafrill loglikelihood: 100%|██████████| 6584/6584 [00:09<00:00, 681.25it/s]
+[evafrill-mo-3b-pretrain|shots0] global_mmlu_ko_dev (0-shot)
+Overwriting default num_fewshot of global_mmlu_ko_dev from None to 0
+100%|██████████| 215/215 [00:00<00:00, 1437.57it/s]
+Tokenizing inputs: 100%|██████████| 860/860 [00:00<00:00, 4051.05it/s]
+evafrill loglikelihood: 100%|██████████| 860/860 [00:02<00:00, 421.38it/s]
+[
+ {
+  "model": "evafrill-mo-3b-pretrain",
+  "variant": "shots0",
+  "task": "kobest_dev",
+  "wall_s": 32.6,
+  "results": {
+   "alias": "kobest_dev",
+   "name": "kobest_dev",
+   "sample_len": 2710,
+   "acc,none": 0.46863468634686345,
+   "acc_stderr,none": 0.009516129117126541,
+   "acc_norm,none": 0.48,
+   "acc_norm_stderr,none": 0.022365160424231326,
+   "sample_count": {
+    "acc,none": 2710,
+    "acc_norm,none": 500
+   }
+  }
+ },
+ {
+  "model": "evafrill-mo-3b-pretrain",
+  "variant": "shots0",
+  "task": "kmmlu_dev",
+  "wall_s": 79.7,
+  "results": {
+   "alias": "kmmlu_dev",
+   "name": "kmmlu_dev",
+   "sample_len": 1646,
+   "acc,none": 0.25698663426488455,
+   "acc_stderr,none": "N/A",
+   "sample_count": {
+    "acc,none": 1646
+   }
+  }
+ },
+ {
+  "model": "evafrill-mo-3b-pretrain",
+  "variant": "shots0",
+  "task": "global_mmlu_ko_dev",
+  "wall_s": 5.8,
+  "results": {
+   "name": "global_mmlu_ko_dev",
+   "alias": "global_mmlu_ko_dev",
+   "sample_len": 215,
+   "acc,none": 0.24186046511627907,
+   "acc_stderr,none": 0.029271847063588156
+  }
+ }
+]
+=== 2026-11-19T00:23:50+09:00 END evafrill-mo-3b-pretrain shots=0 exit=0
+=== ALL DONE

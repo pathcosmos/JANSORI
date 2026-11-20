@@ -1,0 +1,84 @@
+/home/work/llm-dense/llm-test/ko-llm-bench-suite/kobench/standard/run.py:153: DeprecationWarning: get_task_dict is deprecated. Use TaskManager.load() instead.
+  get_task_dict([t.task], tm)
+[data] kmmlu_redux 준비됨
+/home/work/llm-dense/llm-test/ko-llm-bench-suite/kobench/standard/run.py:153: DeprecationWarning: get_task_dict is deprecated. Use TaskManager.load() instead.
+  get_task_dict([t.task], tm)
+[data] kmmlu_pro 준비됨
+[data] kobalt_700 준비됨
+W1119 10:21:27.814000 337202 torch/_opaque_base.py:6] torch._opaque_base is deprecated, use torch._custom_class_base instead
+W1119 10:21:27.814000 337202 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1119 10:21:27.815000 337202 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+(MainProcess pid=337202) INFO 11-19 10:21:33 [startup.py:96] non-default args: {'dtype': 'bfloat16', 'seed': 1234, 'max_model_len': 4096, 'gpu_memory_utilization': 0.85, 'disable_log_stats': True, 'revision': '83fdd4426138b2becb3b33197126de2e4f5dfcd3', 'model': 'kakaocorp/kanana-1.5-2.1b-base'}
+(MainProcess pid=337202) ERROR 11-19 10:21:33 [repo_utils.py:126] Error parsing config for kakaocorp/kanana-1.5-2.1b-base: Class validation error for validator 'validate_architecture':
+(MainProcess pid=337202) ERROR 11-19 10:21:33 [repo_utils.py:126]     ValueError: The hidden size (1792) is not a multiple of the number of attention heads (24)., retrying 1 of 2
+(MainProcess pid=337202) ERROR 11-19 10:21:35 [repo_utils.py:124] Error parsing config for kakaocorp/kanana-1.5-2.1b-base: Class validation error for validator 'validate_architecture':
+(MainProcess pid=337202) ERROR 11-19 10:21:35 [repo_utils.py:124]     ValueError: The hidden size (1792) is not a multiple of the number of attention heads (24).
+Traceback (most recent call last):
+  File "/workspace/llm-test/venv/lib/python3.12/site-packages/huggingface_hub/dataclasses.py", line 251, in validate
+    validator(self)
+  File "/workspace/llm-test/venv/lib/python3.12/site-packages/transformers/models/llama/configuration_llama.py", line 97, in validate_architecture
+    raise ValueError(
+ValueError: The hidden size (1792) is not a multiple of the number of attention heads (24).
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/work/llm-dense/llm-test/ko-llm-bench-suite/kobench/standard/run.py", line 386, in <module>
+    code = main()
+           ^^^^^^
+  File "/home/work/llm-dense/llm-test/ko-llm-bench-suite/kobench/standard/run.py", line 380, in main
+    all_summ += run_model(models[mid], tasks, a.limit, a.force, a.gpu_mem, a.batch_size, Variant.parse(a.variant))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/work/llm-dense/llm-test/ko-llm-bench-suite/kobench/standard/run.py", line 201, in run_model
+    lm = build_lm(spec, gpu_mem, batch_size, variant)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/work/llm-dense/llm-test/ko-llm-bench-suite/kobench/standard/run.py", line 116, in build_lm
+    return VLLM(
+           ^^^^^
+  File "/workspace/llm-test/venv/lib/python3.12/site-packages/lm_eval/models/vllm_causallms.py", line 154, in __init__
+    self.model = LLM(**self.model_args)  # type: ignore[invalid-argument-type]
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/llm-test/venv/lib/python3.12/site-packages/vllm/entrypoints/llm.py", line 341, in __init__
+    self.llm_engine = LLMEngine.from_engine_args(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/llm-test/venv/lib/python3.12/site-packages/vllm/v1/engine/llm_engine.py", line 183, in from_engine_args
+    vllm_config = engine_args.create_engine_config(usage_context)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/llm-test/venv/lib/python3.12/site-packages/vllm/engine/arg_utils.py", line 2280, in create_engine_config
+    model_config = self.create_model_config()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/llm-test/venv/lib/python3.12/site-packages/vllm/engine/arg_utils.py", line 1994, in create_model_config
+    return ModelConfig(
+           ^^^^^^^^^^^^
+  File "/workspace/llm-test/venv/lib/python3.12/site-packages/pydantic/_internal/_dataclasses.py", line 121, in __init__
+    s.__pydantic_validator__.validate_python(ArgsKwargs(args, kwargs), self_instance=s)
+  File "/workspace/llm-test/venv/lib/python3.12/site-packages/vllm/config/model.py", line 680, in __post_init__
+    hf_config = get_config(
+                ^^^^^^^^^^^
+  File "/workspace/llm-test/venv/lib/python3.12/site-packages/vllm/transformers_utils/config.py", line 927, in get_config
+    config_dict, config = with_retry(
+                          ^^^^^^^^^^^
+  File "/workspace/llm-test/venv/lib/python3.12/site-packages/vllm/transformers_utils/repo_utils.py", line 119, in with_retry
+    return func()
+           ^^^^^^
+  File "/workspace/llm-test/venv/lib/python3.12/site-packages/vllm/transformers_utils/config.py", line 928, in <lambda>
+    lambda: config_parser.parse(
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/llm-test/venv/lib/python3.12/site-packages/vllm/transformers_utils/config.py", line 445, in parse
+    config = AutoConfig.from_pretrained(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/llm-test/venv/lib/python3.12/site-packages/transformers/models/auto/configuration_auto.py", line 440, in from_pretrained
+    return config_class.from_dict(config_dict, **unused_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/llm-test/venv/lib/python3.12/site-packages/transformers/configuration_utils.py", line 1073, in from_dict
+    config = cls(**config_dict)
+             ^^^^^^^^^^^^^^^^^^
+  File "/workspace/llm-test/venv/lib/python3.12/site-packages/huggingface_hub/dataclasses.py", line 276, in init_with_validate
+    cls.validate(self)  # type: ignore [attr-defined]
+    ^^^^^^^^^^^^^^^^^^
+  File "/workspace/llm-test/venv/lib/python3.12/site-packages/huggingface_hub/dataclasses.py", line 253, in validate
+    raise StrictDataclassClassValidationError(validator=validator.__name__, cause=e) from e
+huggingface_hub.errors.StrictDataclassClassValidationError: Class validation error for validator 'validate_architecture':
+    ValueError: The hidden size (1792) is not a multiple of the number of attention heads (24).

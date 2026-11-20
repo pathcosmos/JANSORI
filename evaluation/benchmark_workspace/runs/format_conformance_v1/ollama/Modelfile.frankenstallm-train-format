@@ -1,0 +1,3 @@
+FROM /workspace/llm-test/hf/hub/models--pathcosmos--frankenstallm/snapshots/b9f7777f01479b18e5a3a55f9cad4582df122f7d/gguf/frankenstallm-3b-v2-Q8_0.gguf
+TEMPLATE """{{- $hist := "" }}{{- $pend := "" }}{{- range .Messages }}{{- if eq .Role "user" }}{{- if $pend }}{{- $pend = printf "%s\n%s" $pend .Content }}{{- else }}{{- $pend = .Content }}{{- end }}{{- else if eq .Role "assistant" }}{{- if $pend }}{{- $hist = printf "%s<|user|>\n%s\n<|assistant|>\n%s\n" $hist $pend .Content }}{{- $pend = "" }}{{- end }}{{- end }}{{- end }}{{- $hist }}{{- if $pend }}{{ printf "<|user|>\n%s\n<|assistant|>\n" $pend }}{{- end }}"""
+PARAMETER stop "</s>"

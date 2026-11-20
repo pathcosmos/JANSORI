@@ -1,0 +1,151 @@
+{
+  "utc": "2026-11-16T13:37:01.771288+00:00",
+  "cpu": {
+    "affinity": [
+      25,
+      27,
+      29,
+      31,
+      33,
+      35,
+      37,
+      39,
+      41,
+      43,
+      45,
+      47,
+      59,
+      61,
+      63,
+      65,
+      67,
+      69,
+      71,
+      73,
+      75,
+      77,
+      79,
+      81
+    ],
+    "effective": 24.0,
+    "quota": "max 100000"
+  },
+  "memory": {
+    "limit_bytes": 515396075520,
+    "current_bytes": 504838426624,
+    "file_cache_bytes": 498569781248,
+    "reserve_bytes": 64424509440,
+    "conservative_headroom_gib": 0.0
+  },
+  "gpus": [
+    "0, NVIDIA H200, 143771",
+    "1, NVIDIA H200, 143771"
+  ],
+  "storage": {
+    "project": {
+      "path": "/home/work/llm-dense/llm-traditional",
+      "fstype": "nfs",
+      "target": "/home/work/llm-dense",
+      "device": 59,
+      "total_bytes": 2000000024576,
+      "free_bytes": 1038894530560,
+      "network": true
+    },
+    "scratch_parent": {
+      "path": "/tmp/llm-dense-d7135f5715",
+      "fstype": "overlay",
+      "target": "/",
+      "device": 2097405,
+      "total_bytes": 3148078514176,
+      "free_bytes": 1833834143744,
+      "network": false
+    },
+    "scratch_dir": "/tmp/llm-dense-d7135f5715"
+  },
+  "presets": {
+    "cpu_effective": 24.0,
+    "reserved_cpu": 3,
+    "launch_permitted": false,
+    "minimum_memory_headroom_gib": 4,
+    "stages": {
+      "cpu-prep": {
+        "start_workers": 1,
+        "max_workers": 1,
+        "arrow_threads": 4,
+        "env": {
+          "OMP_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "2",
+          "RAYON_NUM_THREADS": "1"
+        },
+        "job_memory_budget_gib": 0,
+        "worker_candidates": [
+          4,
+          8,
+          16,
+          32
+        ]
+      },
+      "tokenization": {
+        "start_workers": 1,
+        "max_workers": 2,
+        "arrow_threads": 4,
+        "env": {
+          "OMP_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "2",
+          "RAYON_NUM_THREADS": "7",
+          "TOKENIZERS_PARALLELISM": "true"
+        },
+        "job_memory_budget_gib": 0
+      },
+      "tokenizer-train": {
+        "start_workers": 1,
+        "max_workers": 1,
+        "arrow_threads": 8,
+        "env": {
+          "OMP_NUM_THREADS": "2",
+          "NUMEXPR_NUM_THREADS": "2",
+          "RAYON_NUM_THREADS": "21",
+          "TOKENIZERS_PARALLELISM": "true"
+        },
+        "job_memory_budget_gib": 0,
+        "rayon_candidates": [
+          8,
+          16,
+          32,
+          64
+        ]
+      },
+      "sqlite": {
+        "start_workers": 1,
+        "max_workers": 1,
+        "arrow_threads": 4,
+        "env": {
+          "OMP_NUM_THREADS": "2",
+          "NUMEXPR_NUM_THREADS": "2"
+        },
+        "validated_cache_mib": 131072,
+        "validated_cache_candidates_mib": [
+          512,
+          8192,
+          131072
+        ],
+        "hash_workers": 21,
+        "candidate_note": "3M same-input cache sweep verified logical identity; 128GiB is a capacity ceiling for the estimated100GiB full DB, not proof of full-scale speed or resident128GiB usage. Use fresh RSS headroom and runtime guards.",
+        "job_memory_budget_gib": 0
+      },
+      "gpu": {
+        "start_workers": 1,
+        "max_workers": 1,
+        "arrow_threads": 4,
+        "env": {
+          "OMP_NUM_THREADS": "2",
+          "NUMEXPR_NUM_THREADS": "2",
+          "TORCHINDUCTOR_COMPILE_THREADS": "2"
+        },
+        "job_memory_budget_gib": 0,
+        "gpu_policy": "Use available required GPUs for compatible kernels/training. Eight-GPU main training still requires user confirmation and numerical gates."
+      }
+    }
+  },
+  "policy": "Measured-container limits, not host core counts. Current memory includes reclaimable file cache. No global kernel/mount/GPU clock changes. Worker and memory budgets are planning values, not automatically enforced by arbitrary child commands."
+}

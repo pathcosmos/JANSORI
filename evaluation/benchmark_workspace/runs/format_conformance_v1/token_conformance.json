@@ -1,0 +1,1803 @@
+{
+ "n_texts": 24,
+ "n_chats": 29,
+ "models": {
+  "jansori-bf16": {
+   "formats_encode_text": {
+    "n": 24,
+    "equal": 24,
+    "mismatches": []
+   },
+   "vllm_add_special": {
+    "n": 24,
+    "equal": 24,
+    "mismatches": []
+   },
+   "vllm_no_special": {
+    "n": 24,
+    "equal": 24,
+    "mismatches": []
+   },
+   "lmeval_tok_encode": {
+    "n": 24,
+    "equal": 24,
+    "mismatches": []
+   },
+   "llamacpp_no_special": {
+    "n": 24,
+    "equal": 24,
+    "mismatches": []
+   },
+   "llamacpp_add_special": {
+    "n": 24,
+    "equal": 24,
+    "mismatches": []
+   }
+  },
+  "frankenstallm-bf16": {
+   "formats": {
+    "n": 29,
+    "equal": 29,
+    "mismatches": []
+   },
+   "vllm_chat_template_str": {
+    "n": 29,
+    "equal": 29,
+    "mismatches": []
+   },
+   "vllm_chat_no_special": {
+    "n": 29,
+    "equal": 29,
+    "mismatches": []
+   },
+   "vllm_chat_add_special": {
+    "n": 29,
+    "equal": 29,
+    "mismatches": []
+   },
+   "lmeval_tok_encode": {
+    "n": 29,
+    "equal": 29,
+    "mismatches": []
+   },
+   "RELEASE_GGUF_not_used__llamacpp_no_special": {
+    "n": 29,
+    "equal": 0,
+    "mismatches": [
+     {
+      "messages": [
+       {
+        "role": "user",
+        "content": "한국의 수도는 어디인가요?"
+       }
+      ],
+      "equal": false,
+      "first_diff": 6,
+      "ref": [
+       201,
+       2526,
+       927,
+       3,
+       3512,
+       6,
+       388,
+       11,
+       5019
+      ],
+      "got": [
+       201,
+       2526,
+       927,
+       64010,
+       3512,
+       6,
+       388,
+       11,
+       5019
+      ],
+      "len_ref": 23,
+      "len_got": 25
+     },
+     {
+      "messages": [
+       {
+        "role": "user",
+        "content": "What is the capital of South Korea?"
+       }
+      ],
+      "equal": false,
+      "first_diff": 6,
+      "ref": [
+       201,
+       2526,
+       927,
+       3,
+       23979,
+       67,
+       8,
+       9035,
+       17
+      ],
+      "got": [
+       201,
+       2526,
+       927,
+       64010,
+       23979,
+       67,
+       8,
+       9035,
+       17
+      ],
+      "len_ref": 24,
+      "len_got": 24
+     },
+     {
+      "messages": [
+       {
+        "role": "user",
+        "content": "한국어와 English가 섞인 문장입니다."
+       }
+      ],
+      "equal": false,
+      "first_diff": 6,
+      "ref": [
+       201,
+       2526,
+       927,
+       3,
+       42074,
+       29,
+       1552,
+       13,
+       17561
+      ],
+      "got": [
+       201,
+       2526,
+       927,
+       64010,
+       3512,
+       17009,
+       1552,
+       13,
+       17561
+      ],
+      "len_ref": 24,
+      "len_got": 24
+     },
+     {
+      "messages": [
+       {
+        "role": "user",
+        "content": "  앞에 공백 두 칸"
+       }
+      ],
+      "equal": false,
+      "first_diff": 6,
+      "ref": [
+       201,
+       2526,
+       927,
+       3,
+       7,
+       1721,
+       27189,
+       141,
+       1953
+      ],
+      "got": [
+       201,
+       2526,
+       927,
+       64010,
+       7,
+       1721,
+       27189,
+       141,
+       1953
+      ],
+      "len_ref": 21,
+      "len_got": 21
+     },
+     {
+      "messages": [
+       {
+        "role": "user",
+        "content": "뒤에 공백 "
+       }
+      ],
+      "equal": false,
+      "first_diff": 6,
+      "ref": [
+       201,
+       2526,
+       927,
+       3,
+       35146,
+       27189,
+       7,
+       3,
+       6804
+      ],
+      "got": [
+       201,
+       2526,
+       927,
+       64010,
+       35146,
+       27189,
+       7,
+       64010,
+       6804
+      ],
+      "len_ref": 19,
+      "len_got": 19
+     },
+     {
+      "messages": [
+       {
+        "role": "user",
+        "content": "중간에  공백  두 칸씩"
+       }
+      ],
+      "equal": false,
+      "first_diff": 6,
+      "ref": [
+       201,
+       2526,
+       927,
+       3,
+       22882,
+       14,
+       7,
+       27189,
+       7
+      ],
+      "got": [
+       201,
+       2526,
+       927,
+       64010,
+       276,
+       12330,
+       7,
+       27189,
+       7
+      ],
+      "len_ref": 24,
+      "len_got": 24
+     },
+     {
+      "messages": [
+       {
+        "role": "user",
+        "content": "첫 줄\n둘째 줄\n\n넷째 줄"
+       }
+      ],
+      "equal": false,
+      "first_diff": 6,
+      "ref": [
+       201,
+       2526,
+       927,
+       3,
+       24459,
+       604,
+       3,
+       6698,
+       6402
+      ],
+      "got": [
+       201,
+       2526,
+       927,
+       64010,
+       24459,
+       604,
+       64010,
+       6698,
+       6402
+      ],
+      "len_ref": 26,
+      "len_got": 27
+     },
+     {
+      "messages": [
+       {
+        "role": "user",
+        "content": "\t탭으로 시작\t중간 탭"
+       }
+      ],
+      "equal": false,
+      "first_diff": 6,
+      "ref": [
+       201,
+       2526,
+       927,
+       3,
+       43224,
+       30,
+       851,
+       3,
+       22882
+      ],
+      "got": [
+       201,
+       2526,
+       927,
+       64010,
+       64009,
+       43224,
+       30,
+       851,
+       64009
+      ],
+      "len_ref": 22,
+      "len_got": 23
+     },
+     {
+      "messages": [
+       {
+        "role": "user",
+        "content": "줄 끝 개행\n"
+       }
+      ],
+      "equal": false,
+      "first_diff": 6,
+      "ref": [
+       201,
+       2526,
+       927,
+       3,
+       1189,
+       3081,
+       675,
+       1181,
+       3
+      ],
+      "got": [
+       201,
+       2526,
+       927,
+       64010,
+       1189,
+       3081,
+       675,
+       1181,
+       64010
+      ],
+      "len_ref": 20,
+      "len_got": 21
+     },
+     {
+      "messages": [
+       {
+        "role": "user",
+        "content": "숫자 1234567890과 3.14159, 1/3, 8,622,698명"
+       }
+      ],
+      "equal": false,
+      "first_diff": 6,
+      "ref": [
+       201,
+       2526,
+       927,
+       3,
+       54342,
+       145,
+       4159,
+       3783,
+       4036
+      ],
+      "got": [
+       201,
+       2526,
+       927,
+       64010,
+       54342,
+       27715,
+       2912,
+       3877,
+       844
+      ],
+      "len_ref": 37,
+      "len_got": 39
+     }
+    ]
+   },
+   "RELEASE_GGUF_not_used__llamacpp_add_special": {
+    "n": 29,
+    "equal": 0,
+    "mismatches": [
+     {
+      "messages": [
+       {
+        "role": "user",
+        "content": "한국의 수도는 어디인가요?"
+       }
+      ],
+      "equal": false,
+      "first_diff": 0,
+      "ref": [
+       473,
+       2526,
+       887,
+       201,
+       2526,
+       927
+      ],
+      "got": [
+       1,
+       473,
+       2526,
+       887,
+       201,
+       2526
+      ],
+      "len_ref": 23,
+      "len_got": 26
+     },
+     {
+      "messages": [
+       {
+        "role": "user",
+        "content": "What is the capital of South Korea?"
+       }
+      ],
+      "equal": false,
+      "first_diff": 0,
+      "ref": [
+       473,
+       2526,
+       887,
+       201,
+       2526,
+       927
+      ],
+      "got": [
+       1,
+       473,
+       2526,
+       887,
+       201,
+       2526
+      ],
+      "len_ref": 24,
+      "len_got": 25
+     },
+     {
+      "messages": [
+       {
+        "role": "user",
+        "content": "한국어와 English가 섞인 문장입니다."
+       }
+      ],
+      "equal": false,
+      "first_diff": 0,
+      "ref": [
+       473,
+       2526,
+       887,
+       201,
+       2526,
+       927
+      ],
+      "got": [
+       1,
+       473,
+       2526,
+       887,
+       201,
+       2526
+      ],
+      "len_ref": 24,
+      "len_got": 25
+     },
+     {
+      "messages": [
+       {
+        "role": "user",
+        "content": "  앞에 공백 두 칸"
+       }
+      ],
+      "equal": false,
+      "first_diff": 0,
+      "ref": [
+       473,
+       2526,
+       887,
+       201,
+       2526,
+       927
+      ],
+      "got": [
+       1,
+       473,
+       2526,
+       887,
+       201,
+       2526
+      ],
+      "len_ref": 21,
+      "len_got": 22
+     },
+     {
+      "messages": [
+       {
+        "role": "user",
+        "content": "뒤에 공백 "
+       }
+      ],
+      "equal": false,
+      "first_diff": 0,
+      "ref": [
+       473,
+       2526,
+       887,
+       201,
+       2526,
+       927
+      ],
+      "got": [
+       1,
+       473,
+       2526,
+       887,
+       201,
+       2526
+      ],
+      "len_ref": 19,
+      "len_got": 20
+     },
+     {
+      "messages": [
+       {
+        "role": "user",
+        "content": "중간에  공백  두 칸씩"
+       }
+      ],
+      "equal": false,
+      "first_diff": 0,
+      "ref": [
+       473,
+       2526,
+       887,
+       201,
+       2526,
+       927
+      ],
+      "got": [
+       1,
+       473,
+       2526,
+       887,
+       201,
+       2526
+      ],
+      "len_ref": 24,
+      "len_got": 25
+     },
+     {
+      "messages": [
+       {
+        "role": "user",
+        "content": "첫 줄\n둘째 줄\n\n넷째 줄"
+       }
+      ],
+      "equal": false,
+      "first_diff": 0,
+      "ref": [
+       473,
+       2526,
+       887,
+       201,
+       2526,
+       927
+      ],
+      "got": [
+       1,
+       473,
+       2526,
+       887,
+       201,
+       2526
+      ],
+      "len_ref": 26,
+      "len_got": 28
+     },
+     {
+      "messages": [
+       {
+        "role": "user",
+        "content": "\t탭으로 시작\t중간 탭"
+       }
+      ],
+      "equal": false,
+      "first_diff": 0,
+      "ref": [
+       473,
+       2526,
+       887,
+       201,
+       2526,
+       927
+      ],
+      "got": [
+       1,
+       473,
+       2526,
+       887,
+       201,
+       2526
+      ],
+      "len_ref": 22,
+      "len_got": 24
+     },
+     {
+      "messages": [
+       {
+        "role": "user",
+        "content": "줄 끝 개행\n"
+       }
+      ],
+      "equal": false,
+      "first_diff": 0,
+      "ref": [
+       473,
+       2526,
+       887,
+       201,
+       2526,
+       927
+      ],
+      "got": [
+       1,
+       473,
+       2526,
+       887,
+       201,
+       2526
+      ],
+      "len_ref": 20,
+      "len_got": 22
+     },
+     {
+      "messages": [
+       {
+        "role": "user",
+        "content": "숫자 1234567890과 3.14159, 1/3, 8,622,698명"
+       }
+      ],
+      "equal": false,
+      "first_diff": 0,
+      "ref": [
+       473,
+       2526,
+       887,
+       201,
+       2526,
+       927
+      ],
+      "got": [
+       1,
+       473,
+       2526,
+       887,
+       201,
+       2526
+      ],
+      "len_ref": 37,
+      "len_got": 40
+     }
+    ]
+   }
+  },
+  "frankenstallm-bf16__pretrain_text": {
+   "formats_encode_text": {
+    "n": 24,
+    "equal": 24,
+    "mismatches": []
+   },
+   "vllm_add_special": {
+    "n": 24,
+    "equal": 24,
+    "mismatches": []
+   },
+   "vllm_no_special": {
+    "n": 24,
+    "equal": 24,
+    "mismatches": []
+   },
+   "lmeval_tok_encode": {
+    "n": 24,
+    "equal": 24,
+    "mismatches": []
+   },
+   "RELEASE_GGUF_not_used__llamacpp_no_special": {
+    "n": 24,
+    "equal": 8,
+    "mismatches": [
+     {
+      "text": "한국의 수도는 어디인가요?",
+      "equal": false,
+      "first_diff": 4,
+      "ref": [
+       388,
+       11,
+       5019,
+       43793,
+       178
+      ],
+      "got": [
+       388,
+       11,
+       5019,
+       38,
+       13,
+       335,
+       178
+      ],
+      "len_ref": 6,
+      "len_got": 8
+     },
+     {
+      "text": "  앞에 공백 두 칸",
+      "equal": false,
+      "first_diff": 1,
+      "ref": [
+       7,
+       1721,
+       27189,
+       141,
+       1953
+      ],
+      "got": [
+       7,
+       7,
+       1721,
+       27189,
+       141,
+       1953
+      ],
+      "len_ref": 5,
+      "len_got": 6
+     },
+     {
+      "text": "첫 줄\n둘째 줄\n\n넷째 줄",
+      "equal": false,
+      "first_diff": 2,
+      "ref": [
+       304,
+       604,
+       3,
+       6698,
+       6402,
+       604,
+       3,
+       6427
+      ],
+      "got": [
+       304,
+       604,
+       64010,
+       6698,
+       6402,
+       604,
+       64010,
+       64010
+      ],
+      "len_ref": 10,
+      "len_got": 11
+     },
+     {
+      "text": "\t탭으로 시작\t중간 탭",
+      "equal": false,
+      "first_diff": 1,
+      "ref": [
+       7,
+       3,
+       43224,
+       30,
+       851,
+       3,
+       22882
+      ],
+      "got": [
+       7,
+       64009,
+       43224,
+       30,
+       851,
+       64009,
+       22882
+      ],
+      "len_ref": 8,
+      "len_got": 8
+     },
+     {
+      "text": "줄 끝 개행\n",
+      "equal": false,
+      "first_diff": 4,
+      "ref": [
+       3081,
+       675,
+       1181,
+       3
+      ],
+      "got": [
+       3081,
+       675,
+       1181,
+       64010
+      ],
+      "len_ref": 5,
+      "len_got": 5
+     },
+     {
+      "text": "숫자 1234567890과 3.14159, 1/3, 8,622,698명",
+      "equal": false,
+      "first_diff": 1,
+      "ref": [
+       5208,
+       145,
+       4159,
+       3783,
+       4036,
+       2626,
+       28
+      ],
+      "got": [
+       5208,
+       27715,
+       2912,
+       3877,
+       844,
+       2626,
+       28
+      ],
+      "len_ref": 21,
+      "len_got": 23
+     },
+     {
+      "text": "km² · ≈ · ½ · ①②③ · ★☆♥",
+      "equal": false,
+      "first_diff": 1,
+      "ref": [
+       2360,
+       3,
+       3691,
+       7,
+       3,
+       3691,
+       7
+      ],
+      "got": [
+       2360,
+       64194,
+       64178,
+       3691,
+       7,
+       64226,
+       64137
+      ],
+      "len_ref": 15,
+      "len_got": 27
+     },
+     {
+      "text": "윷놀이와 廉宗(염종) — 사전에 없는 문자",
+      "equal": false,
+      "first_diff": 1,
+      "ref": [
+       7,
+       3,
+       10349,
+       29,
+       7,
+       3,
+       9856
+      ],
+      "got": [
+       7,
+       64236,
+       64156,
+       64183,
+       10349,
+       29,
+       7
+      ],
+      "len_ref": 15,
+      "len_got": 19
+     },
+     {
+      "text": "이모지 😀👍🇰🇷 포함",
+      "equal": false,
+      "first_diff": 3,
+      "ref": [
+       17898,
+       60,
+       7,
+       3,
+       2073
+      ],
+      "got": [
+       17898,
+       60,
+       7,
+       64240,
+       64159,
+       64152,
+       64128,
+       64240,
+       64159
+      ],
+      "len_ref": 5,
+      "len_got": 20
+     },
+     {
+      "text": "ｆｕｌｌ　ｗｉｄｔｈ 전각 문자",
+      "equal": false,
+      "first_diff": 1,
+      "ref": [
+       7,
+       3,
+       132,
+       1121,
+       4118
+      ],
+      "got": [
+       7,
+       64239,
+       64189,
+       64134,
+       64239,
+       64189,
+       64149
+      ],
+      "len_ref": 5,
+      "len_got": 34
+     }
+    ]
+   },
+   "RELEASE_GGUF_not_used__llamacpp_add_special": {
+    "n": 24,
+    "equal": 0,
+    "mismatches": [
+     {
+      "text": "한국의 수도는 어디인가요?",
+      "equal": false,
+      "first_diff": 0,
+      "ref": [
+       2238,
+       388,
+       11,
+       5019,
+       43793,
+       178
+      ],
+      "got": [
+       1,
+       2238,
+       388,
+       11,
+       5019,
+       38
+      ],
+      "len_ref": 6,
+      "len_got": 9
+     },
+     {
+      "text": "What is the capital of South Korea?",
+      "equal": false,
+      "first_diff": 0,
+      "ref": [
+       10039,
+       67,
+       8,
+       9035,
+       17,
+       1354
+      ],
+      "got": [
+       1,
+       10039,
+       67,
+       8,
+       9035,
+       17
+      ],
+      "len_ref": 8,
+      "len_got": 9
+     },
+     {
+      "text": "한국어와 English가 섞인 문장입니다.",
+      "equal": false,
+      "first_diff": 0,
+      "ref": [
+       2922,
+       29,
+       1552,
+       13,
+       17561,
+       7347
+      ],
+      "got": [
+       1,
+       2922,
+       29,
+       1552,
+       13,
+       17561
+      ],
+      "len_ref": 8,
+      "len_got": 9
+     },
+     {
+      "text": "  앞에 공백 두 칸",
+      "equal": false,
+      "first_diff": 0,
+      "ref": [
+       7,
+       1721,
+       27189,
+       141,
+       1953
+      ],
+      "got": [
+       1,
+       7,
+       7,
+       1721,
+       27189,
+       141
+      ],
+      "len_ref": 5,
+      "len_got": 7
+     },
+     {
+      "text": "뒤에 공백 ",
+      "equal": false,
+      "first_diff": 0,
+      "ref": [
+       1576,
+       27189,
+       7
+      ],
+      "got": [
+       1,
+       1576,
+       27189,
+       7
+      ],
+      "len_ref": 3,
+      "len_got": 4
+     },
+     {
+      "text": "중간에  공백  두 칸씩",
+      "equal": false,
+      "first_diff": 0,
+      "ref": [
+       3386,
+       7,
+       27189,
+       7,
+       141,
+       1953
+      ],
+      "got": [
+       1,
+       3386,
+       7,
+       27189,
+       7,
+       141
+      ],
+      "len_ref": 7,
+      "len_got": 8
+     },
+     {
+      "text": "첫 줄\n둘째 줄\n\n넷째 줄",
+      "equal": false,
+      "first_diff": 0,
+      "ref": [
+       304,
+       604,
+       3,
+       6698,
+       6402,
+       604
+      ],
+      "got": [
+       1,
+       304,
+       604,
+       64010,
+       6698,
+       6402
+      ],
+      "len_ref": 10,
+      "len_got": 12
+     },
+     {
+      "text": "\t탭으로 시작\t중간 탭",
+      "equal": false,
+      "first_diff": 0,
+      "ref": [
+       7,
+       3,
+       43224,
+       30,
+       851,
+       3
+      ],
+      "got": [
+       1,
+       7,
+       64009,
+       43224,
+       30,
+       851
+      ],
+      "len_ref": 8,
+      "len_got": 9
+     },
+     {
+      "text": "줄 끝 개행\n",
+      "equal": false,
+      "first_diff": 0,
+      "ref": [
+       604,
+       3081,
+       675,
+       1181,
+       3
+      ],
+      "got": [
+       1,
+       604,
+       3081,
+       675,
+       1181,
+       64010
+      ],
+      "len_ref": 5,
+      "len_got": 6
+     },
+     {
+      "text": "숫자 1234567890과 3.14159, 1/3, 8,622,698명",
+      "equal": false,
+      "first_diff": 0,
+      "ref": [
+       5208,
+       145,
+       4159,
+       3783,
+       4036,
+       2626
+      ],
+      "got": [
+       1,
+       5208,
+       27715,
+       2912,
+       3877,
+       844
+      ],
+      "len_ref": 21,
+      "len_got": 24
+     }
+    ]
+   }
+  },
+  "frankenstallm-bf16__train_tokenizer_gguf": {
+   "texts": {
+    "n": 24,
+    "equal": 24,
+    "mismatches": []
+   },
+   "chats": {
+    "n": 29,
+    "equal": 29,
+    "mismatches": []
+   },
+   "special_adjacent": {
+    "n": 8,
+    "equal": 8,
+    "mismatches": []
+   }
+  },
+  "jansori-bf16__token_id_input": {
+   "llamacpp_token_id": {
+    "n": 24,
+    "equal": 24,
+    "mismatches": []
+   }
+  },
+  "frankenstallm-bf16__token_id_input": {
+   "llamacpp_token_id": {
+    "n": 53,
+    "equal": 53,
+    "mismatches": []
+   }
+  },
+  "evafrill-mo-3b": {
+   "formats": {
+    "n": 29,
+    "equal": 29,
+    "mismatches": []
+   },
+   "vllm_chat_template_str": {
+    "n": 29,
+    "equal": 29,
+    "mismatches": []
+   },
+   "vllm_chat_no_special": {
+    "n": 29,
+    "equal": 29,
+    "mismatches": []
+   },
+   "vllm_chat_add_special": {
+    "n": 29,
+    "equal": 29,
+    "mismatches": []
+   },
+   "lmeval_tok_encode": {
+    "n": 29,
+    "equal": 29,
+    "mismatches": []
+   }
+  },
+  "evafrill-mo-3b__pretrain_text": {
+   "formats_encode_text": {
+    "n": 24,
+    "equal": 24,
+    "mismatches": []
+   },
+   "vllm_add_special": {
+    "n": 24,
+    "equal": 24,
+    "mismatches": []
+   },
+   "vllm_no_special": {
+    "n": 24,
+    "equal": 24,
+    "mismatches": []
+   },
+   "lmeval_tok_encode": {
+    "n": 24,
+    "equal": 24,
+    "mismatches": []
+   }
+  }
+ },
+ "negative_control_frankenstallm_release_tokenizer": {
+  "n": 29,
+  "equal": 0,
+  "mismatches": [
+   {
+    "messages": [
+     {
+      "role": "user",
+      "content": "한국의 수도는 어디인가요?"
+     }
+    ],
+    "equal": false,
+    "first_diff": 6,
+    "ref": [
+     201,
+     2526,
+     927,
+     3,
+     3512,
+     6,
+     388,
+     11,
+     5019
+    ],
+    "got": [
+     201,
+     2526,
+     927,
+     64010,
+     3512,
+     6,
+     388,
+     11,
+     5019
+    ],
+    "len_ref": 23,
+    "len_got": 23
+   },
+   {
+    "messages": [
+     {
+      "role": "user",
+      "content": "What is the capital of South Korea?"
+     }
+    ],
+    "equal": false,
+    "first_diff": 6,
+    "ref": [
+     201,
+     2526,
+     927,
+     3,
+     23979,
+     67,
+     8,
+     9035,
+     17
+    ],
+    "got": [
+     201,
+     2526,
+     927,
+     64010,
+     23979,
+     67,
+     8,
+     9035,
+     17
+    ],
+    "len_ref": 24,
+    "len_got": 24
+   },
+   {
+    "messages": [
+     {
+      "role": "user",
+      "content": "한국어와 English가 섞인 문장입니다."
+     }
+    ],
+    "equal": false,
+    "first_diff": 6,
+    "ref": [
+     201,
+     2526,
+     927,
+     3,
+     42074,
+     29,
+     1552,
+     13,
+     17561
+    ],
+    "got": [
+     201,
+     2526,
+     927,
+     64010,
+     42074,
+     29,
+     1552,
+     13,
+     17561
+    ],
+    "len_ref": 24,
+    "len_got": 24
+   },
+   {
+    "messages": [
+     {
+      "role": "user",
+      "content": "  앞에 공백 두 칸"
+     }
+    ],
+    "equal": false,
+    "first_diff": 6,
+    "ref": [
+     201,
+     2526,
+     927,
+     3,
+     7,
+     1721,
+     27189,
+     141,
+     1953
+    ],
+    "got": [
+     201,
+     2526,
+     927,
+     64010,
+     7,
+     1721,
+     27189,
+     141,
+     1953
+    ],
+    "len_ref": 21,
+    "len_got": 21
+   },
+   {
+    "messages": [
+     {
+      "role": "user",
+      "content": "뒤에 공백 "
+     }
+    ],
+    "equal": false,
+    "first_diff": 6,
+    "ref": [
+     201,
+     2526,
+     927,
+     3,
+     35146,
+     27189,
+     7,
+     3,
+     6804
+    ],
+    "got": [
+     201,
+     2526,
+     927,
+     64010,
+     35146,
+     27189,
+     7,
+     64010,
+     6804
+    ],
+    "len_ref": 19,
+    "len_got": 19
+   },
+   {
+    "messages": [
+     {
+      "role": "user",
+      "content": "중간에  공백  두 칸씩"
+     }
+    ],
+    "equal": false,
+    "first_diff": 6,
+    "ref": [
+     201,
+     2526,
+     927,
+     3,
+     22882,
+     14,
+     7,
+     27189,
+     7
+    ],
+    "got": [
+     201,
+     2526,
+     927,
+     64010,
+     22882,
+     14,
+     7,
+     27189,
+     7
+    ],
+    "len_ref": 24,
+    "len_got": 24
+   },
+   {
+    "messages": [
+     {
+      "role": "user",
+      "content": "첫 줄\n둘째 줄\n\n넷째 줄"
+     }
+    ],
+    "equal": false,
+    "first_diff": 6,
+    "ref": [
+     201,
+     2526,
+     927,
+     3,
+     24459,
+     604,
+     3,
+     6698,
+     6402
+    ],
+    "got": [
+     201,
+     2526,
+     927,
+     64010,
+     24459,
+     604,
+     64010,
+     6698,
+     6402
+    ],
+    "len_ref": 26,
+    "len_got": 27
+   },
+   {
+    "messages": [
+     {
+      "role": "user",
+      "content": "\t탭으로 시작\t중간 탭"
+     }
+    ],
+    "equal": false,
+    "first_diff": 6,
+    "ref": [
+     201,
+     2526,
+     927,
+     3,
+     43224,
+     30,
+     851,
+     3,
+     22882
+    ],
+    "got": [
+     201,
+     2526,
+     927,
+     64010,
+     64009,
+     43224,
+     30,
+     851,
+     64009
+    ],
+    "len_ref": 22,
+    "len_got": 23
+   },
+   {
+    "messages": [
+     {
+      "role": "user",
+      "content": "줄 끝 개행\n"
+     }
+    ],
+    "equal": false,
+    "first_diff": 6,
+    "ref": [
+     201,
+     2526,
+     927,
+     3,
+     1189,
+     3081,
+     675,
+     1181,
+     3
+    ],
+    "got": [
+     201,
+     2526,
+     927,
+     64010,
+     1189,
+     3081,
+     675,
+     1181,
+     64010
+    ],
+    "len_ref": 20,
+    "len_got": 21
+   },
+   {
+    "messages": [
+     {
+      "role": "user",
+      "content": "숫자 1234567890과 3.14159, 1/3, 8,622,698명"
+     }
+    ],
+    "equal": false,
+    "first_diff": 6,
+    "ref": [
+     201,
+     2526,
+     927,
+     3,
+     54342,
+     145,
+     4159,
+     3783,
+     4036
+    ],
+    "got": [
+     201,
+     2526,
+     927,
+     64010,
+     54342,
+     145,
+     4159,
+     3783,
+     4036
+    ],
+    "len_ref": 37,
+    "len_got": 37
+   }
+  ]
+ },
+ "old_suite_examples": [
+  {
+   "model": "evafrill-mo-3b",
+   "old_path": "kobench/evafrill_runner.py:217 f'{system}\\n{prompt}' → tokenizer.encode",
+   "old_text": "당신은 한국어 시험 문제에 정확히 답하는 AI입니다. 정답 기호만 출력하세요.\n한국의 수도는 어디인가요?",
+   "old_ids": [
+    11658,
+    2922,
+    2444,
+    10549,
+    4088,
+    4680,
+    62,
+    5142,
+    1745,
+    4,
+    16100,
+    13444,
+    53,
+    6635,
+    13794,
+    4,
+    3,
+    3512,
+    6,
+    388,
+    11,
+    5019,
+    43793,
+    178
+   ],
+   "old_pieces": [
+    "▁당신은",
+    "▁한국어",
+    "▁시험",
+    "▁문제에",
+    "▁정확히",
+    "▁답",
+    "하는",
+    "▁AI",
+    "입니다",
+    ".",
+    "▁정답",
+    "▁기호",
+    "만",
+    "▁출력",
+    "하세요",
+    ".",
+    "<unk>",
+    "한국",
+    "의",
+    "▁수도",
+    "는",
+    "▁어디",
+    "인가요",
+    "?"
+   ],
+   "train_text": "<|user|>\n한국의 수도는 어디인가요?\n<|assistant|>\n",
+   "train_ids": [
+    473,
+    2526,
+    887,
+    201,
+    2526,
+    927,
+    3,
+    3512,
+    6,
+    388,
+    11,
+    5019,
+    43793,
+    178,
+    3,
+    6804,
+    2526,
+    29273,
+    16,
+    24232,
+    2526,
+    927,
+    3
+   ],
+   "train_pieces": [
+    "▁<",
+    "|",
+    "us",
+    "er",
+    "|",
+    ">",
+    "<unk>",
+    "한국",
+    "의",
+    "▁수도",
+    "는",
+    "▁어디",
+    "인가요",
+    "?",
+    "<unk>",
+    "<",
+    "|",
+    "assi",
+    "s",
+    "tant",
+    "|",
+    ">",
+    "<unk>"
+   ]
+  },
+  {
+   "model": "frankenstallm-bf16",
+   "old_path": "modelfiles/Modelfile.v2-*: TEMPLATE {{ .Prompt }} (SYSTEM 무시) + GGUF 기본 BOS",
+   "old_text": "한국의 수도는 어디인가요?",
+   "old_ids": [
+    1,
+    2238,
+    388,
+    11,
+    5019,
+    43793,
+    178
+   ],
+   "old_pieces": [
+    "<s>",
+    "▁한국의",
+    "▁수도",
+    "는",
+    "▁어디",
+    "인가요",
+    "?"
+   ],
+   "train_text": "<|user|>\n한국의 수도는 어디인가요?\n<|assistant|>\n",
+   "train_ids": [
+    473,
+    2526,
+    887,
+    201,
+    2526,
+    927,
+    3,
+    3512,
+    6,
+    388,
+    11,
+    5019,
+    43793,
+    178,
+    3,
+    6804,
+    2526,
+    29273,
+    16,
+    24232,
+    2526,
+    927,
+    3
+   ],
+   "train_pieces": [
+    "▁<",
+    "|",
+    "us",
+    "er",
+    "|",
+    ">",
+    "<unk>",
+    "한국",
+    "의",
+    "▁수도",
+    "는",
+    "▁어디",
+    "인가요",
+    "?",
+    "<unk>",
+    "<",
+    "|",
+    "assi",
+    "s",
+    "tant",
+    "|",
+    ">",
+    "<unk>"
+   ]
+  }
+ ]
+}

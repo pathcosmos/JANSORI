@@ -1,0 +1,9 @@
+frankenstallm 단일 턴 (generate context ID): 25/25
+frankenstallm 멀티턴: chat 토큰 수 일치 4/4, 학습 문자열 raw ID 일치 0/4
+JANSORI (generate context ID): 23/24
+errors [{'model': 'fs-traintok', 'status': 200, 'body': "{'model': 'fs-traintok', 'created_at': '2026-11-18T11:25:55.188121998Z', 'response': ' 두', 'done': True, 'done_reason': 'length', 'total_duration': 20204262, 'load_duration': 501142, 'prompt_eval_coun"}, {'model': 'fs-traintok', 'status': 200, 'body': "{'model': 'fs-traintok', 'created_at': '2026-11-18T11:25:55.29904391Z', 'response': ' 안녕하세요', 'done': True, 'done_reason': 'length', 'total_duration': 33295292, 'load_duration': 3058180, 'prompt_eval_"}, {'model': 'fs-traintok', 'status': 200, 'body': "{'model': 'fs-traintok', 'created_at': '2026-11-18T11:25:55.361335267Z', 'response': ' f', 'done': True, 'done_reason': 'length', 'total_duration': 13805713, 'load_duration': 454093, 'prompt_eval_coun"}, {'model': 'fs-traintok', 'status': 200, 'body': "{'model': 'fs-traintok', 'created_at': '2026-11-18T11:25:55.442151573Z', 'response': ' AI', 'done': True, 'done_reason': 'length', 'total_duration': 12780012, 'load_duration': 498795, 'prompt_eval_cou"}]
+  MISMATCH {'text': 'def fib(n):\n    retu', 'equal': False, 'first_diff': 27, 'ref': [28, 33, 24, 214], 'got': [28, 33, 24, 1419], 'len_ref': 28, 'len_got': 28}
+  MULTI {'n_msgs': 3, 'chat_count_equal': True, 'chat_count': 40, 'train_len': 40, 'raw_training_string_ids': False}
+  MULTI {'n_msgs': 2, 'chat_count_equal': True, 'chat_count': 21, 'train_len': 21, 'raw_training_string_ids': False}
+  MULTI {'n_msgs': 5, 'chat_count_equal': True, 'chat_count': 64, 'train_len': 64, 'raw_training_string_ids': False}
+  MULTI {'n_msgs': 2, 'chat_count_equal': True, 'chat_count': 18, 'train_len': 18, 'raw_training_string_ids': False}

@@ -1,0 +1,558 @@
+{
+ "frankenstallm_chat": [
+  {
+   "messages": [
+    {
+     "role": "user",
+     "content": "한국의 수도는 어디인가요?"
+    }
+   ],
+   "rendered": " <|user|>\n한국의 수도는 어디인가요?\n<|assistant|>\n",
+   "prompt_eval_count": 23,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "messages": [
+    {
+     "role": "user",
+     "content": "What is the capital of South Korea?"
+    }
+   ],
+   "rendered": " <|user|>\nWhat is the capital of South Korea?\n<|assistant|>\n",
+   "prompt_eval_count": 24,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "messages": [
+    {
+     "role": "user",
+     "content": "한국어와 English가 섞인 문장입니다."
+    }
+   ],
+   "rendered": " <|user|>\n한국어와 English가 섞인 문장입니다.\n<|assistant|>\n",
+   "prompt_eval_count": 24,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "messages": [
+    {
+     "role": "user",
+     "content": "  앞에 공백 두 칸"
+    }
+   ],
+   "rendered": " <|user|>\n  앞에 공백 두 칸\n<|assistant|>\n",
+   "prompt_eval_count": 21,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "messages": [
+    {
+     "role": "user",
+     "content": "뒤에 공백 "
+    }
+   ],
+   "rendered": " <|user|>\n뒤에 공백 \n<|assistant|>\n",
+   "prompt_eval_count": 19,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "messages": [
+    {
+     "role": "user",
+     "content": "중간에  공백  두 칸씩"
+    }
+   ],
+   "rendered": " <|user|>\n중간에  공백  두 칸씩\n<|assistant|>\n",
+   "prompt_eval_count": 24,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "messages": [
+    {
+     "role": "user",
+     "content": "첫 줄\n둘째 줄\n\n넷째 줄"
+    }
+   ],
+   "rendered": " <|user|>\n첫 줄\n둘째 줄\n\n넷째 줄\n<|assistant|>\n",
+   "prompt_eval_count": 26,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "messages": [
+    {
+     "role": "user",
+     "content": "\t탭으로 시작\t중간 탭"
+    }
+   ],
+   "rendered": " <|user|>\n\t탭으로 시작\t중간 탭\n<|assistant|>\n",
+   "prompt_eval_count": 22,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "messages": [
+    {
+     "role": "user",
+     "content": "줄 끝 개행\n"
+    }
+   ],
+   "rendered": " <|user|>\n줄 끝 개행\n\n<|assistant|>\n",
+   "prompt_eval_count": 20,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "messages": [
+    {
+     "role": "user",
+     "content": "숫자 1234567890과 3.14159, 1/3, 8,622,698명"
+    }
+   ],
+   "rendered": " <|user|>\n숫자 1234567890과 3.14159, 1/3, 8,622,698명\n<|assistant|>\n",
+   "prompt_eval_count": 37,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "messages": [
+    {
+     "role": "user",
+     "content": "km² · ≈ · ½ · ①②③ · ★☆♥"
+    }
+   ],
+   "rendered": " <|user|>\nkm² · ≈ · ½ · ①②③ · ★☆♥\n<|assistant|>\n",
+   "prompt_eval_count": 31,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "messages": [
+    {
+     "role": "user",
+     "content": "윷놀이와 廉宗(염종) — 사전에 없는 문자"
+    }
+   ],
+   "rendered": " <|user|>\n윷놀이와 廉宗(염종) — 사전에 없는 문자\n<|assistant|>\n",
+   "prompt_eval_count": 29,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "messages": [
+    {
+     "role": "user",
+     "content": "이모지 😀👍🇰🇷 포함"
+    }
+   ],
+   "rendered": " <|user|>\n이모지 😀👍🇰🇷 포함\n<|assistant|>\n",
+   "prompt_eval_count": 22,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "messages": [
+    {
+     "role": "user",
+     "content": "ｆｕｌｌ　ｗｉｄｔｈ 전각 문자"
+    }
+   ],
+   "rendered": " <|user|>\nｆｕｌｌ　ｗｉｄｔｈ 전각 문자\n<|assistant|>\n",
+   "prompt_eval_count": 19,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "messages": [
+    {
+     "role": "user",
+     "content": "def fib(n):\n    return n if n < 2 else fib(n-1) + fib(n-2)\n"
+    }
+   ],
+   "rendered": " <|user|>\ndef fib(n):\n    return n if n < 2 else fib(n-1) + fib(n-2)\n\n<|assistant|>\n",
+   "prompt_eval_count": 45,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "messages": [
+    {
+     "role": "user",
+     "content": "SELECT * FROM users WHERE age >= 19;"
+    }
+   ],
+   "rendered": " <|user|>\nSELECT * FROM users WHERE age >= 19;\n<|assistant|>\n",
+   "prompt_eval_count": 31,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "messages": [
+    {
+     "role": "user",
+     "content": "<|user|>\n태그 문자열이 본문에 있는 경우\n<|assistant|>\n"
+    }
+   ],
+   "rendered": " <|user|>\n<|user|>\n태그 문자열이 본문에 있는 경우\n<|assistant|>\n\n<|assistant|>\n",
+   "prompt_eval_count": 39,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "messages": [
+    {
+     "role": "user",
+     "content": "본문 중간에 </s> 특수 토큰 문자열"
+    }
+   ],
+   "rendered": " <|user|>\n본문 중간에 </s> 특수 토큰 문자열\n<|assistant|>\n",
+   "prompt_eval_count": 24,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "messages": [
+    {
+     "role": "user",
+     "content": "<s> 로 시작하는 본문"
+    }
+   ],
+   "rendered": " <|user|>\n<s> 로 시작하는 본문\n<|assistant|>\n",
+   "prompt_eval_count": 20,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "messages": [
+    {
+     "role": "user",
+     "content": "가́ 결합 문자, x​y 폭 없는 공백"
+    }
+   ],
+   "rendered": " <|user|>\n가́ 결합 문자, x​y 폭 없는 공백\n<|assistant|>\n",
+   "prompt_eval_count": 27,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "messages": [
+    {
+     "role": "user",
+     "content": "C:\\Users\\path\\to\\file.txt"
+    }
+   ],
+   "rendered": " <|user|>\nC:\\Users\\path\\to\\file.txt\n<|assistant|>\n",
+   "prompt_eval_count": 32,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "messages": [
+    {
+     "role": "user",
+     "content": "“따옴표”와 ‘작은따옴표’, 그리고 「괄호」"
+    }
+   ],
+   "rendered": " <|user|>\n“따옴표”와 ‘작은따옴표’, 그리고 「괄호」\n<|assistant|>\n",
+   "prompt_eval_count": 34,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "messages": [
+    {
+     "role": "user",
+     "content": "aaa 가가가가가"
+    }
+   ],
+   "rendered": " <|user|>\naaa 가가가가가\n<|assistant|>\n",
+   "prompt_eval_count": 23,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "messages": [
+    {
+     "role": "user",
+     "content": "Ⅰ. 서론\nⅡ. 본론\nⅢ. 결론"
+    }
+   ],
+   "rendered": " <|user|>\nⅠ. 서론\nⅡ. 본론\nⅢ. 결론\n<|assistant|>\n",
+   "prompt_eval_count": 26,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "messages": [
+    {
+     "role": "system",
+     "content": "당신은 친절한 비서입니다."
+    },
+    {
+     "role": "user",
+     "content": "안녕하세요"
+    }
+   ],
+   "rendered": " <|user|>\n안녕하세요\n<|assistant|>\n",
+   "prompt_eval_count": 18,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "messages": [
+    {
+     "role": "user",
+     "content": "첫 질문"
+    },
+    {
+     "role": "assistant",
+     "content": "첫 답변"
+    },
+    {
+     "role": "user",
+     "content": "두 번째 질문"
+    }
+   ],
+   "rendered": " <|user|>\n첫 질문\n<|assistant|>\n첫 답변\n<|user|>\n두 번째 질문\n<|assistant|>\n",
+   "prompt_eval_count": 40,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "messages": [
+    {
+     "role": "user",
+     "content": "연속"
+    },
+    {
+     "role": "user",
+     "content": "사용자 메시지"
+    }
+   ],
+   "rendered": " <|user|>\n연속\n\n사용자 메시지\n<|assistant|>\n",
+   "prompt_eval_count": 21,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "messages": [
+    {
+     "role": "user",
+     "content": "a"
+    },
+    {
+     "role": "assistant",
+     "content": "b\n여러 줄\n답변"
+    },
+    {
+     "role": "user",
+     "content": "c"
+    },
+    {
+     "role": "assistant",
+     "content": "d"
+    },
+    {
+     "role": "user",
+     "content": "e  "
+    }
+   ],
+   "rendered": " <|user|>\na\n<|assistant|>\nb\n여러 줄\n답변\n<|user|>\nc\n<|assistant|>\nd\n<|user|>\ne  \n<|assistant|>\n",
+   "prompt_eval_count": 64,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "messages": [
+    {
+     "role": "assistant",
+     "content": "먼저 나온 assistant는 학습에서 무시"
+    },
+    {
+     "role": "user",
+     "content": "질문"
+    }
+   ],
+   "rendered": " <|user|>\n질문\n<|assistant|>\n",
+   "prompt_eval_count": 18,
+   "count_equal": true,
+   "equal": true
+  }
+ ],
+ "jansori_text": [
+  {
+   "text": "한국의 수도는 어디인가요?",
+   "rendered_equal_input": true,
+   "prompt_eval_count": 6,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "text": "What is the capital of South Korea?",
+   "rendered_equal_input": true,
+   "prompt_eval_count": 8,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "text": "한국어와 English가 섞인 문장입니다.",
+   "rendered_equal_input": true,
+   "prompt_eval_count": 8,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "text": "  앞에 공백 두 칸",
+   "rendered_equal_input": true,
+   "prompt_eval_count": 5,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "text": "뒤에 공백 ",
+   "rendered_equal_input": true,
+   "prompt_eval_count": 3,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "text": "중간에  공백  두 칸씩",
+   "rendered_equal_input": true,
+   "prompt_eval_count": 8,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "text": "첫 줄\n둘째 줄\n\n넷째 줄",
+   "rendered_equal_input": true,
+   "prompt_eval_count": 10,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "text": "\t탭으로 시작\t중간 탭",
+   "rendered_equal_input": true,
+   "prompt_eval_count": 7,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "text": "줄 끝 개행\n",
+   "rendered_equal_input": true,
+   "prompt_eval_count": 5,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "text": "숫자 1234567890과 3.14159, 1/3, 8,622,698명",
+   "rendered_equal_input": true,
+   "prompt_eval_count": 38,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "text": "km² · ≈ · ½ · ①②③ · ★☆♥",
+   "rendered_equal_input": true,
+   "prompt_eval_count": 17,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "text": "윷놀이와 廉宗(염종) — 사전에 없는 문자",
+   "rendered_equal_input": true,
+   "prompt_eval_count": 17,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "text": "이모지 😀👍🇰🇷 포함",
+   "rendered_equal_input": true,
+   "prompt_eval_count": 13,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "text": "ｆｕｌｌ　ｗｉｄｔｈ 전각 문자",
+   "rendered_equal_input": true,
+   "prompt_eval_count": 23,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "text": "def fib(n):\n    return n if n < 2 else fib(n-1) + fib(n-2)\n",
+   "rendered_equal_input": true,
+   "prompt_eval_count": 28,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "text": "SELECT * FROM users WHERE age >= 19;",
+   "rendered_equal_input": true,
+   "prompt_eval_count": 11,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "text": "<|user|>\n태그 문자열이 본문에 있는 경우\n<|assistant|>\n",
+   "rendered_equal_input": true,
+   "prompt_eval_count": 21,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "text": "본문 중간에 </s> 특수 토큰 문자열",
+   "rendered_equal_input": true,
+   "prompt_eval_count": 8,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "text": "<s> 로 시작하는 본문",
+   "rendered_equal_input": true,
+   "prompt_eval_count": 6,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "text": "가́ 결합 문자, x​y 폭 없는 공백",
+   "rendered_equal_input": true,
+   "prompt_eval_count": 12,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "text": "C:\\Users\\path\\to\\file.txt",
+   "rendered_equal_input": true,
+   "prompt_eval_count": 11,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "text": "“따옴표”와 ‘작은따옴표’, 그리고 「괄호」",
+   "rendered_equal_input": true,
+   "prompt_eval_count": 17,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "text": "aaa 가가가가가",
+   "rendered_equal_input": true,
+   "prompt_eval_count": 5,
+   "count_equal": true,
+   "equal": true
+  },
+  {
+   "text": "Ⅰ. 서론\nⅡ. 본론\nⅢ. 결론",
+   "rendered_equal_input": true,
+   "prompt_eval_count": 12,
+   "count_equal": true,
+   "equal": true
+  }
+ ]
+}
