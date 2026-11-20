@@ -3709,8 +3709,8 @@
   },
   {
    "path": "release/public_changes.json",
-   "bytes": 81075,
-   "sha256": "bdc1b533e24b7ef7847dd1270dc774154e201261b979e18e55b8489ae867ea2d"
+   "bytes": 81234,
+   "sha256": "050f48d30316e1c173ed362cf5d49c1212f7ffecdd1b17981ecd7dab8fe9286f"
   },
   {
    "path": "release/source_inventory.json",
@@ -3734,8 +3734,8 @@
   },
   {
    "path": "requirements-cpu.txt",
-   "bytes": 244,
-   "sha256": "9529a5a0f45dc90b206caa9e69d63606dfe891e5bf1f0e4c27e9b0fa84d61776"
+   "bytes": 334,
+   "sha256": "6fc1ccd4d7b5543bc1bcc76da298c2257681a4c19e8d43c715c241cf7416d61f"
   },
   {
    "path": "requirements.txt",

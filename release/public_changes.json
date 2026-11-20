@@ -2019,6 +2019,10 @@
    {
     "path": "tests/conftest.py",
     "reason": "Original-run integration skip list for tests that read excluded run records"
+   },
+   {
+    "path": "requirements-cpu.txt",
+    "reason": "Add transformers==4.56.1 (same pin as requirements.txt) for the added inference/hf_export tests"
    }
   ],
   "evaluation": "evaluation/ added: post-release verification, detailed evaluation and standard-benchmark records; per-file sources, SHA-256 and cleaning in evaluation/SOURCES.json",
