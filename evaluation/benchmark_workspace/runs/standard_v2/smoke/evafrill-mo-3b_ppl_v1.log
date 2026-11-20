@@ -1,0 +1,75 @@
+/home/work/llm-dense/llm-test/ko-llm-bench-suite/kobench/standard/run.py:153: DeprecationWarning: get_task_dict is deprecated. Use TaskManager.load() instead.
+  get_task_dict([t.task], tm)
+[Task: wiki40b_ko] metric word_perplexity is defined, but aggregation is not. using default aggregation=weighted_perplexity
+[Task: wiki40b_ko] metric word_perplexity is defined, but higher_is_better is not. using default higher_is_better=False
+[Task: wiki40b_ko] metric byte_perplexity is defined, but aggregation is not. using default aggregation=weighted_perplexity
+[Task: wiki40b_ko] metric byte_perplexity is defined, but higher_is_better is not. using default higher_is_better=False
+[Task: wiki40b_ko] metric bits_per_byte is defined, but aggregation is not. using default aggregation=bits_per_byte
+[Task: wiki40b_ko] metric bits_per_byte is defined, but higher_is_better is not. using default higher_is_better=False
+[data] wiki40b_ko 준비됨
+/home/work/llm-dense/llm-test/ko-llm-bench-suite/kobench/standard/run.py:153: DeprecationWarning: get_task_dict is deprecated. Use TaskManager.load() instead.
+  get_task_dict([t.task], tm)
+[Task: wikitext] metric word_perplexity is defined, but aggregation is not. using default aggregation=weighted_perplexity
+[Task: wikitext] metric word_perplexity is defined, but higher_is_better is not. using default higher_is_better=False
+[Task: wikitext] metric byte_perplexity is defined, but aggregation is not. using default aggregation=weighted_perplexity
+[Task: wikitext] metric byte_perplexity is defined, but higher_is_better is not. using default higher_is_better=False
+[Task: wikitext] metric bits_per_byte is defined, but aggregation is not. using default aggregation=bits_per_byte
+[Task: wikitext] metric bits_per_byte is defined, but higher_is_better is not. using default higher_is_better=False
+[data] wikitext 준비됨
+Fetching 19 files: 100%|██████████| 19/19 [00:00<00:00, 2076.33it/s]
+[evafrill-mo-3b|A] wiki40b_ko (0-shot, limit=5)
+[Task: wiki40b_ko] metric word_perplexity is defined, but aggregation is not. using default aggregation=weighted_perplexity
+[Task: wiki40b_ko] metric word_perplexity is defined, but higher_is_better is not. using default higher_is_better=False
+[Task: wiki40b_ko] metric byte_perplexity is defined, but aggregation is not. using default aggregation=weighted_perplexity
+[Task: wiki40b_ko] metric byte_perplexity is defined, but higher_is_better is not. using default higher_is_better=False
+[Task: wiki40b_ko] metric bits_per_byte is defined, but aggregation is not. using default aggregation=bits_per_byte
+[Task: wiki40b_ko] metric bits_per_byte is defined, but higher_is_better is not. using default higher_is_better=False
+Overwriting default num_fewshot of wiki40b_ko from None to 0
+100%|██████████| 5/5 [00:00<00:00, 4194.30it/s]
+evafrill rolling: 100%|██████████| 5/5 [00:07<00:00,  1.58s/it]
+[evafrill-mo-3b|A] wikitext (0-shot, limit=5)
+[Task: wikitext] metric word_perplexity is defined, but aggregation is not. using default aggregation=weighted_perplexity
+[Task: wikitext] metric word_perplexity is defined, but higher_is_better is not. using default higher_is_better=False
+[Task: wikitext] metric byte_perplexity is defined, but aggregation is not. using default aggregation=weighted_perplexity
+[Task: wikitext] metric byte_perplexity is defined, but higher_is_better is not. using default higher_is_better=False
+[Task: wikitext] metric bits_per_byte is defined, but aggregation is not. using default aggregation=bits_per_byte
+[Task: wikitext] metric bits_per_byte is defined, but higher_is_better is not. using default higher_is_better=False
+Overwriting default num_fewshot of wikitext from None to 0
+100%|██████████| 5/5 [00:00<00:00, 307.62it/s]
+evafrill rolling: 100%|██████████| 5/5 [00:00<00:00,  7.71it/s]
+[
+ {
+  "model": "evafrill-mo-3b",
+  "variant": "A",
+  "task": "wiki40b_ko",
+  "wall_s": 10.2,
+  "results": {
+   "name": "wiki40b_ko",
+   "alias": "wiki40b_ko",
+   "sample_len": 5,
+   "word_perplexity,none": 542.1695809624068,
+   "word_perplexity_stderr,none": "N/A",
+   "byte_perplexity,none": 1.8321486602805654,
+   "byte_perplexity_stderr,none": "N/A",
+   "bits_per_byte,none": 0.8735365682537555,
+   "bits_per_byte_stderr,none": "N/A"
+  }
+ },
+ {
+  "model": "evafrill-mo-3b",
+  "variant": "A",
+  "task": "wikitext",
+  "wall_s": 3.2,
+  "results": {
+   "name": "wikitext",
+   "alias": "wikitext",
+   "sample_len": 5,
+   "word_perplexity,none": 65.53750769685428,
+   "word_perplexity_stderr,none": "N/A",
+   "byte_perplexity,none": 2.2635314430981883,
+   "byte_perplexity_stderr,none": "N/A",
+   "bits_per_byte,none": 1.178575347445816,
+   "bits_per_byte_stderr,none": "N/A"
+  }
+ }
+]

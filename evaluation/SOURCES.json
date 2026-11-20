@@ -1,0 +1,2750 @@
+{
+ "copied": [
+  {
+   "path": "benchmark_workspace/CLAUDE.md",
+   "source": "llm-test/CLAUDE.md",
+   "source_sha256": "32441c574925d15097ffc9677bc0c7e1edc94bbf83647db034c8655994a82683",
+   "sha256": "32441c574925d15097ffc9677bc0c7e1edc94bbf83647db034c8655994a82683",
+   "bytes": 29888
+  },
+  {
+   "path": "benchmark_workspace/docs/goals/GOAL1.goal.txt",
+   "source": "llm-test/docs/goals/GOAL1.goal.txt",
+   "source_sha256": "b1dd0a342df1d9bc81da0c811a9bb967d80d627083494ee3d1054ce4db2cc61a",
+   "sha256": "b1dd0a342df1d9bc81da0c811a9bb967d80d627083494ee3d1054ce4db2cc61a",
+   "bytes": 3644
+  },
+  {
+   "path": "benchmark_workspace/docs/goals/GOAL1.md",
+   "source": "llm-test/docs/goals/GOAL1.md",
+   "source_sha256": "cdd5d70534a91b0d9e20c85f2913299f87c7b402732402ec33ba7d34b1535a1b",
+   "sha256": "cdd5d70534a91b0d9e20c85f2913299f87c7b402732402ec33ba7d34b1535a1b",
+   "bytes": 7696
+  },
+  {
+   "path": "benchmark_workspace/docs/goals/GOAL2.goal.txt",
+   "source": "llm-test/docs/goals/GOAL2.goal.txt",
+   "source_sha256": "9154c83419199a375ac6fc43123550507335a7b64857325fa44ff0930a90128b",
+   "sha256": "9154c83419199a375ac6fc43123550507335a7b64857325fa44ff0930a90128b",
+   "bytes": 5194
+  },
+  {
+   "path": "benchmark_workspace/docs/goals/GOAL2.md",
+   "source": "llm-test/docs/goals/GOAL2.md",
+   "source_sha256": "df46ca5149097f5e0be36507cc9449b8d15b41d54f21297b692f2203a0121c11",
+   "sha256": "df46ca5149097f5e0be36507cc9449b8d15b41d54f21297b692f2203a0121c11",
+   "bytes": 7547
+  },
+  {
+   "path": "benchmark_workspace/env/setup.sh",
+   "source": "llm-test/env/setup.sh",
+   "source_sha256": "3e78150b2530b5ab1b2131c88e191448bd9f8e3b0e8bec93674e9943ce0f447f",
+   "sha256": "3e78150b2530b5ab1b2131c88e191448bd9f8e3b0e8bec93674e9943ce0f447f",
+   "bytes": 8728
+  },
+  {
+   "path": "benchmark_workspace/env/paths.sh",
+   "source": "llm-test/env/paths.sh",
+   "source_sha256": "6160a059271030dc8cb1d0fbadd665971f309949451fee09db46cca6fde7cc4a",
+   "sha256": "6160a059271030dc8cb1d0fbadd665971f309949451fee09db46cca6fde7cc4a",
+   "bytes": 1254
+  },
+  {
+   "path": "benchmark_workspace/env/lock.txt",
+   "source": "llm-test/env/lock.txt",
+   "source_sha256": "1da995e69cd99b6ba0b2c2df55d282c9905d12501b7e89b38d9c2799b9b7ac8e",
+   "sha256": "1da995e69cd99b6ba0b2c2df55d282c9905d12501b7e89b38d9c2799b9b7ac8e",
+   "bytes": 5217
+  },
+  {
+   "path": "benchmark_workspace/env/evafrill-commit.txt",
+   "source": "llm-test/env/evafrill-commit.txt",
+   "source_sha256": "cc49a36169b0dd466749b48bbfe6c8e92b95a04532f1b2109e7f683bfc962d05",
+   "sha256": "cc49a36169b0dd466749b48bbfe6c8e92b95a04532f1b2109e7f683bfc962d05",
+   "bytes": 41
+  },
+  {
+   "path": "benchmark_workspace/runs/env_smoke_v1/llama-bench-frankenstallm-q4.md",
+   "source": "llm-test/runs/env_smoke_v1/llama-bench-frankenstallm-q4.md",
+   "source_sha256": "8b60e09125d9266c0871cf0376c6551f3544f0b92d49886aa95536273925317a",
+   "sha256": "8b60e09125d9266c0871cf0376c6551f3544f0b92d49886aa95536273925317a",
+   "bytes": 581
+  },
+  {
+   "path": "benchmark_workspace/runs/env_smoke_v1/vllm.log",
+   "source": "llm-test/runs/env_smoke_v1/vllm.log",
+   "source_sha256": "9d5216fb37ecc64efd079bc2f57aa2c768aab19d4fccab5e3947a96ec88a469d",
+   "sha256": "18920700e5911e0d4aeea9ecb280344e27b9a6c8a08cc40547e7d910ff1df545",
+   "bytes": 18595,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/env_smoke_v1/vllm_frankenstallm.log",
+   "source": "llm-test/runs/env_smoke_v1/vllm_frankenstallm.log",
+   "source_sha256": "d8d10bf00011c64f3b457f233d86c5906950dc9a5ea802d916f075a35c7a1e3d",
+   "sha256": "6e7b62d26c00526237176b4af1969058e3440960d1e360a1b47cf1a0262e66a4",
+   "bytes": 15223,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/REPORT.md",
+   "source": "llm-test/runs/evafrill_engine_v1/REPORT.md",
+   "source_sha256": "fa8a4ade29d1ced51c1e8e2c80afdc0bb99e6469c6f4062256db7e2f50650f23",
+   "sha256": "fa8a4ade29d1ced51c1e8e2c80afdc0bb99e6469c6f4062256db7e2f50650f23",
+   "bytes": 12553
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/perf.csv",
+   "source": "llm-test/runs/evafrill_engine_v1/perf.csv",
+   "source_sha256": "1136ec73240a0e1210ca8089b1d7fa74aa7f555fc719731baa2d0694b98e8036",
+   "sha256": "1136ec73240a0e1210ca8089b1d7fa74aa7f555fc719731baa2d0694b98e8036",
+   "bytes": 15946
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/perf_meta.json",
+   "source": "llm-test/runs/evafrill_engine_v1/perf_meta.json",
+   "source_sha256": "198a6fd4814455a91551ab9fd826b737b6699698e63574b216c63b6a073d279b",
+   "sha256": "198a6fd4814455a91551ab9fd826b737b6699698e63574b216c63b6a073d279b",
+   "bytes": 361
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/perf_table.md",
+   "source": "llm-test/runs/evafrill_engine_v1/perf_table.md",
+   "source_sha256": "60c3b6793216114e6979c46efee4975266a2b70531922cec1f8a01ea375f8d39",
+   "sha256": "60c3b6793216114e6979c46efee4975266a2b70531922cec1f8a01ea375f8d39",
+   "bytes": 1986
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/prefix_consistency_probe.log",
+   "source": "llm-test/runs/evafrill_engine_v1/prefix_consistency_probe.log",
+   "source_sha256": "32431e2539f33e33a89dcde09baa83c6bc502cacaf3027465daf380705f44832",
+   "sha256": "32431e2539f33e33a89dcde09baa83c6bc502cacaf3027465daf380705f44832",
+   "bytes": 607
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/tolerance_amendment_v3.json",
+   "source": "llm-test/runs/evafrill_engine_v1/tolerance_amendment_v3.json",
+   "source_sha256": "84cc6ecf3af8fe16a67a8ca2152e4dd6047aefd590c0e0a776cf192f1d18802c",
+   "sha256": "84cc6ecf3af8fe16a67a8ca2152e4dd6047aefd590c0e0a776cf192f1d18802c",
+   "bytes": 1130
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/tolerance_amendment_v3.sha256",
+   "source": "llm-test/runs/evafrill_engine_v1/tolerance_amendment_v3.sha256",
+   "source_sha256": "6dcf96720c55989445b31cb6d55b8175adbc847eaf4ad93745e8945fcaf7e549",
+   "sha256": "6dcf96720c55989445b31cb6d55b8175adbc847eaf4ad93745e8945fcaf7e549",
+   "bytes": 94
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/tolerance_preregistered.json",
+   "source": "llm-test/runs/evafrill_engine_v1/tolerance_preregistered.json",
+   "source_sha256": "58ebdc1e5c9d574584507a1b47722c4eab45eebc4e6e49b1484a21449c255264",
+   "sha256": "58ebdc1e5c9d574584507a1b47722c4eab45eebc4e6e49b1484a21449c255264",
+   "bytes": 2185
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/tolerance_preregistered.sha256",
+   "source": "llm-test/runs/evafrill_engine_v1/tolerance_preregistered.sha256",
+   "source_sha256": "1cafb420bef076bd5a14b33b7f966a9bb23146b1382276deaf13a14efc450e9c",
+   "sha256": "1cafb420bef076bd5a14b33b7f966a9bb23146b1382276deaf13a14efc450e9c",
+   "bytes": 95
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/tolerance_supplementary.json",
+   "source": "llm-test/runs/evafrill_engine_v1/tolerance_supplementary.json",
+   "source_sha256": "5e7008e2d6cc6d4e5f486a82de0c52e7e4fb8c7cd08ccbe0d856d0761de02429",
+   "sha256": "5e7008e2d6cc6d4e5f486a82de0c52e7e4fb8c7cd08ccbe0d856d0761de02429",
+   "bytes": 988
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/tolerance_supplementary.sha256",
+   "source": "llm-test/runs/evafrill_engine_v1/tolerance_supplementary.sha256",
+   "source_sha256": "3f6bbe9cff58bd7bcb0115422ec6a7c2941f5a14e6bd6392b33d4dff47d1c0c6",
+   "sha256": "3f6bbe9cff58bd7bcb0115422ec6a7c2941f5a14e6bd6392b33d4dff47d1c0c6",
+   "bytes": 95
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/tolerance_v4_strict.json",
+   "source": "llm-test/runs/evafrill_engine_v1/tolerance_v4_strict.json",
+   "source_sha256": "0487c1b3212f19f30d5d50d776821ebe6b3fbb25a8c8b12fb219a41e76638af3",
+   "sha256": "0487c1b3212f19f30d5d50d776821ebe6b3fbb25a8c8b12fb219a41e76638af3",
+   "bytes": 829
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/tolerance_v4_strict.sha256",
+   "source": "llm-test/runs/evafrill_engine_v1/tolerance_v4_strict.sha256",
+   "source_sha256": "ce8a00737a94c18e61636190a2885fa2bd1c630d60e877cf3ab6e68cd87e339c",
+   "sha256": "ce8a00737a94c18e61636190a2885fa2bd1c630d60e877cf3ab6e68cd87e339c",
+   "bytes": 137
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/v1_batch_variant/perf.csv",
+   "source": "llm-test/runs/evafrill_engine_v1/v1_batch_variant/perf.csv",
+   "source_sha256": "8d49b98c50b68d9102f65b65097b760c31178336e550f263cd0025882fd77aaa",
+   "sha256": "8d49b98c50b68d9102f65b65097b760c31178336e550f263cd0025882fd77aaa",
+   "bytes": 8455
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/v1_batch_variant/perf.log",
+   "source": "llm-test/runs/evafrill_engine_v1/v1_batch_variant/perf.log",
+   "source_sha256": "63f3544a5e028a4488ff450418987e84f418f11d11a13952cbc9e08759b38687",
+   "sha256": "df32c011f6cc6e58303ed1a8e5b72135371401501ab9d613e9f59abe08cd3466",
+   "bytes": 16313,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/v1_batch_variant/perf_meta.json",
+   "source": "llm-test/runs/evafrill_engine_v1/v1_batch_variant/perf_meta.json",
+   "source_sha256": "198a6fd4814455a91551ab9fd826b737b6699698e63574b216c63b6a073d279b",
+   "sha256": "198a6fd4814455a91551ab9fd826b737b6699698e63574b216c63b6a073d279b",
+   "bytes": 361
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/v1_batch_variant/perf_table.md",
+   "source": "llm-test/runs/evafrill_engine_v1/v1_batch_variant/perf_table.md",
+   "source_sha256": "69592a711f8b37f48d6bf08b1920d305576d021cd5c9ba6349ea21f5ae390a7b",
+   "sha256": "69592a711f8b37f48d6bf08b1920d305576d021cd5c9ba6349ea21f5ae390a7b",
+   "bytes": 1662
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/v1_batch_variant/verification.json",
+   "source": "llm-test/runs/evafrill_engine_v1/v1_batch_variant/verification.json",
+   "source_sha256": "60ffffe052f92016639600427f9b70ae27851360cbd68ac1abac05e20c7e4acf",
+   "sha256": "60ffffe052f92016639600427f9b70ae27851360cbd68ac1abac05e20c7e4acf",
+   "bytes": 28119
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/v1_batch_variant/verification_V3bc.json",
+   "source": "llm-test/runs/evafrill_engine_v1/v1_batch_variant/verification_V3bc.json",
+   "source_sha256": "d17aa85b4c73a15af1d4930134a21c5f7f00c6eb5ede99a446cb2b1a169eb9d5",
+   "sha256": "d17aa85b4c73a15af1d4930134a21c5f7f00c6eb5ede99a446cb2b1a169eb9d5",
+   "bytes": 8763
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/v1_batch_variant/verification_table.md",
+   "source": "llm-test/runs/evafrill_engine_v1/v1_batch_variant/verification_table.md",
+   "source_sha256": "25b2843b88e476f287e983280fa91cbb6c7a33e38585b8dee157d851e9a15ca4",
+   "sha256": "25b2843b88e476f287e983280fa91cbb6c7a33e38585b8dee157d851e9a15ca4",
+   "bytes": 2525
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/v1_batch_variant/verify.log",
+   "source": "llm-test/runs/evafrill_engine_v1/v1_batch_variant/verify.log",
+   "source_sha256": "2a8db8a7f2313aefd0ae649beb31d7e40ba5141d47b71e53e1df8bd22dc6528c",
+   "sha256": "ec31e0d3106307d796508fa7438af82bab1e9371df207c2f3b8fd31ca2c24e6d",
+   "bytes": 2241,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/v1_batch_variant/verify_V3bc.log",
+   "source": "llm-test/runs/evafrill_engine_v1/v1_batch_variant/verify_V3bc.log",
+   "source_sha256": "081d81f8dda13ac6f6210b7b1ff36fc3f8f3daa42e58a08a48e6b02371b59b36",
+   "sha256": "71b644644adabe11400633b0158e07e270df0a400ff692ebb2f5960c62033d85",
+   "bytes": 748,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/v2_batch_invariant/perf.csv",
+   "source": "llm-test/runs/evafrill_engine_v1/v2_batch_invariant/perf.csv",
+   "source_sha256": "f6be18e4b3f112e9e9fde56ef816581f887dbc6b366a56f5752de3d521fcaed6",
+   "sha256": "f6be18e4b3f112e9e9fde56ef816581f887dbc6b366a56f5752de3d521fcaed6",
+   "bytes": 15022
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/v2_batch_invariant/perf.log",
+   "source": "llm-test/runs/evafrill_engine_v1/v2_batch_invariant/perf.log",
+   "source_sha256": "08cde4dca48141030a637927aadcace75ef9e4663360fb9be2490c80c5e2ed06",
+   "sha256": "7d810481768eb6f08ddb9cedc018fbf7a48bbf5a15524783f4d28f14efebcf90",
+   "bytes": 19123,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/v2_batch_invariant/perf_meta.json",
+   "source": "llm-test/runs/evafrill_engine_v1/v2_batch_invariant/perf_meta.json",
+   "source_sha256": "198a6fd4814455a91551ab9fd826b737b6699698e63574b216c63b6a073d279b",
+   "sha256": "198a6fd4814455a91551ab9fd826b737b6699698e63574b216c63b6a073d279b",
+   "bytes": 361
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/v2_batch_invariant/perf_table.md",
+   "source": "llm-test/runs/evafrill_engine_v1/v2_batch_invariant/perf_table.md",
+   "source_sha256": "60c3b6793216114e6979c46efee4975266a2b70531922cec1f8a01ea375f8d39",
+   "sha256": "60c3b6793216114e6979c46efee4975266a2b70531922cec1f8a01ea375f8d39",
+   "bytes": 1986
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/v2_batch_invariant/tolerance_amendment_v3.json",
+   "source": "llm-test/runs/evafrill_engine_v1/v2_batch_invariant/tolerance_amendment_v3.json",
+   "source_sha256": "84cc6ecf3af8fe16a67a8ca2152e4dd6047aefd590c0e0a776cf192f1d18802c",
+   "sha256": "84cc6ecf3af8fe16a67a8ca2152e4dd6047aefd590c0e0a776cf192f1d18802c",
+   "bytes": 1130
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/v2_batch_invariant/tolerance_preregistered.json",
+   "source": "llm-test/runs/evafrill_engine_v1/v2_batch_invariant/tolerance_preregistered.json",
+   "source_sha256": "58ebdc1e5c9d574584507a1b47722c4eab45eebc4e6e49b1484a21449c255264",
+   "sha256": "58ebdc1e5c9d574584507a1b47722c4eab45eebc4e6e49b1484a21449c255264",
+   "bytes": 2185
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/v2_batch_invariant/tolerance_supplementary.json",
+   "source": "llm-test/runs/evafrill_engine_v1/v2_batch_invariant/tolerance_supplementary.json",
+   "source_sha256": "5e7008e2d6cc6d4e5f486a82de0c52e7e4fb8c7cd08ccbe0d856d0761de02429",
+   "sha256": "5e7008e2d6cc6d4e5f486a82de0c52e7e4fb8c7cd08ccbe0d856d0761de02429",
+   "bytes": 988
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/v2_batch_invariant/tolerance_v4_strict.json",
+   "source": "llm-test/runs/evafrill_engine_v1/v2_batch_invariant/tolerance_v4_strict.json",
+   "source_sha256": "0487c1b3212f19f30d5d50d776821ebe6b3fbb25a8c8b12fb219a41e76638af3",
+   "sha256": "0487c1b3212f19f30d5d50d776821ebe6b3fbb25a8c8b12fb219a41e76638af3",
+   "bytes": 829
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/v2_batch_invariant/tolerance_v4_strict.sha256",
+   "source": "llm-test/runs/evafrill_engine_v1/v2_batch_invariant/tolerance_v4_strict.sha256",
+   "source_sha256": "ce8a00737a94c18e61636190a2885fa2bd1c630d60e877cf3ab6e68cd87e339c",
+   "sha256": "ce8a00737a94c18e61636190a2885fa2bd1c630d60e877cf3ab6e68cd87e339c",
+   "bytes": 137
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/v2_batch_invariant/verification.json",
+   "source": "llm-test/runs/evafrill_engine_v1/v2_batch_invariant/verification.json",
+   "source_sha256": "64d60a5c5f8149b4d0295de215a75185040f59ebf384f22b6373f29967b935fb",
+   "sha256": "64d60a5c5f8149b4d0295de215a75185040f59ebf384f22b6373f29967b935fb",
+   "bytes": 34760
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/v2_batch_invariant/verification_V3bc.json",
+   "source": "llm-test/runs/evafrill_engine_v1/v2_batch_invariant/verification_V3bc.json",
+   "source_sha256": "703158643e3d8223e6533942dee110f8fa4fd4f95770a18a5348c4b099097a9c",
+   "sha256": "703158643e3d8223e6533942dee110f8fa4fd4f95770a18a5348c4b099097a9c",
+   "bytes": 8780
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/v2_batch_invariant/verification_final.json",
+   "source": "llm-test/runs/evafrill_engine_v1/v2_batch_invariant/verification_final.json",
+   "source_sha256": "06606c78fda7f1b5c93025239b82b59bb2e77b21836817227ad8eaf2e99cfa2e",
+   "sha256": "06606c78fda7f1b5c93025239b82b59bb2e77b21836817227ad8eaf2e99cfa2e",
+   "bytes": 1578
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/v2_batch_invariant/verification_table.md",
+   "source": "llm-test/runs/evafrill_engine_v1/v2_batch_invariant/verification_table.md",
+   "source_sha256": "98e9761bf24a4012e98324ddb0fcce4976fb838298e8c59c22b0a14967c7fdef",
+   "sha256": "98e9761bf24a4012e98324ddb0fcce4976fb838298e8c59c22b0a14967c7fdef",
+   "bytes": 2542
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/v2_batch_invariant/verify.log",
+   "source": "llm-test/runs/evafrill_engine_v1/v2_batch_invariant/verify.log",
+   "source_sha256": "e7e4046b54dacb4b0c90108d58b3d53696bb72e2d0c1f4a6676a6b729b639847",
+   "sha256": "fb5bbb71ee129b688ff846dec2c774d1c53d118279a9928d7d095b2c6328f112",
+   "bytes": 2453,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/v2_batch_invariant/verify_V3bc.log",
+   "source": "llm-test/runs/evafrill_engine_v1/v2_batch_invariant/verify_V3bc.log",
+   "source_sha256": "b95febb2b1a03a830bcd13a4cd50384473d0c780af4d396f548a5175b8493450",
+   "sha256": "55bcb300c006c32684a86b4ca1005ec0b7ef84d28f3a9a699c70793bc6e512a2",
+   "bytes": 749,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/verification.json",
+   "source": "llm-test/runs/evafrill_engine_v1/verification.json",
+   "source_sha256": "64d60a5c5f8149b4d0295de215a75185040f59ebf384f22b6373f29967b935fb",
+   "sha256": "64d60a5c5f8149b4d0295de215a75185040f59ebf384f22b6373f29967b935fb",
+   "bytes": 34760
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/verification_V3bc.json",
+   "source": "llm-test/runs/evafrill_engine_v1/verification_V3bc.json",
+   "source_sha256": "703158643e3d8223e6533942dee110f8fa4fd4f95770a18a5348c4b099097a9c",
+   "sha256": "703158643e3d8223e6533942dee110f8fa4fd4f95770a18a5348c4b099097a9c",
+   "bytes": 8780
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/verification_final.json",
+   "source": "llm-test/runs/evafrill_engine_v1/verification_final.json",
+   "source_sha256": "06606c78fda7f1b5c93025239b82b59bb2e77b21836817227ad8eaf2e99cfa2e",
+   "sha256": "06606c78fda7f1b5c93025239b82b59bb2e77b21836817227ad8eaf2e99cfa2e",
+   "bytes": 1578
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/verification_table.md",
+   "source": "llm-test/runs/evafrill_engine_v1/verification_table.md",
+   "source_sha256": "98e9761bf24a4012e98324ddb0fcce4976fb838298e8c59c22b0a14967c7fdef",
+   "sha256": "98e9761bf24a4012e98324ddb0fcce4976fb838298e8c59c22b0a14967c7fdef",
+   "bytes": 2542
+  },
+  {
+   "path": "benchmark_workspace/runs/evafrill_engine_v1/verify_attempt1_te_keys_failed.log",
+   "source": "llm-test/runs/evafrill_engine_v1/verify_attempt1_te_keys_failed.log",
+   "source_sha256": "8ee9d0ae92f2a3d6f428e6632043e97d5689bf83afcaf5c95f85967ca312e937",
+   "sha256": "ff787534d6da7a2d3176cdb9726ef08baf83356bd71d867e76d62559bccacc13",
+   "bytes": 1729,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/format_conformance_v1/REPORT.md",
+   "source": "llm-test/runs/format_conformance_v1/REPORT.md",
+   "source_sha256": "3f0bf3875444515132ef92ad79ca590e385cd26092e0d1be659a678382c1ac3c",
+   "sha256": "3f0bf3875444515132ef92ad79ca590e385cd26092e0d1be659a678382c1ac3c",
+   "bytes": 9978
+  },
+  {
+   "path": "benchmark_workspace/runs/format_conformance_v1/cpu_only/token_conformance.json",
+   "source": "llm-test/runs/format_conformance_v1/cpu_only/token_conformance.json",
+   "source_sha256": "11f40555580757d93dcb7b57c7ad37703effad81af1355479c510860d9011501",
+   "sha256": "11f40555580757d93dcb7b57c7ad37703effad81af1355479c510860d9011501",
+   "bytes": 4616
+  },
+  {
+   "path": "benchmark_workspace/runs/format_conformance_v1/frankenstallm_byte_rows.log",
+   "source": "llm-test/runs/format_conformance_v1/frankenstallm_byte_rows.log",
+   "source_sha256": "707421267fe55299d903ba2a2a7d808eb2fb8081c12f8c5c2716461d67f49da5",
+   "sha256": "707421267fe55299d903ba2a2a7d808eb2fb8081c12f8c5c2716461d67f49da5",
+   "bytes": 371
+  },
+  {
+   "path": "benchmark_workspace/runs/format_conformance_v1/llamacpp_token_id_path.json",
+   "source": "llm-test/runs/format_conformance_v1/llamacpp_token_id_path.json",
+   "source_sha256": "53f3d6ffdbf08495d7616428f4407eded4d086c435c02ff062221b40dfb39566",
+   "sha256": "53f3d6ffdbf08495d7616428f4407eded4d086c435c02ff062221b40dfb39566",
+   "bytes": 10504
+  },
+  {
+   "path": "benchmark_workspace/runs/format_conformance_v1/llamacpp_token_id_path.log",
+   "source": "llm-test/runs/format_conformance_v1/llamacpp_token_id_path.log",
+   "source_sha256": "f8272b8b79dc7bdb0ff51b37b2ba9ed76b1bcd0307d393c4d030bb5ab56717d8",
+   "sha256": "f8272b8b79dc7bdb0ff51b37b2ba9ed76b1bcd0307d393c4d030bb5ab56717d8",
+   "bytes": 369
+  },
+  {
+   "path": "benchmark_workspace/runs/format_conformance_v1/newline_unk.log",
+   "source": "llm-test/runs/format_conformance_v1/newline_unk.log",
+   "source_sha256": "f61b78d1c9c3a506b350d2adbd4400e82b3e4c8f2c10c1dddf889fcf9c5bb115",
+   "sha256": "f61b78d1c9c3a506b350d2adbd4400e82b3e4c8f2c10c1dddf889fcf9c5bb115",
+   "bytes": 403
+  },
+  {
+   "path": "benchmark_workspace/runs/format_conformance_v1/ollama/Modelfile.frankenstallm-train-format",
+   "source": "llm-test/runs/format_conformance_v1/ollama/Modelfile.frankenstallm-train-format",
+   "source_sha256": "ed4453ae781f043fbde61a6a03fc7258ee9bd3fa8893c5fa85902678f10fe1d8",
+   "sha256": "ed4453ae781f043fbde61a6a03fc7258ee9bd3fa8893c5fa85902678f10fe1d8",
+   "bytes": 641
+  },
+  {
+   "path": "benchmark_workspace/runs/format_conformance_v1/ollama/Modelfile.jansori",
+   "source": "llm-test/runs/format_conformance_v1/ollama/Modelfile.jansori",
+   "source_sha256": "51b62f782d8b02b9761a858d3bbb6e42cb58b1a74158749e0658637b0eba77c7",
+   "sha256": "51b62f782d8b02b9761a858d3bbb6e42cb58b1a74158749e0658637b0eba77c7",
+   "bytes": 141
+  },
+  {
+   "path": "benchmark_workspace/runs/format_conformance_v1/ollama/ollama_check.log",
+   "source": "llm-test/runs/format_conformance_v1/ollama/ollama_check.log",
+   "source_sha256": "7dbfe5c8a1ccaf669a6f13c396bb4ce48c4894f3e94ab0d8a84dd3f16e800976",
+   "sha256": "7dbfe5c8a1ccaf669a6f13c396bb4ce48c4894f3e94ab0d8a84dd3f16e800976",
+   "bytes": 1975
+  },
+  {
+   "path": "benchmark_workspace/runs/format_conformance_v1/ollama_train_tok/Modelfile.frankenstallm-train-tokenizer",
+   "source": "llm-test/runs/format_conformance_v1/ollama_train_tok/Modelfile.frankenstallm-train-tokenizer",
+   "source_sha256": "8e9ec7ba47134dbf1490dc4658da0639f8a7ff2262ac02727873d758a1d0e055",
+   "sha256": "8e9ec7ba47134dbf1490dc4658da0639f8a7ff2262ac02727873d758a1d0e055",
+   "bytes": 562
+  },
+  {
+   "path": "benchmark_workspace/runs/format_conformance_v1/ollama_train_tok/Modelfile.jansori",
+   "source": "llm-test/runs/format_conformance_v1/ollama_train_tok/Modelfile.jansori",
+   "source_sha256": "51b62f782d8b02b9761a858d3bbb6e42cb58b1a74158749e0658637b0eba77c7",
+   "sha256": "51b62f782d8b02b9761a858d3bbb6e42cb58b1a74158749e0658637b0eba77c7",
+   "bytes": 141
+  },
+  {
+   "path": "benchmark_workspace/runs/format_conformance_v1/ollama_train_tok/Modelfile.suite-fs",
+   "source": "llm-test/runs/format_conformance_v1/ollama_train_tok/Modelfile.suite-fs",
+   "source_sha256": "90f6eb2b3f9c3ea4a5a208896526201786fc53aca163438b44affcc4b598b44d",
+   "sha256": "90f6eb2b3f9c3ea4a5a208896526201786fc53aca163438b44affcc4b598b44d",
+   "bytes": 1834
+  },
+  {
+   "path": "benchmark_workspace/runs/format_conformance_v1/ollama_train_tok/Modelfile.suite-jansori",
+   "source": "llm-test/runs/format_conformance_v1/ollama_train_tok/Modelfile.suite-jansori",
+   "source_sha256": "e24dd76e126b908355058b974fe0698c47a675730b593c62ee41b41d91082e0b",
+   "sha256": "e24dd76e126b908355058b974fe0698c47a675730b593c62ee41b41d91082e0b",
+   "bytes": 697
+  },
+  {
+   "path": "benchmark_workspace/runs/format_conformance_v1/ollama_train_tok/ollama_token_ids.json",
+   "source": "llm-test/runs/format_conformance_v1/ollama_train_tok/ollama_token_ids.json",
+   "source_sha256": "c5ac6f2a717788e49949959b3891a42f7cab628edddf10d5008f96d44ede811f",
+   "sha256": "c5ac6f2a717788e49949959b3891a42f7cab628edddf10d5008f96d44ede811f",
+   "bytes": 12508
+  },
+  {
+   "path": "benchmark_workspace/runs/format_conformance_v1/ollama_train_tok/ollama_token_ids.log",
+   "source": "llm-test/runs/format_conformance_v1/ollama_train_tok/ollama_token_ids.log",
+   "source_sha256": "8b1d740d0d80ab36594f5b780e1d19f929e894de5ca89f96f52155a854da198f",
+   "sha256": "8b1d740d0d80ab36594f5b780e1d19f929e894de5ca89f96f52155a854da198f",
+   "bytes": 1841
+  },
+  {
+   "path": "benchmark_workspace/runs/format_conformance_v1/ollama_train_tok/ollama_token_ids_v2.log",
+   "source": "llm-test/runs/format_conformance_v1/ollama_train_tok/ollama_token_ids_v2.log",
+   "source_sha256": "96e27753d86d0cecaa1b0e2fe32de203cdf4100a967daf08ac3bf35ea599c345",
+   "sha256": "96e27753d86d0cecaa1b0e2fe32de203cdf4100a967daf08ac3bf35ea599c345",
+   "bytes": 154
+  },
+  {
+   "path": "benchmark_workspace/runs/format_conformance_v1/token_conformance.json",
+   "source": "llm-test/runs/format_conformance_v1/token_conformance.json",
+   "source_sha256": "f42c4f65b09acb0956d74a49e2884cad391e6130c1d303cee0a67d7b95cdf292",
+   "sha256": "f42c4f65b09acb0956d74a49e2884cad391e6130c1d303cee0a67d7b95cdf292",
+   "bytes": 26110
+  },
+  {
+   "path": "benchmark_workspace/runs/format_conformance_v1/tokenizer_diff_causes.log",
+   "source": "llm-test/runs/format_conformance_v1/tokenizer_diff_causes.log",
+   "source_sha256": "ba4a015a74485a00e62ea3d5e26d6c0f1b4739315c490115fa67b6a2ac059559",
+   "sha256": "ba4a015a74485a00e62ea3d5e26d6c0f1b4739315c490115fa67b6a2ac059559",
+   "bytes": 309
+  },
+  {
+   "path": "benchmark_workspace/runs/format_conformance_v1/tokenizer_equivalence_probe.log",
+   "source": "llm-test/runs/format_conformance_v1/tokenizer_equivalence_probe.log",
+   "source_sha256": "e8f2456210a1e23321b850f27f1f640ba6c579b5e041101044abd7dd2d0a37ad",
+   "sha256": "8b98a0651e3b8b11c66c1e66fc7245dbc5779cb36b752e3e4a6c19077582f057",
+   "bytes": 5326,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/format_conformance_v1/train_tokenizer_gguf_check.json",
+   "source": "llm-test/runs/format_conformance_v1/train_tokenizer_gguf_check.json",
+   "source_sha256": "d8268d315338e8d9f8ee2ffcde88c51b250aa87d3ff3fd43a575c719f00e0e17",
+   "sha256": "d8268d315338e8d9f8ee2ffcde88c51b250aa87d3ff3fd43a575c719f00e0e17",
+   "bytes": 5207
+  },
+  {
+   "path": "benchmark_workspace/runs/format_conformance_v1/train_tokenizer_gguf_check.log",
+   "source": "llm-test/runs/format_conformance_v1/train_tokenizer_gguf_check.log",
+   "source_sha256": "be4016de73e46083475c78e0b8c0c00ebf43e5ce8fc824a5618e848bebb525bc",
+   "sha256": "be4016de73e46083475c78e0b8c0c00ebf43e5ce8fc824a5618e848bebb525bc",
+   "bytes": 758
+  },
+  {
+   "path": "benchmark_workspace/runs/format_conformance_v1/train_tokenizer_gguf_noprefix_check.json",
+   "source": "llm-test/runs/format_conformance_v1/train_tokenizer_gguf_noprefix_check.json",
+   "source_sha256": "e387430279e27830c90dc0cc19d2760a6561cdb58df9933aafca21116d00c6bb",
+   "sha256": "e387430279e27830c90dc0cc19d2760a6561cdb58df9933aafca21116d00c6bb",
+   "bytes": 4593
+  },
+  {
+   "path": "benchmark_workspace/runs/format_conformance_v1/train_tokenizer_gguf_noprefix_check.log",
+   "source": "llm-test/runs/format_conformance_v1/train_tokenizer_gguf_noprefix_check.log",
+   "source_sha256": "618f238c2e3dcd00b830a5109108b6d20d322d798adb00c56034419973fba7b1",
+   "sha256": "618f238c2e3dcd00b830a5109108b6d20d322d798adb00c56034419973fba7b1",
+   "bytes": 72
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v1/own_vllm_ko_mc.log",
+   "source": "llm-test/runs/standard_v1/own_vllm_ko_mc.log",
+   "source_sha256": "172830790d84852f33d6ba626b41defee18c02a16c8c8d4f818b2ff20f852e01",
+   "sha256": "4a9fd18e7689281cbacdc76bcdb3c1b4b41d6a0d35918b81bf31adbd29a887aa",
+   "bytes": 37713,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v1/own_vllm_ko_mc.retry1.log",
+   "source": "llm-test/runs/standard_v1/own_vllm_ko_mc.retry1.log",
+   "source_sha256": "395e202fe5f4c45130ae2aeb8daed7825631701031170276c35bac92b5d7b320",
+   "sha256": "fdbdc53d40896a544a1f379933dd964394d81794a3ff53c0365e6d546c1942ab",
+   "bytes": 65443,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/dev_search_evafrill_phase2.log",
+   "source": "llm-test/runs/standard_v2/dev_search_evafrill_phase2.log",
+   "source_sha256": "b75f5c1c9aec4940295c87393d08332e9f6842449931b5d62ee16a5b7c6c5c71",
+   "sha256": "61bdd89ed86415396f43eb39599f1e3884638cbeb5f1df86c79eef6ab81f4471",
+   "bytes": 20195,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/dev_search_evafrill_phase2.sh",
+   "source": "llm-test/runs/standard_v2/dev_search_evafrill_phase2.sh",
+   "source_sha256": "2c674f1190b128b4cde6356d4d229be721606b39af74e8ff2a39c1703b97a4d9",
+   "sha256": "2c674f1190b128b4cde6356d4d229be721606b39af74e8ff2a39c1703b97a4d9",
+   "bytes": 973
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/dev_search_user_models.log",
+   "source": "llm-test/runs/standard_v2/dev_search_user_models.log",
+   "source_sha256": "de99ddd85210bfea1046e61d01f13c51a300990f80b4bb7c52610262df3a38f0",
+   "sha256": "734efe60b22d112172531e4773e6f458096798ad638edde453c0f42eb655c820",
+   "bytes": 301347,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/dev_search_user_models.sh",
+   "source": "llm-test/runs/standard_v2/dev_search_user_models.sh",
+   "source_sha256": "f5e37d808a19efd39bcd1ccda1b25cb5beac8f1133f4b89c155ed6eb4609762d",
+   "sha256": "f5e37d808a19efd39bcd1ccda1b25cb5beac8f1133f4b89c155ed6eb4609762d",
+   "bytes": 948
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/frankenstallm_ko_mc_train_tokenizer.log",
+   "source": "llm-test/runs/standard_v2/frankenstallm_ko_mc_train_tokenizer.log",
+   "source_sha256": "0e2c43d9c182a2469e4149e74e0a1d98f0c4660a4a14fd81ddbe86700ae1de50",
+   "sha256": "fa0a114585e916b080cc13e32e501d22b2480fd004c4f4430f23d4278cfc6f0a",
+   "bytes": 31650,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/exaone-3.5-2.4b__dev_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/exaone-3.5-2.4b__dev_mc_v1__A.log",
+   "source_sha256": "5c5e645c5c52026d04e0521b69a26348d7acdd2dc7db72b404c9c98d15b15313",
+   "sha256": "5fde323e1531ee5d48a2b528b4323bc2a4cb9f37b2b026018af1e6abd526777c",
+   "bytes": 47830,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/exaone-3.5-2.4b__dev_mc_v1__chat_1.log",
+   "source": "llm-test/runs/standard_v2/public_p1/exaone-3.5-2.4b__dev_mc_v1__chat_1.log",
+   "source_sha256": "409effa80d903ed8ace869d95a1802e43dd839bd37822d7f3a50d0c654e82f98",
+   "sha256": "092d13bff58e2535fb08c8368d931779b16ad5211bfcaee288b37bcf4d9e6251",
+   "bytes": 47506,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/exaone-3.5-2.4b__dev_mc_v1__shots_0.log",
+   "source": "llm-test/runs/standard_v2/public_p1/exaone-3.5-2.4b__dev_mc_v1__shots_0.log",
+   "source_sha256": "c40087f9d9736699d69b9b18349de33a8e61b969686cbd818770439851d889d2",
+   "sha256": "0666a3b68f3932f235f5a1bbbac44d7efe6107849f0902f66910db47a578c421",
+   "bytes": 47406,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/exaone-3.5-2.4b__en_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/exaone-3.5-2.4b__en_mc_v1__A.log",
+   "source_sha256": "b79591eef8bc10bd5dba472a1a87a109584bb679f11db63c451c638471bc234b",
+   "sha256": "5b76a05cd1707d0167450cdcd4120603154b233c4e0cb80c60e4495eed5253b6",
+   "bytes": 50592,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/exaone-3.5-2.4b__ko_mc_ext_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/exaone-3.5-2.4b__ko_mc_ext_v1__A.log",
+   "source_sha256": "d8704351b075a2f450053ec1979056ab395a3ec90eeaf043e4ba833dd023eb6f",
+   "sha256": "62c8ce0750c1c70ef97441c3cb1f1ffafa4bfa9e64ee99a2e49d87077b7b3a7b",
+   "bytes": 40002,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/exaone-3.5-2.4b__ko_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/exaone-3.5-2.4b__ko_mc_v1__A.log",
+   "source_sha256": "7929a9f5ed71ca8cf1b147bd3116d88063f0ef9d4a35a0ac27ff25fa5a1901e9",
+   "sha256": "b91d928cbefb1549f1d2bacda9b6ecbb36128e5dc93fb4135e24e85bf61942c7",
+   "bytes": 53797,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/exaone-3.5-2.4b__ppl_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/exaone-3.5-2.4b__ppl_v1__A.log",
+   "source_sha256": "ded9067f500f754c4b0d62f8d48e2e4eb49fa6d6b61db582f413359b072073af",
+   "sha256": "911a44e088c193e5e42047ca770b5cfffbb751b335cc30709a144850ddc2afcf",
+   "bytes": 43326,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-1.5-2.1b-base__dev_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-1.5-2.1b-base__dev_mc_v1__A.log",
+   "source_sha256": "f7b341ea2b705068401cacfdc3008a6b9635a98c2c8d4688efb5796445e21303",
+   "sha256": "0048b90c67b0d244c7685bc51301852c192d977ffe2796c5902191fa267f2aee",
+   "bytes": 6625,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-1.5-2.1b-base__dev_mc_v1__shots_0.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-1.5-2.1b-base__dev_mc_v1__shots_0.log",
+   "source_sha256": "af1f871cf741e36dfb5198552c6af0c7559334f7f802b3b7c7564acce3922580",
+   "sha256": "6571ee4bd625906cb868074432a50b7dd9e4f8ad40bfbbd4822edf953ea1d9fc",
+   "bytes": 6625,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-1.5-2.1b-base__en_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-1.5-2.1b-base__en_mc_v1__A.log",
+   "source_sha256": "e96b99c0888c6f57e191d75dfdf0fbe4cc81f4275cd09a5e75e0801653d79f3c",
+   "sha256": "998d34fa280988dffc30a21ae3fdf4f2ee4833c205f81bd3de817a90c923d08b",
+   "bytes": 6642,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-1.5-2.1b-base__ko_mc_ext_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-1.5-2.1b-base__ko_mc_ext_v1__A.log",
+   "source_sha256": "a397541039b8b7bb4dfebdf3101363f85cdc39d8d1a6322f1d96bb158bc2448c",
+   "sha256": "a0ca34b88a1a94207ea34399ba0b33ad4b38d9a20042198bba266e4615dc8488",
+   "bytes": 6618,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-1.5-2.1b-base__ko_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-1.5-2.1b-base__ko_mc_v1__A.log",
+   "source_sha256": "7cc1eeceb625c76ce7ad06adadb625dfc2285dffa8516d56b3543ba97cb266d6",
+   "sha256": "c6590987da3887090180b9c7eb4d24bd79e21cfe7c27031191239202fde2392a",
+   "bytes": 6695,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-1.5-2.1b-base__ppl_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-1.5-2.1b-base__ppl_v1__A.log",
+   "source_sha256": "534c0eadca18c9c53d6c287612565c20353f3923cf04245d334e58f66afdd17f",
+   "sha256": "e07b9430f9e80c9cce7b4326e37b12d1c2f4b8836ea7d2e67fc82cc8c88f206f",
+   "bytes": 8020,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-1.5-2.1b__dev_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-1.5-2.1b__dev_mc_v1__A.log",
+   "source_sha256": "a55451f5c833a00b974b14db5c9a9b5f770fa3cc700b20be3000284311202914",
+   "sha256": "6fd624d6dc1d94a5d5038c57c1e42795439ba407b1857488d57e666a65ba04bb",
+   "bytes": 6652,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-1.5-2.1b__dev_mc_v1__chat_1.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-1.5-2.1b__dev_mc_v1__chat_1.log",
+   "source_sha256": "5ef20ef8c640b237f0e3fe72477242191853662c278c679df7732c4a90d07124",
+   "sha256": "d1794c70e27f0b2e840f5356d9685e8a98d5fcb61df91f2bfe908b89032f1f06",
+   "bytes": 6652,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-1.5-2.1b__dev_mc_v1__shots_0.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-1.5-2.1b__dev_mc_v1__shots_0.log",
+   "source_sha256": "6a8772e00d2529adb55510f0e638b754714579ae84faf880e87f742478df560e",
+   "sha256": "42d9f60e5a633950f7dbccfa0fc66f51e90855a978abef10aba1f3e4c1ab77a4",
+   "bytes": 6652,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-1.5-2.1b__en_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-1.5-2.1b__en_mc_v1__A.log",
+   "source_sha256": "1e36e4d4305a60e6140cdcc52f9c347e5e48aa711e2dd7e1d9f231db779e2d91",
+   "sha256": "1e9e66a36585a7e6c3707f157201abe543757fcbed7a84439182926eba31e5ba",
+   "bytes": 6669,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-1.5-2.1b__ko_mc_ext_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-1.5-2.1b__ko_mc_ext_v1__A.log",
+   "source_sha256": "78b6d79976dd10e4444db10d0fc38365693a3d1b0e758aa51ca030a08c1d97c4",
+   "sha256": "a046536f5fbd4d32a675a488297c4c14e3f94ba1eb51f68c14cd8c9b0f6e5fcd",
+   "bytes": 6645,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-1.5-2.1b__ko_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-1.5-2.1b__ko_mc_v1__A.log",
+   "source_sha256": "79bafda83df7f9795ba6312ed2af3818a0a1546b596d36f49fae877c5f8b28f7",
+   "sha256": "eafddd84bada6197ed4af626adc15ddd8264d9bb912df29435317267746c0bbe",
+   "bytes": 6722,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-1.5-2.1b__ppl_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-1.5-2.1b__ppl_v1__A.log",
+   "source_sha256": "1027097a3b8e08ab433ddcca219df46d026b1676c3e07b6cccc8da9fb60d5823",
+   "sha256": "72d94dd0c179f93881721f430e38b27ac61f95b6dfedbf26772e0dae4b9adb38",
+   "bytes": 8047,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-2-30b-a3b-base__dev_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-2-30b-a3b-base__dev_mc_v1__A.log",
+   "source_sha256": "8e990b04d561e3971e7d2cd8da8436efc7692170f727bee0166ca400691cd991",
+   "sha256": "27c41cdf4d227a3f7ad496bbffd47a682e8a056418f934fceaa134ad05fcfb7d",
+   "bytes": 32041,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-2-30b-a3b-base__dev_mc_v1__shots_0.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-2-30b-a3b-base__dev_mc_v1__shots_0.log",
+   "source_sha256": "597ad4e8afcb895808d811a9984917448ca8cafd73f944704612acc81ca45a99",
+   "sha256": "98f236d59075544f57b25dd522d164c83923a109683166a7a433a0e1b2fdf3b9",
+   "bytes": 31572,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-2-30b-a3b-base__en_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-2-30b-a3b-base__en_mc_v1__A.log",
+   "source_sha256": "2f108e7e82e55bc8aadc87a3fcac393dac69ca0719bc02a16a4851adb4bd1cf2",
+   "sha256": "67b7a8acd7780b548c12423e864554cd1dd88ea17e965302dfb99b6cd8d4f7cb",
+   "bytes": 34709,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-2-30b-a3b-base__ko_mc_ext_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-2-30b-a3b-base__ko_mc_ext_v1__A.log",
+   "source_sha256": "3e561c2cbd2ee07cd1e4404d23b9aab8aa261a5fc735cd4d451ff79c378d0bb2",
+   "sha256": "452e26646a7cb7421ac0e6e5d447b8d6c4a89ecc1ceb090b48568805f7b38a52",
+   "bytes": 24168,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-2-30b-a3b-base__ko_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-2-30b-a3b-base__ko_mc_v1__A.log",
+   "source_sha256": "1eef4e5951b305586496f553d8ce55b586919c19368a68a21ba9a76d1ce0b564",
+   "sha256": "7d61224b80958c320d9af23c795e24fa9725cd9f1095383dd98c661915ae5599",
+   "bytes": 38692,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-2-30b-a3b-base__ppl_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-2-30b-a3b-base__ppl_v1__A.log",
+   "source_sha256": "dfbe8f56d3b30a5aff8f48eff6588ed36a61ddb79c1b332e4ac2b13ab836e8f0",
+   "sha256": "1e902b632f9096506b2415d9ecd95dd3d499273427796020793b83cab58009c8",
+   "bytes": 27484,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-2-30b-a3b__dev_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-2-30b-a3b__dev_mc_v1__A.log",
+   "source_sha256": "90e6f10810ed3d9351917d43032786ebb42e6e2698a493fd17b9617f9cdaa61b",
+   "sha256": "28c838c4d7808d255629bdbc095e24a9660395fbae952e64a812078ae5e1e32a",
+   "bytes": 32030,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-2-30b-a3b__dev_mc_v1__chat_1.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-2-30b-a3b__dev_mc_v1__chat_1.log",
+   "source_sha256": "12ec594bc21d95a952f770612458cd1f0eb58a25810383692f7fb03ba7e35df2",
+   "sha256": "df28c37bda6eb221a543a1823cabc5158ee4335b46b91f1d701d97e43ae7ee35",
+   "bytes": 31506,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-2-30b-a3b__dev_mc_v1__shots_0.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-2-30b-a3b__dev_mc_v1__shots_0.log",
+   "source_sha256": "b8e5133fa29afe0ab941c7c6b22db75ad7b268ecf1c1ce019d437de32933a7be",
+   "sha256": "6d088dd4341f6769f6fe47606e52ab1f541ac85e3db442e8b45d9c1815499bf3",
+   "bytes": 31522,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-2-30b-a3b__en_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-2-30b-a3b__en_mc_v1__A.log",
+   "source_sha256": "64b717cda19861a1f0a155af37c7be75a2a4ec8e688bf60d6014c9258829e3f9",
+   "sha256": "1627760fb8e0c296e8e4c9365d26ffc4f7493b38896a0c4b6e7ffe6e03d2a40c",
+   "bytes": 34835,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-2-30b-a3b__ko_mc_ext_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-2-30b-a3b__ko_mc_ext_v1__A.log",
+   "source_sha256": "2954d061da46d55e513ba62e4eba0445c7cf9c51d666f29bad4f96574e3e48b4",
+   "sha256": "041c4553be44e267dab9fba5a533d453c66cd4170742d9e770e92b17e84896e2",
+   "bytes": 24138,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-2-30b-a3b__ko_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-2-30b-a3b__ko_mc_v1__A.log",
+   "source_sha256": "021797c2ebfba1e1f769857052f69d25b328c9fc8b6c30d197fdb878444d3af7",
+   "sha256": "742390a97ad8bc960570502658a2b3f7b264ef86738509e5229c9d07f290bece",
+   "bytes": 38651,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-2-30b-a3b__ppl_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-2-30b-a3b__ppl_v1__A.log",
+   "source_sha256": "d121cdc5ca3cd09ad5d7a8664b865ae6bfd02763895fd1f8bbd633a94c405f82",
+   "sha256": "d8d7a87f34598195d3b13dcffa37483ac96d362fd1a4bf129c9884166b5a6088",
+   "bytes": 27480,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-2-3b-base__dev_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-2-3b-base__dev_mc_v1__A.log",
+   "source_sha256": "e7f0a8e6dd482ba11e15acc11af825b3111973c311281c1ce33bbc113a30a461",
+   "sha256": "2444a0c174577244de7b08b80b3d677b6fa7f0237b0a27e155fc3a98e83e4944",
+   "bytes": 25312,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-2-3b-base__dev_mc_v1__shots_0.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-2-3b-base__dev_mc_v1__shots_0.log",
+   "source_sha256": "dc9fe50a46b4ea8e625b0e3b9e3f6e1600a02b2ddabdc77372eff62a5d444ec0",
+   "sha256": "a4359b06454b84ee7156c7ca83f96d56c982785447c268c3a28d207220eda7d3",
+   "bytes": 24847,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-2-3b-base__en_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-2-3b-base__en_mc_v1__A.log",
+   "source_sha256": "4af5363d773ebef89ede47f70d25a85cc7bdc9384e9431cf7b9bc2f3ebd94541",
+   "sha256": "9e568e064068ddf1987bbbfe879e732bcc33301b9c0fb05f44a50145a1e8607e",
+   "bytes": 28049,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-2-3b-base__ko_mc_ext_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-2-3b-base__ko_mc_ext_v1__A.log",
+   "source_sha256": "68fea17c50fc6296ceac5367992afcc3cd0b86594498d70dfb0fcb285329f22a",
+   "sha256": "87e5176bfbc6717285440c8cb0385164f838780fefacccd70f566964078b9eb0",
+   "bytes": 17424,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-2-3b-base__ko_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-2-3b-base__ko_mc_v1__A.log",
+   "source_sha256": "160be5eb036fe20ffb98f95db4b686f69c339b3bde7cf776a878f146feaa0ec4",
+   "sha256": "9d5c245fdd5de115fff2cd34df9a723971e01981d314eb0069e566af85380844",
+   "bytes": 32006,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-2-3b-base__ppl_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-2-3b-base__ppl_v1__A.log",
+   "source_sha256": "e6625389e458bedba82565e323138b940098e492c95e21b370ebe647dd6d05e5",
+   "sha256": "cd6855c820bfb8cd28b8c0035af677a691c9df14945a098712d1910269f2f30f",
+   "bytes": 20764,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-2-3b__dev_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-2-3b__dev_mc_v1__A.log",
+   "source_sha256": "c0e8464fc8de69a3eaa1199ba1ccc632cfb6417a04f37e2aa89d263e2bbd2830",
+   "sha256": "0af6228a3acb29d729ddd987067e90f85796e7de2fab5e291cb850eb7c0a7652",
+   "bytes": 25300,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-2-3b__dev_mc_v1__chat_1.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-2-3b__dev_mc_v1__chat_1.log",
+   "source_sha256": "665aae2ab96cef7141d0f358dd58220f5726bedbf96d0dfd5b52ded0126b29f4",
+   "sha256": "7201300d250c3629bced2934d91f7baed682873bb7bf5645186b116122389b78",
+   "bytes": 24808,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-2-3b__dev_mc_v1__shots_0.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-2-3b__dev_mc_v1__shots_0.log",
+   "source_sha256": "05e5eb43967c379e791532bbf6b31be1fc4eec6d66182f56a8220fc12f238bdd",
+   "sha256": "7037e80210ed9ff2219260a6de59bab9ac03588a7a240bb04ea8d2401d42f203",
+   "bytes": 24831,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-2-3b__en_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-2-3b__en_mc_v1__A.log",
+   "source_sha256": "c8060f4829ae0ba1984b15efa8d3232efb74a30154872e9ae9432f6e47b5acf6",
+   "sha256": "aa0d45e20c69fc777077330baf9a5e7fcb189984b2910636b6befa831148d105",
+   "bytes": 27990,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-2-3b__ko_mc_ext_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-2-3b__ko_mc_ext_v1__A.log",
+   "source_sha256": "e0021340dd10bd89f26dd5920f51d6335c97f1b7c3cf213057c848a2a64c62e8",
+   "sha256": "9fbb7cfc21217117b4c843a050d3cb4bb4814b89761dffc5f5d8c5421a1fd669",
+   "bytes": 17426,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-2-3b__ko_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-2-3b__ko_mc_v1__A.log",
+   "source_sha256": "136e12a362a9d6211ee286a547f729f75fc59e97a5ec1f799e90d107122d24ac",
+   "sha256": "82118d27208b06dd91daaa6b268df6db52056edfe5602b5b5fd2baa2d34bb013",
+   "bytes": 31928,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/kanana-2-3b__ppl_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/kanana-2-3b__ppl_v1__A.log",
+   "source_sha256": "6529ab1779280479728b98fec299ecf77196e3392fb79db59c2361573548ce84",
+   "sha256": "ad4d4189b7051a6c84d1d587a5d282e154ac844f5f4d10c05b7870fa7c5251d9",
+   "bytes": 20759,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/llama-3.2-3b-instruct__dev_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/llama-3.2-3b-instruct__dev_mc_v1__A.log",
+   "source_sha256": "97fb7d981613dcc0fc8d81f8a8ad4d0cd339bca93b0397aa48515ca5305eac15",
+   "sha256": "e4c5923587e6145c1a7881310c304b32cac6f8bb0a41ebbf7ee70b77ae55950a",
+   "bytes": 24872,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/llama-3.2-3b-instruct__dev_mc_v1__chat_1.log",
+   "source": "llm-test/runs/standard_v2/public_p1/llama-3.2-3b-instruct__dev_mc_v1__chat_1.log",
+   "source_sha256": "7fd427ec3e0dc6d514b02b6551d39a213265473cd7ad3180ef125e3ef7c9ace0",
+   "sha256": "72d4ad67b3939f23f168825734ec4ff586f5184c3501752fec7c998693819476",
+   "bytes": 24322,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/llama-3.2-3b-instruct__dev_mc_v1__shots_0.log",
+   "source": "llm-test/runs/standard_v2/public_p1/llama-3.2-3b-instruct__dev_mc_v1__shots_0.log",
+   "source_sha256": "8ed4ca76fd2f5f25ec63d5d2cdb7d0660b148f34ec4f2aa7bbc9c99c0ca5acbc",
+   "sha256": "6344adbfc14af2ffa59cfeb9ce068a9a1fe91a3fb60582be267af6c7b66ec70f",
+   "bytes": 24404,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/llama-3.2-3b-instruct__en_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/llama-3.2-3b-instruct__en_mc_v1__A.log",
+   "source_sha256": "0e3692a6f77f22a8c8cc1f891913a7dea4cff9606e7034590df6aa1959dfdada",
+   "sha256": "1cf47fa312c36a7c733ba8fdcf27b4d85c21ed17d94c35d431ff9bd9345cc7e4",
+   "bytes": 27427,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/llama-3.2-3b-instruct__ko_mc_ext_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/llama-3.2-3b-instruct__ko_mc_ext_v1__A.log",
+   "source_sha256": "55c7961b213978ea59eea07e9299bd4d0bc85e27035f08a0072d4e58473e987c",
+   "sha256": "c0a5c5eac563c0098ff681786438295d18f808a7dac27c1e9e28efdb45e2cee0",
+   "bytes": 16994,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/llama-3.2-3b-instruct__ko_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/llama-3.2-3b-instruct__ko_mc_v1__A.log",
+   "source_sha256": "adb0ac7be28ad23dae17bd8cdb3948cd72022ea93ad45eea18e7db399afb9c11",
+   "sha256": "e7266f5b0906783d053a71dd5b14fda09d6efe9d6a67de114007e0f663002881",
+   "bytes": 32021,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/llama-3.2-3b-instruct__ppl_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/llama-3.2-3b-instruct__ppl_v1__A.log",
+   "source_sha256": "ecbdf9423b82547ae9e96b084f456551deb76fe6d86cc254ee0c024b55562936",
+   "sha256": "08853246de0d18cca95abd982fd412df8393fa2dffd9fb52820cb4b5f567e97a",
+   "bytes": 20318,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/llama-3.2-3b__dev_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/llama-3.2-3b__dev_mc_v1__A.log",
+   "source_sha256": "05814c1cc66f37f9bcb083a2da62a70c226c1d10c5357a15f2962dd5fb01feb9",
+   "sha256": "5cfccc7349eadd484c9fc7d3bdd6390d9e514efb5ee91226de48ec1ef229c9eb",
+   "bytes": 24779,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/llama-3.2-3b__dev_mc_v1__shots_0.log",
+   "source": "llm-test/runs/standard_v2/public_p1/llama-3.2-3b__dev_mc_v1__shots_0.log",
+   "source_sha256": "fc91d5c843dfc3bd19732b55681e817304d23203792768925454b462191c8125",
+   "sha256": "48ef9765bae7eb105bb758ee41f95102ad73b8f662536c560e06f166aa6bd9b4",
+   "bytes": 24314,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/llama-3.2-3b__en_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/llama-3.2-3b__en_mc_v1__A.log",
+   "source_sha256": "1a235dfec26c03448caec6bad068786f640981b2303ddf862024f3b88703c0c4",
+   "sha256": "a8926206d7376e9d6fc0468faffbce738e341dc478918a734a4b52978e74bb90",
+   "bytes": 27322,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/llama-3.2-3b__ko_mc_ext_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/llama-3.2-3b__ko_mc_ext_v1__A.log",
+   "source_sha256": "5c0c573ba2327cf472bf7709fd16a286d8a8cbfecd3bee62ecf9102adef03eef",
+   "sha256": "ef515d62ac83b46b2a537a96117ba2c3ff902a7e7f73b6b31bfc9a29a39a807b",
+   "bytes": 16903,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/llama-3.2-3b__ko_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/llama-3.2-3b__ko_mc_v1__A.log",
+   "source_sha256": "de7952d1a06c98bff127693c0f005116c94e6a5c0b954eb5d60bea8635ab5ed4",
+   "sha256": "41eece45805e8d86df0a58aa33498897e69fbf957aba113bb9e41ce2e402cfff",
+   "bytes": 30799,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/llama-3.2-3b__ppl_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/llama-3.2-3b__ppl_v1__A.log",
+   "source_sha256": "a6668756dbcf37296d2d0e7bb514d250104ca569a060526e54804b8f67e4c0d4",
+   "sha256": "c55120365f7be700f6c2b14d478058103d62736164f428cf1282bb0e41b582e4",
+   "bytes": 20243,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/nemotron-3-nano-30b-a3b-base__dev_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/nemotron-3-nano-30b-a3b-base__dev_mc_v1__A.log",
+   "source_sha256": "c577bcd1e9809749d738b1bc91b578c2a7205deedd0d366b9cec7f79505b6c89",
+   "sha256": "3b546eab2ec05326900193adfb0543240638f91300634d290bab61907d335f86",
+   "bytes": 28074,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/nemotron-3-nano-30b-a3b-base__dev_mc_v1__shots_0.log",
+   "source": "llm-test/runs/standard_v2/public_p1/nemotron-3-nano-30b-a3b-base__dev_mc_v1__shots_0.log",
+   "source_sha256": "b3869e5dbaf7c20798b4425933d7b15d02f92d7330934f2c20c09ff8408d6562",
+   "sha256": "48f0a495e303ad9749643daf4e98a88e35c54a7221730329753fa8aaba6753d3",
+   "bytes": 27631,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/nemotron-3-nano-30b-a3b-base__en_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/nemotron-3-nano-30b-a3b-base__en_mc_v1__A.log",
+   "source_sha256": "935ae1512948e956973a3df40cfa09897de587b8a4bdd6b67539acf8d14ebb0c",
+   "sha256": "8c12ae4eb2a8f1b1cf85723d2140f5cd07c3ec2e800ff85c58746631e8a80f48",
+   "bytes": 30861,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/nemotron-3-nano-30b-a3b-base__ko_mc_ext_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/nemotron-3-nano-30b-a3b-base__ko_mc_ext_v1__A.log",
+   "source_sha256": "e2513ed44513df10f48622af94d3aa50589a91eed56f87a274b84c6a099cd5a0",
+   "sha256": "acb4784d78d8cd2d87572b99a5e803b3f8feb20eebf1f9bae0c5cb8a778c4513",
+   "bytes": 20262,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/nemotron-3-nano-30b-a3b-base__ko_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/nemotron-3-nano-30b-a3b-base__ko_mc_v1__A.log",
+   "source_sha256": "e8614090eb424aa6cd8cdce9bfc1b8b50d80e67987a8881e5820c596f2182682",
+   "sha256": "5f10dffa3720681d1c9c8de572c12791b5eee51eaa630c636e95d44d1edc2d26",
+   "bytes": 35253,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/nemotron-3-nano-30b-a3b-base__ppl_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/nemotron-3-nano-30b-a3b-base__ppl_v1__A.log",
+   "source_sha256": "576c7f99771d05f9700ccf280546f9cafcbe23799f1c20f2cce9bfb11ef0f5f9",
+   "sha256": "35d49599e6c1c657e9436c5d31066ddea02c8e75e564bdd44955f80eb6865159",
+   "bytes": 23107,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/nemotron-3-nano-30b-a3b__dev_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/nemotron-3-nano-30b-a3b__dev_mc_v1__A.log",
+   "source_sha256": "e6961dc891608696d9378c424d4df5975932a7c4d585a93a303fa9de9a425995",
+   "sha256": "c31a8142186ee381ef64f8f40263b8c1adb0d00a3bc6d8cb3ffc3d11328d5348",
+   "bytes": 32120,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/nemotron-3-nano-30b-a3b__dev_mc_v1__chat_1.log",
+   "source": "llm-test/runs/standard_v2/public_p1/nemotron-3-nano-30b-a3b__dev_mc_v1__chat_1.log",
+   "source_sha256": "d335fc51c19abb0f5f92a5a0ce070a42f5929599f8cba6cd9887d4cdc91c156f",
+   "sha256": "63c0c4e8225d5678fa205b2eb5918f0f1078f4265c5746a9973c95e12df30903",
+   "bytes": 31631,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/nemotron-3-nano-30b-a3b__dev_mc_v1__shots_0.log",
+   "source": "llm-test/runs/standard_v2/public_p1/nemotron-3-nano-30b-a3b__dev_mc_v1__shots_0.log",
+   "source_sha256": "8696d9cbd67a1e727a4defd703a9f8038280795e5f5a1e0e6f9301fe8cda4626",
+   "sha256": "0bfb81fc625be5eb0b4fb86935f514abc5f0eb661c967ca89e3e548ceb89a09f",
+   "bytes": 31649,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/nemotron-3-nano-30b-a3b__en_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/nemotron-3-nano-30b-a3b__en_mc_v1__A.log",
+   "source_sha256": "046c6899430c8e539f691665da8f0f7ec3942d9ba910fbb8314fcde5ec3451db",
+   "sha256": "0a1295adf7013af3b0fcafea219671ea20351e9956cd1f9480013daac9618f58",
+   "bytes": 34830,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/nemotron-3-nano-30b-a3b__ko_mc_ext_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/nemotron-3-nano-30b-a3b__ko_mc_ext_v1__A.log",
+   "source_sha256": "e6480d2c82af494a3bec46e8bb34248383483d1b57d83713e9eaa411c670f398",
+   "sha256": "a7c1127c4f830fa45cd22ecc1830c1613695f174e035b7ea96ad9667353424f5",
+   "bytes": 24430,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/nemotron-3-nano-30b-a3b__ko_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/nemotron-3-nano-30b-a3b__ko_mc_v1__A.log",
+   "source_sha256": "82fa728d88a612cb3be723c6ddc60d3583925bd6ff49a9184e2b49a5c4585675",
+   "sha256": "7cba40f40e997002cc68550c7310c30171a369f29647fd974bff3069d2e8f60a",
+   "bytes": 39278,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/nemotron-3-nano-30b-a3b__ppl_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/nemotron-3-nano-30b-a3b__ppl_v1__A.log",
+   "source_sha256": "323f23d7d96897244511e6e6af445762be63e5c297f418d2b8e71453ab0d0605",
+   "sha256": "cc82d194545ac8a229c8ca70b5b0b29a0f7d563935574d8b72656b3ae6e43c9b",
+   "bytes": 27131,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen2.5-3b-instruct__dev_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen2.5-3b-instruct__dev_mc_v1__A.log",
+   "source_sha256": "47be9a77611d6f15cc394bc74b71cd68ad0befeb4f612805ad5178d1a4cac156",
+   "sha256": "50f48c7aa74c863afedd431221175002c944db35739428cf3a5c020443e269a4",
+   "bytes": 24827,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen2.5-3b-instruct__dev_mc_v1__chat_1.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen2.5-3b-instruct__dev_mc_v1__chat_1.log",
+   "source_sha256": "a67a8d71ba1365991d72bc331468e2e74282764e2a61162c2fe0ddb75bf6175f",
+   "sha256": "58d2bb4fe6c9af4c41b689c40e99b6541d2b19572a96739c8cbc8b7fb8fcea83",
+   "bytes": 24340,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen2.5-3b-instruct__dev_mc_v1__shots_0.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen2.5-3b-instruct__dev_mc_v1__shots_0.log",
+   "source_sha256": "38e540a076a1667e3313565bcc859891b782f611d294302b8e41752d22d9b944",
+   "sha256": "a44ab120f881ee78ff5bdd84aebaca1fb67b1ecdf74116da934f1fbe851b187e",
+   "bytes": 24358,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen2.5-3b-instruct__en_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen2.5-3b-instruct__en_mc_v1__A.log",
+   "source_sha256": "165b0bcb07b0143dc78e734bfe4297555029be6fad3ec9328c8bda96d278d937",
+   "sha256": "5fb1af7406c92098f8a5f4bb0261ee4fe5b91b4a09d69564c0588ef415b8c440",
+   "bytes": 27230,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen2.5-3b-instruct__ko_mc_ext_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen2.5-3b-instruct__ko_mc_ext_v1__A.log",
+   "source_sha256": "c72b167b17a052e8c9b925dfab221a1da9dcfebea8836dea5962547faaadf2a4",
+   "sha256": "9d6f03e54acdeb66f8eb3412b66d521d24b1bf6be6bc314b2dbf685a5149df42",
+   "bytes": 16935,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen2.5-3b-instruct__ko_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen2.5-3b-instruct__ko_mc_v1__A.log",
+   "source_sha256": "d582d02d26d12da10e99d0cdccb1bc0e0bf7dd5bdd0e4c0c937c8d5cc58761e2",
+   "sha256": "b2b25617445d3e60c5d029940a2253d9d783dbf303cbed3f320b82d872d8351c",
+   "bytes": 31781,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen2.5-3b-instruct__ppl_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen2.5-3b-instruct__ppl_v1__A.log",
+   "source_sha256": "c8562ef945441fdcbe3c7d1757ff805a7ed83ea2b43a425e24205d072e4d6619",
+   "sha256": "d9491c7d45446db0eebaef691f3acaf8dd1e6f08b8a581088ae6b8786f6e96f6",
+   "bytes": 19813,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen2.5-3b__dev_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen2.5-3b__dev_mc_v1__A.log",
+   "source_sha256": "b7131b085ebbf06b054c0e6b424329c725958b52a8ae7dceb941f6d59cb62f23",
+   "sha256": "39565dd9da83b2674f410aea1ace093ff2e4fd9a497cd25296df2ebd551da277",
+   "bytes": 24885,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen2.5-3b__dev_mc_v1__shots_0.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen2.5-3b__dev_mc_v1__shots_0.log",
+   "source_sha256": "05b89798f2479936fc063b58a98bc068720cd7bac15c319de00d6081c7f1364e",
+   "sha256": "e9135c36241917921a3855ae90779f071a44e1385ee1461f9ab13ec5562092c9",
+   "bytes": 24270,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen2.5-3b__en_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen2.5-3b__en_mc_v1__A.log",
+   "source_sha256": "7e04ebfd558ce7f5abcb6b5cc769e8f5caf4c8af2d93c20b27c53ee938737b5d",
+   "sha256": "b752c270036502c8a6d32eb381a70eeb56027ef6a230e72ef690f56958eaf1c4",
+   "bytes": 26519,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen2.5-3b__ko_mc_ext_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen2.5-3b__ko_mc_ext_v1__A.log",
+   "source_sha256": "08fa62bae0adebed00506a000c268292d2ae7aa2d9cb79d72354fc602f27b0f9",
+   "sha256": "1e85eb96abc4d0b69024db2cbd38ede5a858217b6ac231a87eb90129e3227bb0",
+   "bytes": 16862,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen2.5-3b__ko_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen2.5-3b__ko_mc_v1__A.log",
+   "source_sha256": "46d19943058f76e753ac9fbba15f2e384372d85b05d2a5ff1e8e4ab585b6374d",
+   "sha256": "b058ca2834d46883a2c3aa31faa1a37a2632c9649adecd25ac791422b36ef0a8",
+   "bytes": 31697,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen2.5-3b__ppl_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen2.5-3b__ppl_v1__A.log",
+   "source_sha256": "3a898d327b69994c55f00207af92b223b264b9a7bf0c679ee9fc356e111537ce",
+   "sha256": "45bb82f484e909cadc6358359c3738b5e6ffbee1a29fe7c5a22c58f4f3fa76ef",
+   "bytes": 19742,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen3-30b-a3b-2507__dev_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen3-30b-a3b-2507__dev_mc_v1__A.log",
+   "source_sha256": "e54e39e3d3f8dc85404f8a735ed1a98d398464c0f93668ada40f6f9939594b60",
+   "sha256": "5ec946c918e19b5777ca6cb7eb8b66de86f8135b781a9207fa1183d6605da912",
+   "bytes": 26749,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen3-30b-a3b-2507__dev_mc_v1__chat_1.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen3-30b-a3b-2507__dev_mc_v1__chat_1.log",
+   "source_sha256": "8647446d6f09ff38d289d938f05588d72ab9ca20179245f9d38e8d8f7a71c08a",
+   "sha256": "65b1fd4aebedd1e98a620723a4c9870b2307fd37ce184ea897c1113c85c07328",
+   "bytes": 26413,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen3-30b-a3b-2507__dev_mc_v1__shots_0.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen3-30b-a3b-2507__dev_mc_v1__shots_0.log",
+   "source_sha256": "a4749d743ca829a24c06bdf7ba6f1ea32e98242f6a5ffb85168b951e18e74504",
+   "sha256": "89bdd9d12418edfc5349262e2bde51a752c187270e9b2d9abfabb86f52e7961c",
+   "bytes": 26312,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen3-30b-a3b-2507__en_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen3-30b-a3b-2507__en_mc_v1__A.log",
+   "source_sha256": "a1b2580e8f9905dcecd9993cb6211d69ea746a2a7dd39829eca36321dee6d4ab",
+   "sha256": "26ca8c7f9e94bad44ff592a70ffef0c45c53aaec9fd6642374d28066755e85c9",
+   "bytes": 29488,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen3-30b-a3b-2507__ko_mc_ext_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen3-30b-a3b-2507__ko_mc_ext_v1__A.log",
+   "source_sha256": "4d761c694e65b6efd4ee41fbfb069b4eb5c5325d90b40260fc5bf177fc53c4d7",
+   "sha256": "d908ff28f6d47282d280dd6b1aff48888b87c89279be494c9c473ec4aaefe296",
+   "bytes": 18908,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen3-30b-a3b-2507__ko_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen3-30b-a3b-2507__ko_mc_v1__A.log",
+   "source_sha256": "30d0d0ef3349c010884d89bab4f7ecee758014d16460af7b711a4be220972355",
+   "sha256": "29fff9fb91ff572123a7b2a83e461daf8368c164e03f21b7dc0b387df83dfced",
+   "bytes": 33847,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen3-30b-a3b-2507__ppl_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen3-30b-a3b-2507__ppl_v1__A.log",
+   "source_sha256": "c06c6fad08060f6afb8a1a9bf05a170dbd10605642d29cb4c532ac1bc6f7361c",
+   "sha256": "bfbb5b0d690719be1a5afe34ccc25b9a43d4cfd634c37dda24c7e79569f93011",
+   "bytes": 21772,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen3-30b-a3b-base__dev_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen3-30b-a3b-base__dev_mc_v1__A.log",
+   "source_sha256": "5260bc9a46e23dfbad03aa55393a50296ab0624f94cbdb81504b8179285624c0",
+   "sha256": "5910bef17f26d4571918f881ad78e51df3bf67fbbcbb0023faa5afe67ac503dd",
+   "bytes": 26748,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen3-30b-a3b-base__dev_mc_v1__shots_0.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen3-30b-a3b-base__dev_mc_v1__shots_0.log",
+   "source_sha256": "4e5045c68c414dd0db4a48892d28b905bd4e2e70e47eddbe69b2629aef7a51af",
+   "sha256": "5758236260e01a11c1548b87071737aeeb631d649998e5e71b126249ac2cdde5",
+   "bytes": 26276,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen3-30b-a3b-base__en_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen3-30b-a3b-base__en_mc_v1__A.log",
+   "source_sha256": "9f54b69ee262d512d83b5fe92e6981849b1075faaf2c10e47e859069847ddf0f",
+   "sha256": "cb293788fe7ba9e48fe26e446d63c9c6bd100e73fb7757a0686ac38986ffa931",
+   "bytes": 29445,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen3-30b-a3b-base__ko_mc_ext_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen3-30b-a3b-base__ko_mc_ext_v1__A.log",
+   "source_sha256": "f1083f065bcbceafbd8d98f9b4ce77a552a233a217959fb4b63fd73d2555a13e",
+   "sha256": "ba6cdb5603b30fdc296f7a461e402f5659063ff97d91bfc509378af0af2326e2",
+   "bytes": 18855,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen3-30b-a3b-base__ko_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen3-30b-a3b-base__ko_mc_v1__A.log",
+   "source_sha256": "9d338e8d6f3fb1c7201c84f2e8cdbc994201cc8a485cc9e60f0279fa069d7611",
+   "sha256": "dbbc1d327b42842a513b5d428f4f14cfef2d815ee8a34423a5e116eb28fadc4a",
+   "bytes": 33753,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen3-30b-a3b-base__ppl_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen3-30b-a3b-base__ppl_v1__A.log",
+   "source_sha256": "8e2f85203e765affe5cf4f16c64c87024acaa76458d6d3ce2f0992f9cca23ab2",
+   "sha256": "b390a27e63b245625240cbd1949ee57d520d31bf3f2dc34dff2e47a2a8ba8bc7",
+   "bytes": 21732,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen3-4b-2507__dev_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen3-4b-2507__dev_mc_v1__A.log",
+   "source_sha256": "530ed3e0d6ed995da0416cc567ddbbca4a6023b458aeff35cf93bd337ff47791",
+   "sha256": "24215a0a0ee6a7aa9c928406a4fd20c89c23fc14bfe5e02047e7976091f8b196",
+   "bytes": 24885,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen3-4b-2507__dev_mc_v1__chat_1.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen3-4b-2507__dev_mc_v1__chat_1.log",
+   "source_sha256": "dbe44ceb3347c169fb34f8c2e69c62196afdd9eca8c2a6a6ed36546836d5bc7b",
+   "sha256": "52285f99a0a60a8ab0c1f5f2a272effa7598e3851bfb85096cd936bc2a6b3590",
+   "bytes": 24399,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen3-4b-2507__dev_mc_v1__shots_0.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen3-4b-2507__dev_mc_v1__shots_0.log",
+   "source_sha256": "49faa4cca8b6ad9487f5a5196fe922843bbc329a8e4c04f9535b94ce0627206c",
+   "sha256": "a630fecb33201d5082de34d43790341a55417672d0217e394ebb0bf5644ba947",
+   "bytes": 24416,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen3-4b-2507__en_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen3-4b-2507__en_mc_v1__A.log",
+   "source_sha256": "92955da5e2bcf096619c136977ef5a04802e14dae55bdfd8de0cc6848b79aeb3",
+   "sha256": "f6bc447e10c5b212595fc3092aa9ed7464b043c54783a7f60cfc646542137d56",
+   "bytes": 27573,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen3-4b-2507__ko_mc_ext_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen3-4b-2507__ko_mc_ext_v1__A.log",
+   "source_sha256": "74b479757f26ca77f94f7b261eba94c313bce4addcea99e252f9c5ad1ea22ade",
+   "sha256": "e780d14491a0bb8495b84493cb2ad9c37487c9505191a1de1665548537c8e702",
+   "bytes": 17008,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen3-4b-2507__ko_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen3-4b-2507__ko_mc_v1__A.log",
+   "source_sha256": "adc9adc9dc95f25d3b8705846b2fd8999f3eccc8f16917b8cbec37b75ced9367",
+   "sha256": "0c41fcb6f6844f06d17de433a45532c284ffea68acde81c2f37e14e0828b6dfa",
+   "bytes": 31986,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen3-4b-2507__ppl_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen3-4b-2507__ppl_v1__A.log",
+   "source_sha256": "f784fccb7283dda1dbc46d15adc2fdf4ec2051b5fcabdea8250a15e5091c2013",
+   "sha256": "a79c3799a51fa443a6c3f0cac10624c0def4555b8e994f12f52a11ea911da834",
+   "bytes": 19881,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen3-4b-base__dev_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen3-4b-base__dev_mc_v1__A.log",
+   "source_sha256": "979c788604c3cae9e6b03c417de5ca6a3128913184ac00063879404f6471971d",
+   "sha256": "daf7cd6bb8292b8898dbaaaffe5458e1127f235ff65c7f83dea853f4183fd7a7",
+   "bytes": 24848,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen3-4b-base__dev_mc_v1__shots_0.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen3-4b-base__dev_mc_v1__shots_0.log",
+   "source_sha256": "8bc430e25c4aff34c53de8a3d8c2722899cae6f64c5e7903f71e96bf1e18e587",
+   "sha256": "36db5e8d8379558b04122b60afb4e0358542a2824429da2bc865c955b3dc5b63",
+   "bytes": 24379,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen3-4b-base__en_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen3-4b-base__en_mc_v1__A.log",
+   "source_sha256": "abbd7825d487596f895ba0928177e3303a971bda91a08ec2ccb477b01dbc070a",
+   "sha256": "387c9eff713d10a7d023987db1331033b25b78f4997980d338bfea41635f715e",
+   "bytes": 27692,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen3-4b-base__ko_mc_ext_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen3-4b-base__ko_mc_ext_v1__A.log",
+   "source_sha256": "2a876002c6f2a66e63c8f24e7bab2913797a465ddada08145c2df6be8ba34c4f",
+   "sha256": "8b3a524bbe1a991e9f9ef2a4a51ee6b2b85550606e8ce15f09e29daa9a6629c0",
+   "bytes": 16971,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen3-4b-base__ko_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen3-4b-base__ko_mc_v1__A.log",
+   "source_sha256": "22d8a8fe4a347347c65ee82ae5d3404dca7282505a7960eae41563306859b56e",
+   "sha256": "7db95e2d00bee4784cc8aa941f5a345798533ac39f7e5bbe7dbbcb453b90357e",
+   "bytes": 31945,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/qwen3-4b-base__ppl_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/qwen3-4b-base__ppl_v1__A.log",
+   "source_sha256": "d77a8ba29dde81714d531c80c662362f4d2572785baf9a40b97c1e7182e105c8",
+   "sha256": "ab7de7766b529956af4157c7bed5b4a6c8613e5ad350dd13519ae75969e416e2",
+   "bytes": 19844,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/smollm3-3b-base__dev_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/smollm3-3b-base__dev_mc_v1__A.log",
+   "source_sha256": "abc1720ac3eb5a5413466f59e592991743aef3f36d74e6bbb244a300198c1efa",
+   "sha256": "f12bd2dc6631317f4a5737f7316208472d6a756655d71bcfc1d9ff9beadb72b1",
+   "bytes": 25351,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/smollm3-3b-base__dev_mc_v1__shots_0.log",
+   "source": "llm-test/runs/standard_v2/public_p1/smollm3-3b-base__dev_mc_v1__shots_0.log",
+   "source_sha256": "8bd0cc1431a6e73802db96221c1cba8a30c9ea167577dce550c84e48fb8d5b97",
+   "sha256": "3efc32682cab76c9dbcaf16357713eb66665fb27effa9aff3bd1a153f80f3c5d",
+   "bytes": 25381,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/smollm3-3b-base__en_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/smollm3-3b-base__en_mc_v1__A.log",
+   "source_sha256": "62f15c353f51ae860ff8df08d22167d52b02dc95d145b5f286871eb2442c9e19",
+   "sha256": "d8f2ea9a1380da24419e3736fcf78ec0bc314c3d5646e87e3e1e923cd84f6188",
+   "bytes": 28699,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/smollm3-3b-base__ko_mc_ext_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/smollm3-3b-base__ko_mc_ext_v1__A.log",
+   "source_sha256": "450b524df599ee552dbef56e56279249ff2d37f993d7048597494434af7d23f2",
+   "sha256": "1ba496ed01daf5cf5d0eb278f8466486934446f12a640b35ab37692496b74a58",
+   "bytes": 17978,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/smollm3-3b-base__ko_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/smollm3-3b-base__ko_mc_v1__A.log",
+   "source_sha256": "10951c8c1e7f80890b4b2c35fefefd4fecc3dc21f43612e8d3114a9236a42577",
+   "sha256": "cdcb965f246b6e74ce3fc3bae887b1a73df23d67c2b81c261c802571ff74717f",
+   "bytes": 33004,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/smollm3-3b-base__ppl_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/smollm3-3b-base__ppl_v1__A.log",
+   "source_sha256": "842a5494f1fbb2ebd1c2ce863245f62493d7976e2c16f7eca1e5d85c34d57b7f",
+   "sha256": "bfc3e8746d8dff1032dffb91f5f7358e5947a32d6673e5437b7e2cca3707b9b7",
+   "bytes": 21314,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/smollm3-3b__dev_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/smollm3-3b__dev_mc_v1__A.log",
+   "source_sha256": "9f4d8debfe4ceefa9771a4585fbdd598e7589bfd57b4e1c5984c295a084bc367",
+   "sha256": "f57c71a1f2ac240bc4c41b1be87dbe57b598020c9f6416a0ef17dd9e65877c51",
+   "bytes": 25298,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/smollm3-3b__dev_mc_v1__chat_1.log",
+   "source": "llm-test/runs/standard_v2/public_p1/smollm3-3b__dev_mc_v1__chat_1.log",
+   "source_sha256": "5f688f48b142270fe9f74c10a458e63649249811b476faab095be13a7a5d7e2d",
+   "sha256": "8d73c3648fccdb825c7f0e69491d2eb3ed2830be5342116c254404f28aeb5430",
+   "bytes": 25464,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/smollm3-3b__dev_mc_v1__shots_0.log",
+   "source": "llm-test/runs/standard_v2/public_p1/smollm3-3b__dev_mc_v1__shots_0.log",
+   "source_sha256": "afd66d2ecc841fa1a931d63236c0e91d932e139249bbc8dfb6d3cc526ce37e74",
+   "sha256": "3ed527c6545100c281952ea0bc8ff229aa3f2a94698cc4482fa8ad3f58c3c21d",
+   "bytes": 25337,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/smollm3-3b__en_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/smollm3-3b__en_mc_v1__A.log",
+   "source_sha256": "67707c589c533cf174ee3f4693720bc03106fbbc886e5d82555550f86ad9ad7f",
+   "sha256": "dc34aeecd77ae2f222b6352b2c0cef18b94d0a977fb4f5b3958040f37ae35f23",
+   "bytes": 28491,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/smollm3-3b__ko_mc_ext_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/smollm3-3b__ko_mc_ext_v1__A.log",
+   "source_sha256": "e918249eaeb855b42d52bb8b33567fe0e6a363dba208537f2c8f9635acf838b9",
+   "sha256": "c6fa5a213ac544e658f2f597cd2df9cdb838ecaae254c403536a916e717f352f",
+   "bytes": 17929,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/smollm3-3b__ko_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/smollm3-3b__ko_mc_v1__A.log",
+   "source_sha256": "db3a6b86c144b9bd08f5db08e9228f0f2d25d6e0b046e6e0685218c0e4e79a07",
+   "sha256": "58f0bcf074170e082af7456f6aa5273471b77ead130c994c36723c5ad1d0f870",
+   "bytes": 32770,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1/smollm3-3b__ppl_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1/smollm3-3b__ppl_v1__A.log",
+   "source_sha256": "eda67f258ae8137a3957e1e7c725ab90cae4c656efc5e44dd1964eee4091b82b",
+   "sha256": "8262bd6d89312e842a8dd302f5a60f4a13c5d4901fd926fe083aeb34640fe76a",
+   "bytes": 21272,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1.log",
+   "source": "llm-test/runs/standard_v2/public_p1.log",
+   "source_sha256": "b219f84b5b6252a432b5ee7d34227bc491a0fcfb55d7f2d473d428ba499610d3",
+   "sha256": "b219f84b5b6252a432b5ee7d34227bc491a0fcfb55d7f2d473d428ba499610d3",
+   "bytes": 17127
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1.sh",
+   "source": "llm-test/runs/standard_v2/public_p1.sh",
+   "source_sha256": "47a058782cee87ab70360e6191f3780cf52d634a50b1d784d5aa938575c1bb41",
+   "sha256": "47a058782cee87ab70360e6191f3780cf52d634a50b1d784d5aa938575c1bb41",
+   "bytes": 1447
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1_b/llama-3.2-3b-instruct__en_mc_v1__chat_1.log",
+   "source": "llm-test/runs/standard_v2/public_p1_b/llama-3.2-3b-instruct__en_mc_v1__chat_1.log",
+   "source_sha256": "0fe91b57500fa7566597a11770521ef2c89674ac3f8af4b700eccab6cfdf4adc",
+   "sha256": "2fa98239ef923d628f4badcecfe9be6dfcb2d6fc216f9266be36bffc157995fc",
+   "bytes": 24199,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1_b/llama-3.2-3b-instruct__ko_mc_ext_v1__chat_1.log",
+   "source": "llm-test/runs/standard_v2/public_p1_b/llama-3.2-3b-instruct__ko_mc_ext_v1__chat_1.log",
+   "source_sha256": "2c283b44c5daf77c3f8d3f98beb610e21518300fcdce9233000c4596acfa3f93",
+   "sha256": "4ae323b62ddf9aaf15d33f589a4b59d473dc19f7d8575b2677930e1f73c0fbcb",
+   "bytes": 17014,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1_b/llama-3.2-3b-instruct__ko_mc_v1__chat_1.log",
+   "source": "llm-test/runs/standard_v2/public_p1_b/llama-3.2-3b-instruct__ko_mc_v1__chat_1.log",
+   "source_sha256": "1eb1f7db7900a3ec19854f873c2b52ed1ba6071b6223a18c250a4510de50d15e",
+   "sha256": "4da08d4507b24e83305a24e60d1f0fa6eb9911437fa232f24f6d2ad0fa110318",
+   "bytes": 31133,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1_b/smollm3-3b__en_mc_v1__chat_1.log",
+   "source": "llm-test/runs/standard_v2/public_p1_b/smollm3-3b__en_mc_v1__chat_1.log",
+   "source_sha256": "0af6d88350719c1457a8ca6e8212afc8d027266b7c48dc46156ca6f1cedffdc0",
+   "sha256": "fc4772aaf7753a05ec09376a761cc83ee00eb4810b0ba29d6afab643ac622671",
+   "bytes": 29268,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1_b/smollm3-3b__ko_mc_ext_v1__chat_1.log",
+   "source": "llm-test/runs/standard_v2/public_p1_b/smollm3-3b__ko_mc_ext_v1__chat_1.log",
+   "source_sha256": "ccffbcc8256c3318e76f75627b3fe961bf465b3d36b862ff2f45ad1ed17e92b6",
+   "sha256": "365c4774bd6162ca6230d404f71326079ac29ee00ea9d75f9f96f3305f0633d3",
+   "bytes": 17943,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1_b/smollm3-3b__ko_mc_v1__chat_1.log",
+   "source": "llm-test/runs/standard_v2/public_p1_b/smollm3-3b__ko_mc_v1__chat_1.log",
+   "source_sha256": "0f774bbe4e22d7152f3df7c617ba285aeeb644e5577aec6481bf3df7aabe88ee",
+   "sha256": "a151927dfd8dae901488f0a651880d97ff3ebc428311033828306d4bc4174a3a",
+   "bytes": 33686,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1_b.log",
+   "source": "llm-test/runs/standard_v2/public_p1_b.log",
+   "source_sha256": "6669cfd867b296c6ba254c493ce16d366e41fda188d30bef1e392467ef3f91c3",
+   "sha256": "6669cfd867b296c6ba254c493ce16d366e41fda188d30bef1e392467ef3f91c3",
+   "bytes": 789
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1_b.sh",
+   "source": "llm-test/runs/standard_v2/public_p1_b.sh",
+   "source_sha256": "12238a863a5d1e6f017a496e64a4c093a5be02ca780aacc5a93a6d6f0e311a08",
+   "sha256": "12238a863a5d1e6f017a496e64a4c093a5be02ca780aacc5a93a6d6f0e311a08",
+   "bytes": 811
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1_retry1/kanana-1.5-2.1b-base__dev_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1_retry1/kanana-1.5-2.1b-base__dev_mc_v1__A.log",
+   "source_sha256": "e058270129e1df50389c3da43fa6a6067bb197d11852bca819979f33796c4046",
+   "sha256": "d660f889784827cbf1270562a3f08c1a94cf83777c77c03cda13da15a8697aac",
+   "bytes": 24623,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1_retry1/kanana-1.5-2.1b-base__dev_mc_v1__shots_0.log",
+   "source": "llm-test/runs/standard_v2/public_p1_retry1/kanana-1.5-2.1b-base__dev_mc_v1__shots_0.log",
+   "source_sha256": "8b6b4c3c604c8730648c7db13409ad2b1a20cf8aa9b5d2730d62bc9be9c51921",
+   "sha256": "f801531f46a20d59bad51e994b185fcd4a42c08dc80f72b67604faeacab484d4",
+   "bytes": 24162,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1_retry1/kanana-1.5-2.1b-base__en_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1_retry1/kanana-1.5-2.1b-base__en_mc_v1__A.log",
+   "source_sha256": "bee5be8a95c9f3d43a7298c450dfdb53a392c78c8cae8ac5ac425b75e2bed12a",
+   "sha256": "547897b5bea8de20b496abafe1652c559efccbc72b80000fb9a40314772b57f3",
+   "bytes": 26740,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1_retry1/kanana-1.5-2.1b-base__ko_mc_ext_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1_retry1/kanana-1.5-2.1b-base__ko_mc_ext_v1__A.log",
+   "source_sha256": "0fac8dd0ac8ad1eac179ea73a35a1a567dbe86ce99d8127481c8cd64ecb5a3ce",
+   "sha256": "ac6d750a7572a2708db42da85a728d14d0d34f1e8c0df569a04aa293a50f0424",
+   "bytes": 16752,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1_retry1/kanana-1.5-2.1b-base__ko_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1_retry1/kanana-1.5-2.1b-base__ko_mc_v1__A.log",
+   "source_sha256": "8bcfff1920f6c7f54b8e647105704feae6cab42ca4a58694cdbb7190ee78c18a",
+   "sha256": "0698e9edb2322534fe9775aaf61054340b8f413ce770733dc63e5872c8914d85",
+   "bytes": 31783,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1_retry1/kanana-1.5-2.1b-base__ppl_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1_retry1/kanana-1.5-2.1b-base__ppl_v1__A.log",
+   "source_sha256": "adac18e579cade316f8d7c8fabd4bfa18592141eb505a3d131ee3b24057b8174",
+   "sha256": "a2e1b234fe847da6142c7d5dd3aac26aea5e0dc885149d0ce1462721ab41d027",
+   "bytes": 20071,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1_retry1/kanana-1.5-2.1b__dev_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1_retry1/kanana-1.5-2.1b__dev_mc_v1__A.log",
+   "source_sha256": "27de330d66670ff91d9ebedf9f19639e6d58a9d6e3a18a74430a3174e5d6dc45",
+   "sha256": "ea538e31a19977de4c2b1b7765fa5a705bb4ef6e042d50f8112a380b10deb574",
+   "bytes": 24632,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1_retry1/kanana-1.5-2.1b__dev_mc_v1__chat_1.log",
+   "source": "llm-test/runs/standard_v2/public_p1_retry1/kanana-1.5-2.1b__dev_mc_v1__chat_1.log",
+   "source_sha256": "fd889b7bfc8dd8447744fdccf07d38cf05125258788bcbefa18a378aea7a00b6",
+   "sha256": "6df3d0186eb89a3c128dc1bea00053fc32f4dacd74560f4054d8c4f53ae6938f",
+   "bytes": 24141,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1_retry1/kanana-1.5-2.1b__dev_mc_v1__shots_0.log",
+   "source": "llm-test/runs/standard_v2/public_p1_retry1/kanana-1.5-2.1b__dev_mc_v1__shots_0.log",
+   "source_sha256": "e3941b5c7b6907ec2e33b08803f9d0fca23d08d2acfeeb734c35fa126421be6c",
+   "sha256": "fbd6d027cbb77902654b03e24bbb8d85761d5ed7e8765cdbe1f44958c46b955c",
+   "bytes": 24166,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1_retry1/kanana-1.5-2.1b__en_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1_retry1/kanana-1.5-2.1b__en_mc_v1__A.log",
+   "source_sha256": "db290b87b9164ec344f5b7fa20a73e689d4f5c734329ccdafb5c40a7fbfa4228",
+   "sha256": "3d6b088c102712277b00cd85b625c76dd30a668f6aa8794206b4a816125ffc7c",
+   "bytes": 27043,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1_retry1/kanana-1.5-2.1b__ko_mc_ext_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1_retry1/kanana-1.5-2.1b__ko_mc_ext_v1__A.log",
+   "source_sha256": "4197bebcb569000a777874b49ad85496e2243a3ef62b4d63285493ef0b52057c",
+   "sha256": "433a3fd2859d60da8c940bec7822694b0079fe5cab412f0c53eb2d9047e3866a",
+   "bytes": 16760,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1_retry1/kanana-1.5-2.1b__ko_mc_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1_retry1/kanana-1.5-2.1b__ko_mc_v1__A.log",
+   "source_sha256": "b2cdcbfb706136626400a52de7269122e248c41555bb197d0a057143fd55459e",
+   "sha256": "ba30a0d7ff14d26f4ef92c0f204e6d7e555c9c79c8baba8dbadf86b8733bcb89",
+   "bytes": 31604,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1_retry1/kanana-1.5-2.1b__ppl_v1__A.log",
+   "source": "llm-test/runs/standard_v2/public_p1_retry1/kanana-1.5-2.1b__ppl_v1__A.log",
+   "source_sha256": "901c4cf68422c27e6971c03137db75eea3b4281b98bb59d0455d0de87ad066b8",
+   "sha256": "dbedc9b2614f98cb0bc60d72620b6a83744ef2d8282bf198f4b7bedd59b672c7",
+   "bytes": 20087,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1_retry1.log",
+   "source": "llm-test/runs/standard_v2/public_p1_retry1.log",
+   "source_sha256": "a58c1fa982c60ef0c7adadc48fffebcd1cc18d3036b9e1a78f30bc31ad73fd79",
+   "sha256": "a58c1fa982c60ef0c7adadc48fffebcd1cc18d3036b9e1a78f30bc31ad73fd79",
+   "bytes": 1828
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/public_p1_retry1.sh",
+   "source": "llm-test/runs/standard_v2/public_p1_retry1.sh",
+   "source_sha256": "5f4442580daa4e601918617ae53a389887951c3eaae672a925931f1390257d3b",
+   "sha256": "5f4442580daa4e601918617ae53a389887951c3eaae672a925931f1390257d3b",
+   "bytes": 1306
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/smoke/evafrill-mo-3b_ko_mc_ext_v1.log",
+   "source": "llm-test/runs/standard_v2/smoke/evafrill-mo-3b_ko_mc_ext_v1.log",
+   "source_sha256": "2c4e21262708a111940c7fea5afeb0434907367b71239b13e119b8083f0be8c9",
+   "sha256": "145cbc1064ef5fc1d2aea575ece92867eb6cc05105b909817098bdfaa87fef6b",
+   "bytes": 2326,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/smoke/evafrill-mo-3b_ppl_v1.log",
+   "source": "llm-test/runs/standard_v2/smoke/evafrill-mo-3b_ppl_v1.log",
+   "source_sha256": "3d5eaf65913ea9d250e76b55f28426164e8439c93d34072e324d69509d7da78e",
+   "sha256": "cece7d9f4f4e7c67b64cca843ceb6ccf6e63044e172611952cfb09e8aa324ac4",
+   "bytes": 4785,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/smoke/jansori-bf16_ko_mc_ext_v1.log",
+   "source": "llm-test/runs/standard_v2/smoke/jansori-bf16_ko_mc_ext_v1.log",
+   "source_sha256": "3ce9490f97fa5af5b48628959149b706d5ac730578dd9c6f2b322f7fec1a7a44",
+   "sha256": "e7e7ac68609c9d66d84f3eaf7fbe0006fff1871f67bdfc84d7b03e5af2cd726c",
+   "bytes": 18301,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/smoke/jansori-bf16_ppl_v1.log",
+   "source": "llm-test/runs/standard_v2/smoke/jansori-bf16_ppl_v1.log",
+   "source_sha256": "2847d231501333885c927a119000df766aac9a9cac411010fde2b86a560b7b87",
+   "sha256": "9019f6fb7d61726c087360313b98f3a43b5aa15dd555a56fbdb452763cbc1e34",
+   "bytes": 21306,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/test_user_models.log",
+   "source": "llm-test/runs/standard_v2/test_user_models.log",
+   "source_sha256": "4693474fee4e7be535059fc6b584dd370da622f78204bcb2caf2d0036f7bc03c",
+   "sha256": "4b9bfdee0689c34453511b2c0baf397f4d9a00c68a5f878fd4f0d689ecd8e9b4",
+   "bytes": 307101,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "benchmark_workspace/runs/standard_v2/test_user_models.sh",
+   "source": "llm-test/runs/standard_v2/test_user_models.sh",
+   "source_sha256": "ffacec69eaef8a616ac5c9b6016815fa32fe1279a9c8e68dee2a8a8447ec9eee",
+   "sha256": "ffacec69eaef8a616ac5c9b6016815fa32fe1279a9c8e68dee2a8a8447ec9eee",
+   "bytes": 1002
+  },
+  {
+   "path": "jansori_release_v1/RELEASE_REPORT.md",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/RELEASE_REPORT.md",
+   "source_sha256": "e7c553373afc5a81f7ca745670ec04edc8d81aeb652d81aaa8c1798536836416",
+   "sha256": "e7c553373afc5a81f7ca745670ec04edc8d81aeb652d81aaa8c1798536836416",
+   "bytes": 3965
+  },
+  {
+   "path": "jansori_release_v1/TEST_AND_SETTINGS.md",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/TEST_AND_SETTINGS.md",
+   "source_sha256": "613d2c409353ce053d93aac96c5660427b33b4b4f6a652400ab8bbe6b27f4175",
+   "sha256": "613d2c409353ce053d93aac96c5660427b33b4b4f6a652400ab8bbe6b27f4175",
+   "bytes": 12437
+  },
+  {
+   "path": "jansori_release_v1/anonymous-recovery.json",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/anonymous-recovery.json",
+   "source_sha256": "53ceba600429c69179beffdc3adde925e55d01f298f6edac931ea1fb4922c979",
+   "sha256": "53ceba600429c69179beffdc3adde925e55d01f298f6edac931ea1fb4922c979",
+   "bytes": 3262
+  },
+  {
+   "path": "jansori_release_v1/clean-root",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/clean-root",
+   "source_sha256": "f6c3ddd2e20f2e16d13fb538694949d12bf88e3328985b08f1c8e607588fc915",
+   "sha256": "f6c3ddd2e20f2e16d13fb538694949d12bf88e3328985b08f1c8e607588fc915",
+   "bytes": 29
+  },
+  {
+   "path": "jansori_release_v1/commit.json",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/commit.json",
+   "source_sha256": "6cedfbb6b82c9a7fa632b6d7f77ce8f199efc4db8c3d2d85bf7de8bd339ee300",
+   "sha256": "6cedfbb6b82c9a7fa632b6d7f77ce8f199efc4db8c3d2d85bf7de8bd339ee300",
+   "bytes": 281
+  },
+  {
+   "path": "jansori_release_v1/finish_public_download.py",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/finish_public_download.py",
+   "source_sha256": "d3a2a40d5384327a4fb6f314c2fd1f6b8b085c2c79b1428cfc97ad26a616dc25",
+   "sha256": "d3a2a40d5384327a4fb6f314c2fd1f6b8b085c2c79b1428cfc97ad26a616dc25",
+   "bytes": 3880
+  },
+  {
+   "path": "jansori_release_v1/ollama-1/Q4_K_M-cli.err",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/ollama-1/Q4_K_M-cli.err",
+   "source_sha256": "d9c14d2e5a05c59239da7bbe1ee4111b29b4869e613943f842f2e2157bf09bfd",
+   "sha256": "d9c14d2e5a05c59239da7bbe1ee4111b29b4869e613943f842f2e2157bf09bfd",
+   "bytes": 47811
+  },
+  {
+   "path": "jansori_release_v1/ollama-1/Q4_K_M-cli.out",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/ollama-1/Q4_K_M-cli.out",
+   "source_sha256": "e1ee3e8b51574a7d00881a3f7aac02e0fa578453076492da7fdbd4cb02a412b2",
+   "sha256": "e1ee3e8b51574a7d00881a3f7aac02e0fa578453076492da7fdbd4cb02a412b2",
+   "bytes": 562
+  },
+  {
+   "path": "jansori_release_v1/ollama-1/Q4_K_M-device.json",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/ollama-1/Q4_K_M-device.json",
+   "source_sha256": "2b47912f9c50977bc251d3a0f9dd092057548ac8f14614aa44fbd0458b1f9fa2",
+   "sha256": "2b47912f9c50977bc251d3a0f9dd092057548ac8f14614aa44fbd0458b1f9fa2",
+   "bytes": 566
+  },
+  {
+   "path": "jansori_release_v1/ollama-1/Q4_K_M-generation.json",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/ollama-1/Q4_K_M-generation.json",
+   "source_sha256": "8b1849857e93c59d21ccfc13ea95f588a0106c0232b9229946ca6aac4972e26f",
+   "sha256": "8b1849857e93c59d21ccfc13ea95f588a0106c0232b9229946ca6aac4972e26f",
+   "bytes": 2395
+  },
+  {
+   "path": "jansori_release_v1/ollama-1/Q4_K_M-identity.json",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/ollama-1/Q4_K_M-identity.json",
+   "source_sha256": "41d5a4a9f1d32ffe25d69f19f23911cf3332274000c9fd712dd82cb638062f18",
+   "sha256": "41d5a4a9f1d32ffe25d69f19f23911cf3332274000c9fd712dd82cb638062f18",
+   "bytes": 246
+  },
+  {
+   "path": "jansori_release_v1/ollama-1/Q8_0-cli.err",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/ollama-1/Q8_0-cli.err",
+   "source_sha256": "b707c0037e2c8ad7afc6bcd2ce2a2ec0aa3398cbcef465d16dd932458d3eabda",
+   "sha256": "b707c0037e2c8ad7afc6bcd2ce2a2ec0aa3398cbcef465d16dd932458d3eabda",
+   "bytes": 429936
+  },
+  {
+   "path": "jansori_release_v1/ollama-1/Q8_0-cli.out",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/ollama-1/Q8_0-cli.out",
+   "source_sha256": "67ca7eba9cf2e16544ba12d71394c196d5f7a4d5076442a2d351c566fdd5b1b2",
+   "sha256": "67ca7eba9cf2e16544ba12d71394c196d5f7a4d5076442a2d351c566fdd5b1b2",
+   "bytes": 121843
+  },
+  {
+   "path": "jansori_release_v1/ollama-1/Q8_0-device.json",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/ollama-1/Q8_0-device.json",
+   "source_sha256": "083d2b6b5f9e117e78a3fabee5fb357e4e376cb0e3ee001f9f28376139ee818b",
+   "sha256": "083d2b6b5f9e117e78a3fabee5fb357e4e376cb0e3ee001f9f28376139ee818b",
+   "bytes": 562
+  },
+  {
+   "path": "jansori_release_v1/ollama-1/Q8_0-generation.json",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/ollama-1/Q8_0-generation.json",
+   "source_sha256": "b8a2d0ac0056c32df093df256e701494f699c8143eae30438a163092099b03b0",
+   "sha256": "b8a2d0ac0056c32df093df256e701494f699c8143eae30438a163092099b03b0",
+   "bytes": 2499
+  },
+  {
+   "path": "jansori_release_v1/ollama-1/Q8_0-identity.json",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/ollama-1/Q8_0-identity.json",
+   "source_sha256": "46213a2760e796b86fb9789a826456bd13263a0c18ed11800dd6363c91df86fa",
+   "sha256": "46213a2760e796b86fb9789a826456bd13263a0c18ed11800dd6363c91df86fa",
+   "bytes": 244
+  },
+  {
+   "path": "jansori_release_v1/ollama-1/lifecycle.json",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/ollama-1/lifecycle.json",
+   "source_sha256": "8bf9e10d8c0f99ad9005c71471d527163119c96d273a37ff12ab33ac6dfa0a23",
+   "sha256": "8bf9e10d8c0f99ad9005c71471d527163119c96d273a37ff12ab33ac6dfa0a23",
+   "bytes": 300
+  },
+  {
+   "path": "jansori_release_v1/ollama-2/Q4_K_M-device.json",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/ollama-2/Q4_K_M-device.json",
+   "source_sha256": "ee5d015db61175ce8b27dd8c58cfed28f0aa6464d6937776d65408b0e120116b",
+   "sha256": "ee5d015db61175ce8b27dd8c58cfed28f0aa6464d6937776d65408b0e120116b",
+   "bytes": 565
+  },
+  {
+   "path": "jansori_release_v1/ollama-2/Q4_K_M-generation.json",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/ollama-2/Q4_K_M-generation.json",
+   "source_sha256": "8b1849857e93c59d21ccfc13ea95f588a0106c0232b9229946ca6aac4972e26f",
+   "sha256": "8b1849857e93c59d21ccfc13ea95f588a0106c0232b9229946ca6aac4972e26f",
+   "bytes": 2395
+  },
+  {
+   "path": "jansori_release_v1/ollama-2/Q4_K_M-identity.json",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/ollama-2/Q4_K_M-identity.json",
+   "source_sha256": "41d5a4a9f1d32ffe25d69f19f23911cf3332274000c9fd712dd82cb638062f18",
+   "sha256": "41d5a4a9f1d32ffe25d69f19f23911cf3332274000c9fd712dd82cb638062f18",
+   "bytes": 246
+  },
+  {
+   "path": "jansori_release_v1/ollama-2/Q8_0-device.json",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/ollama-2/Q8_0-device.json",
+   "source_sha256": "49b3be3a226103057fe059504ecff0099b9d5b1f1b10598b08b7fd22ecd2b8bb",
+   "sha256": "49b3be3a226103057fe059504ecff0099b9d5b1f1b10598b08b7fd22ecd2b8bb",
+   "bytes": 561
+  },
+  {
+   "path": "jansori_release_v1/ollama-2/Q8_0-generation.json",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/ollama-2/Q8_0-generation.json",
+   "source_sha256": "b8a2d0ac0056c32df093df256e701494f699c8143eae30438a163092099b03b0",
+   "sha256": "b8a2d0ac0056c32df093df256e701494f699c8143eae30438a163092099b03b0",
+   "bytes": 2499
+  },
+  {
+   "path": "jansori_release_v1/ollama-2/Q8_0-identity.json",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/ollama-2/Q8_0-identity.json",
+   "source_sha256": "46213a2760e796b86fb9789a826456bd13263a0c18ed11800dd6363c91df86fa",
+   "sha256": "46213a2760e796b86fb9789a826456bd13263a0c18ed11800dd6363c91df86fa",
+   "bytes": 244
+  },
+  {
+   "path": "jansori_release_v1/ollama-2/lifecycle.json",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/ollama-2/lifecycle.json",
+   "source_sha256": "d264b12259a364f3d63a700c01955d0059b687d44136ba61ba8a3fec96617d39",
+   "sha256": "d264b12259a364f3d63a700c01955d0059b687d44136ba61ba8a3fec96617d39",
+   "bytes": 300
+  },
+  {
+   "path": "jansori_release_v1/ollama-pull.json",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/ollama-pull.json",
+   "source_sha256": "90b1d114fba6e940c5fe9f01a40cc41c6f2a88884df594ccebb428e543b2c701",
+   "sha256": "90b1d114fba6e940c5fe9f01a40cc41c6f2a88884df594ccebb428e543b2c701",
+   "bytes": 842
+  },
+  {
+   "path": "jansori_release_v1/public-metadata.json",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/public-metadata.json",
+   "source_sha256": "9195e409c9b2ec5152f645ada72b8012c361db0ebe29e15d83097740a4778e18",
+   "sha256": "9195e409c9b2ec5152f645ada72b8012c361db0ebe29e15d83097740a4778e18",
+   "bytes": 531
+  },
+  {
+   "path": "jansori_release_v1/public-snapshot.json",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/public-snapshot.json",
+   "source_sha256": "c6a2d969f4eb6eed667ccefbd7cb369244a99e791e07187ce1a1284196555dfc",
+   "sha256": "c6a2d969f4eb6eed667ccefbd7cb369244a99e791e07187ce1a1284196555dfc",
+   "bytes": 459
+  },
+  {
+   "path": "jansori_release_v1/public-snapshot.log",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/public-snapshot.log",
+   "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "jansori_release_v1/publish.py",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/publish.py",
+   "source_sha256": "ff1227f580afab92d4f0506e3c8d131ddc9d57c18fda03373535731c9c5e5fbe",
+   "sha256": "ff1227f580afab92d4f0506e3c8d131ddc9d57c18fda03373535731c9c5e5fbe",
+   "bytes": 1853
+  },
+  {
+   "path": "jansori_release_v1/range-recovery.log",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/range-recovery.log",
+   "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "jansori_release_v1/range-snapshot.json",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/range-snapshot.json",
+   "source_sha256": "c6a2d969f4eb6eed667ccefbd7cb369244a99e791e07187ce1a1284196555dfc",
+   "sha256": "c6a2d969f4eb6eed667ccefbd7cb369244a99e791e07187ce1a1284196555dfc",
+   "bytes": 459
+  },
+  {
+   "path": "jansori_release_v1/release_audit.py",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/release_audit.py",
+   "source_sha256": "3f60f50e114aa3c34265162048a92c1b2c5b83d5c71db1b81e1df8b4ecd7824d",
+   "sha256": "3f60f50e114aa3c34265162048a92c1b2c5b83d5c71db1b81e1df8b4ecd7824d",
+   "bytes": 8558
+  },
+  {
+   "path": "jansori_release_v1/repository.json",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/repository.json",
+   "source_sha256": "1c39ac8eaea38b66d1e2a329a037da39c7406a595f6a859ecbe6bdf1b7ed13e6",
+   "sha256": "1c39ac8eaea38b66d1e2a329a037da39c7406a595f6a859ecbe6bdf1b7ed13e6",
+   "bytes": 115
+  },
+  {
+   "path": "jansori_release_v1/test_runtime.py",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/test_runtime.py",
+   "source_sha256": "7b4d3b8e7b6d655cadf8335f2b045c54dbb8eee58a24652d7c5a96d8b98e2c7b",
+   "sha256": "7b4d3b8e7b6d655cadf8335f2b045c54dbb8eee58a24652d7c5a96d8b98e2c7b",
+   "bytes": 7684
+  },
+  {
+   "path": "jansori_release_v1/upload.log",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/upload.log",
+   "source_sha256": "7c8467e77ec7b68c88bff2ac28dc7fc7e17d01faa9180fb7e1050b6072f82505",
+   "sha256": "7c8467e77ec7b68c88bff2ac28dc7fc7e17d01faa9180fb7e1050b6072f82505",
+   "bytes": 167
+  },
+  {
+   "path": "jansori_release_v1/verified.json",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/verified.json",
+   "source_sha256": "cc135462da3ef3142076c31ad5c010ff2ab45fd4b757d67670d6462c5a6698b9",
+   "sha256": "cc135462da3ef3142076c31ad5c010ff2ab45fd4b757d67670d6462c5a6698b9",
+   "bytes": 1416
+  },
+  {
+   "path": "jansori_release_v1/vllm-1/BF16-generation.json",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/vllm-1/BF16-generation.json",
+   "source_sha256": "86adb2a1d2ec693985f315971baeaf5d6bdd2c541a61d0aaddf81de100be21ad",
+   "sha256": "86adb2a1d2ec693985f315971baeaf5d6bdd2c541a61d0aaddf81de100be21ad",
+   "bytes": 2509
+  },
+  {
+   "path": "jansori_release_v1/vllm-1/device.json",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/vllm-1/device.json",
+   "source_sha256": "bbc439ad24223f3ee8ab2eb433e3f61e8af5b216b0b16ba8e1be15dbc320a8c7",
+   "sha256": "bbc439ad24223f3ee8ab2eb433e3f61e8af5b216b0b16ba8e1be15dbc320a8c7",
+   "bytes": 273
+  },
+  {
+   "path": "jansori_release_v1/vllm-1/lifecycle.json",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/vllm-1/lifecycle.json",
+   "source_sha256": "0c558092fb83f4833540674a5983e4919420bc581743d26763f31e1abb60c157",
+   "sha256": "0c558092fb83f4833540674a5983e4919420bc581743d26763f31e1abb60c157",
+   "bytes": 669
+  },
+  {
+   "path": "jansori_release_v1/vllm-2/BF16-generation.json",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/vllm-2/BF16-generation.json",
+   "source_sha256": "86adb2a1d2ec693985f315971baeaf5d6bdd2c541a61d0aaddf81de100be21ad",
+   "sha256": "86adb2a1d2ec693985f315971baeaf5d6bdd2c541a61d0aaddf81de100be21ad",
+   "bytes": 2509
+  },
+  {
+   "path": "jansori_release_v1/vllm-2/device.json",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/vllm-2/device.json",
+   "source_sha256": "47c56bc8859c30c71f06b4a4d318edc68037da6a3029e75766f63c5cb92e1a33",
+   "sha256": "47c56bc8859c30c71f06b4a4d318edc68037da6a3029e75766f63c5cb92e1a33",
+   "bytes": 273
+  },
+  {
+   "path": "jansori_release_v1/vllm-2/lifecycle.json",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/vllm-2/lifecycle.json",
+   "source_sha256": "2fe4de925f949d7395a405854c59c069a26be2109800bcbbb5956051fe0f4073",
+   "sha256": "2fe4de925f949d7395a405854c59c069a26be2109800bcbbb5956051fe0f4073",
+   "bytes": 669
+  },
+  {
+   "path": "jansori_release_v1/vllm-3/BF16-generation.json",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/vllm-3/BF16-generation.json",
+   "source_sha256": "a6fee34ae148d43fc798359f71bfe6a7a62046858e32dff732d1241875733b99",
+   "sha256": "a6fee34ae148d43fc798359f71bfe6a7a62046858e32dff732d1241875733b99",
+   "bytes": 2499
+  },
+  {
+   "path": "jansori_release_v1/vllm-3/device.json",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/vllm-3/device.json",
+   "source_sha256": "c1c9359ffc1fba5578dd7210398474bca862f2a99f8fcc856737162afe1df4f2",
+   "sha256": "c1c9359ffc1fba5578dd7210398474bca862f2a99f8fcc856737162afe1df4f2",
+   "bytes": 271
+  },
+  {
+   "path": "jansori_release_v1/vllm-3/lifecycle.json",
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/vllm-3/lifecycle.json",
+   "source_sha256": "05de580e94f7a7770cb3d4408d7374c333095327b13e77ae499e8b23e6dd6d2b",
+   "sha256": "05de580e94f7a7770cb3d4408d7374c333095327b13e77ae499e8b23e6dd6d2b",
+   "bytes": 955
+  },
+  {
+   "path": "jansori_detailed_eval_v1/BF16/boolq-driver.log",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/BF16/boolq-driver.log",
+   "source_sha256": "0f87b3c58d4f9b62f87c97bf26a6f15e6d4554a9a64f352e3620b497180aa235",
+   "sha256": "9bfe88ae7f794d16797347b702f9c10709bcc1caab8b296012a81d3ec72caf3b",
+   "bytes": 114,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "jansori_detailed_eval_v1/BF16/boolq.jsonl",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/BF16/boolq.jsonl",
+   "source_sha256": "79ae5122ba848d7e4278b8de50047c38b14f885bb7a042924c8f47ce579d504a",
+   "sha256": "79ae5122ba848d7e4278b8de50047c38b14f885bb7a042924c8f47ce579d504a",
+   "bytes": 125090
+  },
+  {
+   "path": "jansori_detailed_eval_v1/BF16/calibration.json",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/BF16/calibration.json",
+   "source_sha256": "d61f2f8235be37846680e2fa9e440a6b1bb615fa2794cd69f3febefa498dea6e",
+   "sha256": "d61f2f8235be37846680e2fa9e440a6b1bb615fa2794cd69f3febefa498dea6e",
+   "bytes": 324
+  },
+  {
+   "path": "jansori_detailed_eval_v1/BF16/grades.json",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/BF16/grades.json",
+   "source_sha256": "09c3b23f5256dc94a7aea55ceb2a86620a4857be84552311342af7aaeb648efc",
+   "sha256": "09c3b23f5256dc94a7aea55ceb2a86620a4857be84552311342af7aaeb648efc",
+   "bytes": 20442
+  },
+  {
+   "path": "jansori_detailed_eval_v1/BF16/perf.jsonl",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/BF16/perf.jsonl",
+   "source_sha256": "e85511edeffd0f205b651aa55d3b66f1c1c7c8289e4943de404c058c1743a106",
+   "sha256": "e85511edeffd0f205b651aa55d3b66f1c1c7c8289e4943de404c058c1743a106",
+   "bytes": 39084
+  },
+  {
+   "path": "jansori_detailed_eval_v1/BF16/quality.jsonl",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/BF16/quality.jsonl",
+   "source_sha256": "19caa9dd5a2b401fbc2da3459f360e3e25bcd686fe2bc249cf6af2d623c2783d",
+   "sha256": "19caa9dd5a2b401fbc2da3459f360e3e25bcd686fe2bc249cf6af2d623c2783d",
+   "bytes": 31360
+  },
+  {
+   "path": "jansori_detailed_eval_v1/BF16/samples.jsonl",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/BF16/samples.jsonl",
+   "source_sha256": "957495611c41d1b9e0d759db791db355ce655bc77adbbf860258540fd18f2ee9",
+   "sha256": "957495611c41d1b9e0d759db791db355ce655bc77adbbf860258540fd18f2ee9",
+   "bytes": 18676
+  },
+  {
+   "path": "jansori_detailed_eval_v1/BF16/scaffold.jsonl",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/BF16/scaffold.jsonl",
+   "source_sha256": "038d8d0a82cd99cbf20220b0dcca92c1835b2dc86bf9482b91603989d825b51b",
+   "sha256": "038d8d0a82cd99cbf20220b0dcca92c1835b2dc86bf9482b91603989d825b51b",
+   "bytes": 8565
+  },
+  {
+   "path": "jansori_detailed_eval_v1/BF16.log",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/BF16.log",
+   "source_sha256": "18baa2e4ccfbecf0f9ffae6919f87ae3c90ecd29716b2332690e92136b667d12",
+   "sha256": "18baa2e4ccfbecf0f9ffae6919f87ae3c90ecd29716b2332690e92136b667d12",
+   "bytes": 18
+  },
+  {
+   "path": "jansori_detailed_eval_v1/DETAILED_RESULTS.md",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/DETAILED_RESULTS.md",
+   "source_sha256": "846307d04f74d499329567ae66f0c6a9ef61ffdcc5a5f91bc6ba9b9dc3c33167",
+   "sha256": "846307d04f74d499329567ae66f0c6a9ef61ffdcc5a5f91bc6ba9b9dc3c33167",
+   "bytes": 10092
+  },
+  {
+   "path": "jansori_detailed_eval_v1/MODEL_CARD_UPDATE.md",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/MODEL_CARD_UPDATE.md",
+   "source_sha256": "d144d3526543a5def4dcbd31be6ee4c4d18b1df890466de52a3020207ad8d1f4",
+   "sha256": "d144d3526543a5def4dcbd31be6ee4c4d18b1df890466de52a3020207ad8d1f4",
+   "bytes": 9892
+  },
+  {
+   "path": "jansori_detailed_eval_v1/PERFORMANCE.csv",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/PERFORMANCE.csv",
+   "source_sha256": "55c392fa8aa67628efd67a46c768fe64ed53e798e6922c4514b52c9a3a90a2a3",
+   "sha256": "55c392fa8aa67628efd67a46c768fe64ed53e798e6922c4514b52c9a3a90a2a3",
+   "bytes": 8520
+  },
+  {
+   "path": "jansori_detailed_eval_v1/Q4_K_M/boolq-driver.log",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/Q4_K_M/boolq-driver.log",
+   "source_sha256": "02fbf703ce88803bc9358f94a97d8c4b4b695e122c060e5da83929cb3eb0ccb2",
+   "sha256": "02fbf703ce88803bc9358f94a97d8c4b4b695e122c060e5da83929cb3eb0ccb2",
+   "bytes": 22
+  },
+  {
+   "path": "jansori_detailed_eval_v1/Q4_K_M/boolq-scorer.log",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/Q4_K_M/boolq-scorer.log",
+   "source_sha256": "2e8b89d986804aa6d91e1cdfb7b70ca53b8d02ac962cd5b76077396faccde459",
+   "sha256": "2e8b89d986804aa6d91e1cdfb7b70ca53b8d02ac962cd5b76077396faccde459",
+   "bytes": 224708
+  },
+  {
+   "path": "jansori_detailed_eval_v1/Q4_K_M/boolq.jsonl",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/Q4_K_M/boolq.jsonl",
+   "source_sha256": "e4de581cd5a507af0546cb55f6e89b4ab7e5e8eba541e00526c74a3c5fe8169e",
+   "sha256": "e4de581cd5a507af0546cb55f6e89b4ab7e5e8eba541e00526c74a3c5fe8169e",
+   "bytes": 125262
+  },
+  {
+   "path": "jansori_detailed_eval_v1/Q4_K_M/boundary-diagnostic.json",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/Q4_K_M/boundary-diagnostic.json",
+   "source_sha256": "4ac13d7b2942cd03be2a5bea2be914a8f12935e46000c1a547d0965999f3607a",
+   "sha256": "4ac13d7b2942cd03be2a5bea2be914a8f12935e46000c1a547d0965999f3607a",
+   "bytes": 15369
+  },
+  {
+   "path": "jansori_detailed_eval_v1/Q4_K_M/calibration.json",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/Q4_K_M/calibration.json",
+   "source_sha256": "8365027098cf391f2ed4b9e5e66e7a50009d4b432c2441616b6cfa4f4291c037",
+   "sha256": "8365027098cf391f2ed4b9e5e66e7a50009d4b432c2441616b6cfa4f4291c037",
+   "bytes": 353
+  },
+  {
+   "path": "jansori_detailed_eval_v1/Q4_K_M/device.json",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/Q4_K_M/device.json",
+   "source_sha256": "78713f23505924ece0ee6a959d6eb360a30c5450783214b79e35c95cc4feb541",
+   "sha256": "78713f23505924ece0ee6a959d6eb360a30c5450783214b79e35c95cc4feb541",
+   "bytes": 519
+  },
+  {
+   "path": "jansori_detailed_eval_v1/Q4_K_M/grades.json",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/Q4_K_M/grades.json",
+   "source_sha256": "2a8087101b96730bfb717c263fb998c1c33d866ab5262cf64a0dbbe1a2b22c6a",
+   "sha256": "2a8087101b96730bfb717c263fb998c1c33d866ab5262cf64a0dbbe1a2b22c6a",
+   "bytes": 20424
+  },
+  {
+   "path": "jansori_detailed_eval_v1/Q4_K_M/perf.jsonl",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/Q4_K_M/perf.jsonl",
+   "source_sha256": "68b16eaae55af4c9bd693739b46fe6d78611f9fe6e34cc27574d2e00daf09e3c",
+   "sha256": "68b16eaae55af4c9bd693739b46fe6d78611f9fe6e34cc27574d2e00daf09e3c",
+   "bytes": 45918
+  },
+  {
+   "path": "jansori_detailed_eval_v1/Q4_K_M/quality.jsonl",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/Q4_K_M/quality.jsonl",
+   "source_sha256": "fc4cba2bcea772cab7ca76ee5d7fbcb40c2e81c05761c96623cf0ad7ea02e295",
+   "sha256": "fc4cba2bcea772cab7ca76ee5d7fbcb40c2e81c05761c96623cf0ad7ea02e295",
+   "bytes": 31379
+  },
+  {
+   "path": "jansori_detailed_eval_v1/Q4_K_M/samples.jsonl",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/Q4_K_M/samples.jsonl",
+   "source_sha256": "5bc8315c3a581ddbe2156033ffdbb6455020f8d1f186b89dddcbfb805bd7856f",
+   "sha256": "5bc8315c3a581ddbe2156033ffdbb6455020f8d1f186b89dddcbfb805bd7856f",
+   "bytes": 16645
+  },
+  {
+   "path": "jansori_detailed_eval_v1/Q4_K_M/scaffold.jsonl",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/Q4_K_M/scaffold.jsonl",
+   "source_sha256": "164562fd4af8728471bd06e1a955bbd90c93be4a2f9e59651cd3c79cd7379be4",
+   "sha256": "164562fd4af8728471bd06e1a955bbd90c93be4a2f9e59651cd3c79cd7379be4",
+   "bytes": 8488
+  },
+  {
+   "path": "jansori_detailed_eval_v1/Q4_K_M-first-attempt.log",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/Q4_K_M-first-attempt.log",
+   "source_sha256": "b1fb364c66c18a4c28dc68957b0bc97b8f2b4f1fa9d1cb014722b268d76a87bd",
+   "sha256": "b1fb364c66c18a4c28dc68957b0bc97b8f2b4f1fa9d1cb014722b268d76a87bd",
+   "bytes": 1591
+  },
+  {
+   "path": "jansori_detailed_eval_v1/Q4_K_M.log",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/Q4_K_M.log",
+   "source_sha256": "276aff456011964f7e21f636ac85f4c0d79d8b456f997d24a195e79b3fe897e3",
+   "sha256": "276aff456011964f7e21f636ac85f4c0d79d8b456f997d24a195e79b3fe897e3",
+   "bytes": 1611
+  },
+  {
+   "path": "jansori_detailed_eval_v1/Q8_0/boolq-driver.log",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/Q8_0/boolq-driver.log",
+   "source_sha256": "1ca21a708623ee664537cbc0b5bc3b5f2ddcfd858488809b4395b184940e788f",
+   "sha256": "1ca21a708623ee664537cbc0b5bc3b5f2ddcfd858488809b4395b184940e788f",
+   "bytes": 20
+  },
+  {
+   "path": "jansori_detailed_eval_v1/Q8_0/boolq-scorer.log",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/Q8_0/boolq-scorer.log",
+   "source_sha256": "802362a8279d1147250e4f5f584284d4d06979bcc57d3a737b2bfe46159882e9",
+   "sha256": "802362a8279d1147250e4f5f584284d4d06979bcc57d3a737b2bfe46159882e9",
+   "bytes": 224653
+  },
+  {
+   "path": "jansori_detailed_eval_v1/Q8_0/boolq.jsonl",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/Q8_0/boolq.jsonl",
+   "source_sha256": "a7e1132c1271473d75a1a006268040c33d7a001b07915dcd49629ad8c7ca0d30",
+   "sha256": "a7e1132c1271473d75a1a006268040c33d7a001b07915dcd49629ad8c7ca0d30",
+   "bytes": 125081
+  },
+  {
+   "path": "jansori_detailed_eval_v1/Q8_0/calibration.json",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/Q8_0/calibration.json",
+   "source_sha256": "87938c6a3e899426ff8c48b19d2da7099abde90781e2f17b1c5b1357e2f4f719",
+   "sha256": "87938c6a3e899426ff8c48b19d2da7099abde90781e2f17b1c5b1357e2f4f719",
+   "bytes": 333
+  },
+  {
+   "path": "jansori_detailed_eval_v1/Q8_0/device.json",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/Q8_0/device.json",
+   "source_sha256": "91af679a6114fb06501b5b22a4c4d0669b9dc9f596e1076a51e092c8a1bcc259",
+   "sha256": "91af679a6114fb06501b5b22a4c4d0669b9dc9f596e1076a51e092c8a1bcc259",
+   "bytes": 515
+  },
+  {
+   "path": "jansori_detailed_eval_v1/Q8_0/grades.json",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/Q8_0/grades.json",
+   "source_sha256": "a933ae97187504347465fd2f8662c47ccd697a2d9dc0b27aff5166dc926521c7",
+   "sha256": "a933ae97187504347465fd2f8662c47ccd697a2d9dc0b27aff5166dc926521c7",
+   "bytes": 20460
+  },
+  {
+   "path": "jansori_detailed_eval_v1/Q8_0/perf.jsonl",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/Q8_0/perf.jsonl",
+   "source_sha256": "43f68b6f97ac5682cb43a3ada8a31706735cb3631984f623185cf9b538d776d8",
+   "sha256": "43f68b6f97ac5682cb43a3ada8a31706735cb3631984f623185cf9b538d776d8",
+   "bytes": 45932
+  },
+  {
+   "path": "jansori_detailed_eval_v1/Q8_0/quality.jsonl",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/Q8_0/quality.jsonl",
+   "source_sha256": "a161cf2298aed042e9082352ff3b3578dca1678e40572fa97826ff642799236c",
+   "sha256": "a161cf2298aed042e9082352ff3b3578dca1678e40572fa97826ff642799236c",
+   "bytes": 31252
+  },
+  {
+   "path": "jansori_detailed_eval_v1/Q8_0/samples.jsonl",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/Q8_0/samples.jsonl",
+   "source_sha256": "38af0b26394563156a4965e494e1fc17da1c394a4019bfe6a42a08928c5a99f2",
+   "sha256": "38af0b26394563156a4965e494e1fc17da1c394a4019bfe6a42a08928c5a99f2",
+   "bytes": 16312
+  },
+  {
+   "path": "jansori_detailed_eval_v1/Q8_0/scaffold.jsonl",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/Q8_0/scaffold.jsonl",
+   "source_sha256": "36df638e2d414411220f32bd0bf51ce35b8f1b1d37cff37cb9257a401846f5c6",
+   "sha256": "36df638e2d414411220f32bd0bf51ce35b8f1b1d37cff37cb9257a401846f5c6",
+   "bytes": 8562
+  },
+  {
+   "path": "jansori_detailed_eval_v1/Q8_0.log",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/Q8_0.log",
+   "source_sha256": "6a7d41b73d46e1a185ca00969fbae1ad00c009b2194de56f6cdc9f77dd89bd1e",
+   "sha256": "6a7d41b73d46e1a185ca00969fbae1ad00c009b2194de56f6cdc9f77dd89bd1e",
+   "bytes": 18
+  },
+  {
+   "path": "jansori_detailed_eval_v1/boolq-contract.json",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/boolq-contract.json",
+   "source_sha256": "4d7d36206beb31fcda1cdbb3e0aa39c05f839469fcf0e7fd76124f3ff16153bb",
+   "sha256": "4d7d36206beb31fcda1cdbb3e0aa39c05f839469fcf0e7fd76124f3ff16153bb",
+   "bytes": 153632
+  },
+  {
+   "path": "jansori_detailed_eval_v1/boolq.py",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/boolq.py",
+   "source_sha256": "a70fec101355adef19005d3e3001cde1f5fe40b9cd828d9ee550b30735a11151",
+   "sha256": "a70fec101355adef19005d3e3001cde1f5fe40b9cd828d9ee550b30735a11151",
+   "bytes": 3730
+  },
+  {
+   "path": "jansori_detailed_eval_v1/code_case.py",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/code_case.py",
+   "source_sha256": "cdaf01053bb4eb94f4a5d3d242d2829a27b54a730b6f0960e0ecd8b1f61af001",
+   "sha256": "cdaf01053bb4eb94f4a5d3d242d2829a27b54a730b6f0960e0ecd8b1f61af001",
+   "bytes": 2282
+  },
+  {
+   "path": "jansori_detailed_eval_v1/dual-attempt1/dual-driver.log",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/dual-attempt1/dual-driver.log",
+   "source_sha256": "22a66b5174c268004cb13e3460837bb499a6d647999c6b793f83e2a245c67334",
+   "sha256": "22a66b5174c268004cb13e3460837bb499a6d647999c6b793f83e2a245c67334",
+   "bytes": 244
+  },
+  {
+   "path": "jansori_detailed_eval_v1/dual-attempt1/dual-vllm.log",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/dual-attempt1/dual-vllm.log",
+   "source_sha256": "84676605e75ca7a627321297ce364151332bd1f6f4329f584df2d64874dc1940",
+   "sha256": "84d686b98ec71bb12e5e03cb932c2cdff50f54c71e337cef85dbaba02041b711",
+   "bytes": 8390,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "jansori_detailed_eval_v1/dual-attempt1/dual.jsonl",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/dual-attempt1/dual.jsonl",
+   "source_sha256": "5930848724975f768fb45c0f9981139e3e00d745b7e3f63dbac91019a6812b1b",
+   "sha256": "5930848724975f768fb45c0f9981139e3e00d745b7e3f63dbac91019a6812b1b",
+   "bytes": 722
+  },
+  {
+   "path": "jansori_detailed_eval_v1/dual-driver.log",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/dual-driver.log",
+   "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "jansori_detailed_eval_v1/dual-summary.json",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/dual-summary.json",
+   "source_sha256": "0e4330f492dbe9654f0a1e32de053e038a2b703afd16aaac918ada7a5565ee30",
+   "sha256": "0e4330f492dbe9654f0a1e32de053e038a2b703afd16aaac918ada7a5565ee30",
+   "bytes": 1175
+  },
+  {
+   "path": "jansori_detailed_eval_v1/dual-vllm.log",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/dual-vllm.log",
+   "source_sha256": "b85a90ac7ebf9ca35c222075a6e6c855920d1e2664a4688cd0949059a4ecb995",
+   "sha256": "5121dbbc56c4b62eb8827d1d7a3a98ffbb9ce9029ae3dc044a590452e3f3374d",
+   "bytes": 12401,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "jansori_detailed_eval_v1/dual.jsonl",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/dual.jsonl",
+   "source_sha256": "48c19ebe616dc4994706995c39cf1361a2b6089579285d71e42e9d5819626aa0",
+   "sha256": "48c19ebe616dc4994706995c39cf1361a2b6089579285d71e42e9d5819626aa0",
+   "bytes": 15147
+  },
+  {
+   "path": "jansori_detailed_eval_v1/dual.py",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/dual.py",
+   "source_sha256": "951a1fb18bf8e1b636f65d1138e41613b0e344535a0e48faaacceb5878aa1718",
+   "sha256": "951a1fb18bf8e1b636f65d1138e41613b0e344535a0e48faaacceb5878aa1718",
+   "bytes": 5068
+  },
+  {
+   "path": "jansori_detailed_eval_v1/evidence.json",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/evidence.json",
+   "source_sha256": "bc7d2100022d95a5e9d638a2d33dded0e1c2bab1995d41763851a3e18a8e6ef3",
+   "sha256": "bc7d2100022d95a5e9d638a2d33dded0e1c2bab1995d41763851a3e18a8e6ef3",
+   "bytes": 4540
+  },
+  {
+   "path": "jansori_detailed_eval_v1/grade.py",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/grade.py",
+   "source_sha256": "b754fbdcc7acc9d0473dff8cbc70e7d151342635316798d5bccb4257c07315f5",
+   "sha256": "b754fbdcc7acc9d0473dff8cbc70e7d151342635316798d5bccb4257c07315f5",
+   "bytes": 4960
+  },
+  {
+   "path": "jansori_detailed_eval_v1/hardware.json",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/hardware.json",
+   "source_sha256": "1acea4e6c95fb75cdb0f3e2efe4a43b3c9bb315665381031b905d7dfe45af9db",
+   "sha256": "1acea4e6c95fb75cdb0f3e2efe4a43b3c9bb315665381031b905d7dfe45af9db",
+   "bytes": 3867
+  },
+  {
+   "path": "jansori_detailed_eval_v1/hub-card-commit.json",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/hub-card-commit.json",
+   "source_sha256": "d51bc9a6e2367b07f4f947934464b19666ac9352d37114b84f0ce113c8feb4bc",
+   "sha256": "d51bc9a6e2367b07f4f947934464b19666ac9352d37114b84f0ce113c8feb4bc",
+   "bytes": 334
+  },
+  {
+   "path": "jansori_detailed_eval_v1/hub-card-public-verification.json",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/hub-card-public-verification.json",
+   "source_sha256": "aab3e055910326a6d810441cc5ea29be6f8268ac0b0bb758083c6c5bc908a56a",
+   "sha256": "aab3e055910326a6d810441cc5ea29be6f8268ac0b0bb758083c6c5bc908a56a",
+   "bytes": 476
+  },
+  {
+   "path": "jansori_detailed_eval_v1/hub-card-update/README.md",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/hub-card-update/README.md",
+   "source_sha256": "57b502f333dc02f6fb6064a6cae1626876501ebc7f6a6f9fd950da9bb3d15d91",
+   "sha256": "57b502f333dc02f6fb6064a6cae1626876501ebc7f6a6f9fd950da9bb3d15d91",
+   "bytes": 16315
+  },
+  {
+   "path": "jansori_detailed_eval_v1/hub-card-update/SHA256SUMS",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/hub-card-update/SHA256SUMS",
+   "source_sha256": "da92592a79502043260a886454016c28cb73ff5d5a5b32dbb09c4b061c673d89",
+   "sha256": "da92592a79502043260a886454016c28cb73ff5d5a5b32dbb09c4b061c673d89",
+   "bytes": 1476
+  },
+  {
+   "path": "jansori_detailed_eval_v1/inputs.py",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/inputs.py",
+   "source_sha256": "fa56f7e9fefd425b7379bc1f6f83f527d1ea7bdaa2544ac402471ad0854366c9",
+   "sha256": "fa56f7e9fefd425b7379bc1f6f83f527d1ea7bdaa2544ac402471ad0854366c9",
+   "bytes": 7408
+  },
+  {
+   "path": "jansori_detailed_eval_v1/ppl-bootstrap.json",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/ppl-bootstrap.json",
+   "source_sha256": "3692d4c985268a482e325be5bf7dd0a4aa249b6921a72f32871f33a2e4e47fc4",
+   "sha256": "3692d4c985268a482e325be5bf7dd0a4aa249b6921a72f32871f33a2e4e47fc4",
+   "bytes": 1522
+  },
+  {
+   "path": "jansori_detailed_eval_v1/quality-inputs.json",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/quality-inputs.json",
+   "source_sha256": "25d802407efbb44e08ce8437acea2e3e85ccda3ef1098b7c108238880128766e",
+   "sha256": "25d802407efbb44e08ce8437acea2e3e85ccda3ef1098b7c108238880128766e",
+   "bytes": 75845
+  },
+  {
+   "path": "jansori_detailed_eval_v1/quality-summary.json",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/quality-summary.json",
+   "source_sha256": "dc4199c069e37d91228176fdae27ad231c411cdd6544073a22bd0dfdd17cebd4",
+   "sha256": "dc4199c069e37d91228176fdae27ad231c411cdd6544073a22bd0dfdd17cebd4",
+   "bytes": 4540
+  },
+  {
+   "path": "jansori_detailed_eval_v1/resources-end.json",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/resources-end.json",
+   "source_sha256": "dde511ce8b3891ead50bd71c5a647dfd4b8eb5ed0ec544a0b209bb69ffc4e08e",
+   "sha256": "dde511ce8b3891ead50bd71c5a647dfd4b8eb5ed0ec544a0b209bb69ffc4e08e",
+   "bytes": 1341
+  },
+  {
+   "path": "jansori_detailed_eval_v1/resources-mid.json",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/resources-mid.json",
+   "source_sha256": "46531a9212ccd8d8ef65b85440e0be586748291f768a32c314b500c0cc0adabd",
+   "sha256": "46531a9212ccd8d8ef65b85440e0be586748291f768a32c314b500c0cc0adabd",
+   "bytes": 1346
+  },
+  {
+   "path": "jansori_detailed_eval_v1/resources-start.json",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/resources-start.json",
+   "source_sha256": "c2b441cd14ddfabadeabe9ca9ff0cd0be9ac9fb88f854e01c158fc764ee4dca9",
+   "sha256": "c2b441cd14ddfabadeabe9ca9ff0cd0be9ac9fb88f854e01c158fc764ee4dca9",
+   "bytes": 1343
+  },
+  {
+   "path": "jansori_detailed_eval_v1/run.py",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/run.py",
+   "source_sha256": "650c1a04c48c7c0b61cd7ea7a68bf70f5d8a633a7aced3744bb992ff03d57ae3",
+   "sha256": "650c1a04c48c7c0b61cd7ea7a68bf70f5d8a633a7aced3744bb992ff03d57ae3",
+   "bytes": 7180
+  },
+  {
+   "path": "jansori_detailed_eval_v1/scaffold-vllm.log",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/scaffold-vllm.log",
+   "source_sha256": "4fe3ae21299c9bad809b40d1180e21b94f152be3564d689245512133c4006a28",
+   "sha256": "c0536a3a3adb74272ad2ad300ab195154358b6110af5deabf12d44a93cd4f086",
+   "bytes": 9157,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  },
+  {
+   "path": "jansori_detailed_eval_v1/scaffold.log",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/scaffold.log",
+   "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "jansori_detailed_eval_v1/scaffold.py",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/scaffold.py",
+   "source_sha256": "374d3bf222d9c1742788dc4e94b1b35ece583915032eadf6f7107c544dc847d8",
+   "sha256": "374d3bf222d9c1742788dc4e94b1b35ece583915032eadf6f7107c544dc847d8",
+   "bytes": 3549
+  },
+  {
+   "path": "jansori_detailed_eval_v1/story-blind.json",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/story-blind.json",
+   "source_sha256": "18ab4541ebcc1a71bbec297cfe793710463cdecb99d6c37db979b001334e7804",
+   "sha256": "18ab4541ebcc1a71bbec297cfe793710463cdecb99d6c37db979b001334e7804",
+   "bytes": 1591
+  },
+  {
+   "path": "jansori_detailed_eval_v1/story-key.json",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/story-key.json",
+   "source_sha256": "006c18ea6eb263c6c92ed3c06de75c4e9395de24d8faff00e5566f44c915f6aa",
+   "sha256": "006c18ea6eb263c6c92ed3c06de75c4e9395de24d8faff00e5566f44c915f6aa",
+   "bytes": 844
+  },
+  {
+   "path": "jansori_detailed_eval_v1/summarize.py",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/summarize.py",
+   "source_sha256": "c548f5e9eed29658d1286cafd3bb0626a42c50d648f5d676f4518adb30b505eb",
+   "sha256": "c548f5e9eed29658d1286cafd3bb0626a42c50d648f5d676f4518adb30b505eb",
+   "bytes": 23729
+  },
+  {
+   "path": "jansori_detailed_eval_v1/vllm.log",
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/vllm.log",
+   "source_sha256": "c1113dc286e0844ce5a147ae3e246152bd75b118b09a32d00c4eb592aebc3945",
+   "sha256": "1322972cb9682b0962cb79452ab402eb8483d1276984a7844339e1ea668e3c7e",
+   "bytes": 24940,
+   "modified": "progress-bar intermediate states removed (100% lines kept), ANSI codes stripped, consecutive duplicate lines elided"
+  }
+ ],
+ "excluded": [
+  {
+   "source": "llm-test/runs/format_conformance_v1/ollama/serve.log",
+   "bytes": 457333,
+   "reason": "server log / pid / port / per-item samples"
+  },
+  {
+   "source": "llm-test/runs/format_conformance_v1/ollama_train_tok/serve.log",
+   "bytes": 1147968,
+   "reason": "server log / pid / port / per-item samples"
+  },
+  {
+   "source": "llm-test/runs/format_conformance_v1/ollama_train_tok/serve_suite.log",
+   "bytes": 445892,
+   "reason": "server log / pid / port / per-item samples"
+  },
+  {
+   "source": "llm-test/runs/format_conformance_v1/ollama_train_tok/serve_trace.log",
+   "bytes": 486178,
+   "reason": "server log / pid / port / per-item samples"
+  },
+  {
+   "source": "llm-test/runs/standard_v2/.public_p1.pid",
+   "bytes": 7,
+   "reason": "server log / pid / port / per-item samples"
+  },
+  {
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/__pycache__/test_runtime.cpython-312.pyc",
+   "bytes": 14553,
+   "reason": "server log / pid / port / per-item samples"
+  },
+  {
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/ollama-1/server.log",
+   "bytes": 118583,
+   "reason": "server log / pid / port / per-item samples"
+  },
+  {
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/ollama-2/server.log",
+   "bytes": 79785,
+   "reason": "server log / pid / port / per-item samples"
+  },
+  {
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/vllm-1/server.log",
+   "bytes": 13375,
+   "reason": "server log / pid / port / per-item samples"
+  },
+  {
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/vllm-2/server.log",
+   "bytes": 13284,
+   "reason": "server log / pid / port / per-item samples"
+  },
+  {
+   "source": "llm-traditional/runs/3b_47k_hub_release_v1/jansori-hub-v1/vllm-3/server.log",
+   "bytes": 9073,
+   "reason": "server log / pid / port / per-item samples"
+  },
+  {
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/__pycache__/grade.cpython-312.pyc",
+   "bytes": 12450,
+   "reason": "server log / pid / port / per-item samples"
+  },
+  {
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/__pycache__/inputs.cpython-312.pyc",
+   "bytes": 12223,
+   "reason": "server log / pid / port / per-item samples"
+  },
+  {
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/dual-attempt1/dual-ollama.log",
+   "bytes": 28997,
+   "reason": "server log / pid / port / per-item samples"
+  },
+  {
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/dual-ollama.log",
+   "bytes": 172708,
+   "reason": "server log / pid / port / per-item samples"
+  },
+  {
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/ollama.log",
+   "bytes": 3327866,
+   "reason": "server log / pid / port / per-item samples"
+  },
+  {
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/ollama.pid",
+   "bytes": 7,
+   "reason": "server log / pid / port / per-item samples"
+  },
+  {
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/ollama.port",
+   "bytes": 5,
+   "reason": "server log / pid / port / per-item samples"
+  },
+  {
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/scaffold-ollama.log",
+   "bytes": 114694,
+   "reason": "server log / pid / port / per-item samples"
+  },
+  {
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/vllm.pid",
+   "bytes": 7,
+   "reason": "server log / pid / port / per-item samples"
+  },
+  {
+   "source": "llm-traditional/runs/jansori_detailed_eval_v1/vllm.port",
+   "bytes": 5,
+   "reason": "server log / pid / port / per-item samples"
+  }
+ ]
+}

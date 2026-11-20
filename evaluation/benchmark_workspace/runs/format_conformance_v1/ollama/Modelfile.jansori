@@ -1,0 +1,2 @@
+FROM /home/work/llm-dense/llm-traditional/runs/3b_47k_hub_release_v1/nfs-release-v1/gguf/dense-3b-47k-Q8_0.gguf
+TEMPLATE """{{ .Prompt }}"""

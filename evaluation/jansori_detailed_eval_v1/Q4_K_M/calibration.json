@@ -1,0 +1,18 @@
+{
+ "model": "hf.co/pathcosmos/JANSORI:Q4_K_M",
+ "offset": 0,
+ "probe": {
+  "text": " and white.\n",
+  "n": 4,
+  "k": 3,
+  "reason": "length",
+  "error": null,
+  "start": 3134709.523978993,
+  "end": 3134709.810232463,
+  "latency": 0.2862534699961543,
+  "ttft": null,
+  "server": {}
+ },
+ "gpu": "GPU-262fc2bd-aa7a-dc10-2658-18e1bc39a05f",
+ "pid": 170940
+}

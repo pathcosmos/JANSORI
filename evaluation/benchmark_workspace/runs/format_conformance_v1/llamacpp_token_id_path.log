@@ -1,0 +1,3 @@
+jansori-bf16: token-ID 입력 24건 — tokens_evaluated==len(ids) 24/24, BOS를 붙인 입력과 출력 분포 다름 24/24
+frankenstallm-bf16: token-ID 입력 53건 — tokens_evaluated==len(ids) 53/53, BOS를 붙인 입력과 출력 분포 다름 53/53
+sample row {'kind': 'text', 'n_ids': 6, 'tokens_evaluated': 6, 'prompt_n': 6, 'differs_from_bos_prefixed': True}

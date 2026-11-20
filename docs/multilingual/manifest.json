@@ -14,7 +14,7 @@
     "he": "עברית",
     "ru": "Русский"
   },
-  "github": "https://github.com/pathcosmos/korean-dense-llm",
+  "github": "https://github.com/pathcosmos/JANSORI",
   "hf_repositories": [
     "pathcosmos/korean-pretrain-corpus",
     "pathcosmos/korean-pretrain-training-data",

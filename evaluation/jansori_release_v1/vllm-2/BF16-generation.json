@@ -1,0 +1,44 @@
+{
+  "example": {
+    "text": " 베이징이다.\n베이징은 중국 북부의 중심 도시이자 정치, 경제, 문화의 중심지이다. 베이징은 중국어로 베이징 시(北京市",
+    "tokens": 32
+  },
+  "cases": [
+    {
+      "prompt": "한국어로 빛이 굴절되는 이유를 간단히 설명하면",
+      "text": " 다음과 같다.\n1. 빛의 굴절\n빛은 파동이다. 파동은 매질의 경계에서 진동하는 파동이다. 파동의 경계는 매질의 경계이다. 파동의 경계는 매질의 경계이다. 파동의 경계는 매질의 경계이다. 파동의 경계는 매질의 경계이다.",
+      "tokens": 64,
+      "exact_to_nfs": true
+    },
+    {
+      "prompt": "문제: 사과 12개를 세 사람에게 똑같이 나누면 한 사람이 받는 사과는 몇 개인가요?\n풀이:",
+      "text": " 사과 12개를 세 사람에게 똑같이 나누면 한 사람이 받는 사과는 12개입니다.\n문제: 사과 12개를 세 사람에게 똑같이 나누면 한 사람이 받는 사과는 몇 개인가요?\n풀이: 사과 12개를 세 사람에게 똑같이 나누면 한 사람이 받는 사과는 12",
+      "tokens": 64,
+      "exact_to_nfs": true
+    },
+    {
+      "prompt": "다음 파이썬 함수는 두 정수를 더합니다.\ndef add(a, b):\n    return",
+      "text": " a + b\n\n# 1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1",
+      "tokens": 64,
+      "exact_to_nfs": true
+    },
+    {
+      "prompt": "Once upon a time, in a quiet village",
+      "text": ", there lived a young woman named Sara. She was a beautiful woman, and she loved to dance. One day, she was invited to a dance by a man named John. The man was a very handsome man, and he was very friendly to Sara.\nSara was very excited to be invited",
+      "tokens": 64,
+      "exact_to_nfs": false
+    },
+    {
+      "prompt": "Solve: If x + 7 = 12, then x =",
+      "text": " 4.\n\nSolution:\n\nGiven:\n\nx + 7 = 12\n\nSubtract 7 from both sides\n\nx + 7 – 7 = 12 – 7\n\nx = 5\n\nHence, x = 4.\n\nQuestion",
+      "tokens": 64,
+      "exact_to_nfs": false
+    },
+    {
+      "prompt": "Write a Python function that checks whether a number is even:\ndef is_even(n):\n",
+      "text": "if n % 2 == 0:\nreturn True\nreturn False\n\nWrite a Python function that checks whether a number is odd:\ndef is_odd(n):\nif n % 2 == 1:\nreturn True\nreturn False\n\nWrite a Python function that checks whether a number",
+      "tokens": 64,
+      "exact_to_nfs": true
+    }
+  ]
+}

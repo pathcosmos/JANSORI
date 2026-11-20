@@ -1,0 +1,12 @@
+{
+  "registered_at": "2026-11-18T19:42:21+09:00",
+  "disclosure": "V3(free-running greedy) 결과 일부(pretrain 2/8 동일, 분기는 모두 근접 동률)를 본 뒤 추가한 보조 검증이다. 원래 V3 기준(tolerance_preregistered.json)은 바꾸지 않으며 V3 판정은 그대로 기록한다. 사용자 승인(2026-11-18): 기준 유지 + 보조 검증 추가.",
+  "V3b_teacher_forced": {
+    "scope": "V3과 같은 체크포인트·프롬프트. 원본 방식(매 단계 BF16 전체 forward) greedy 토큰열을 엔진에 강제 입력(prefill 후 decode 단계마다 원본 토큰을 넣음)",
+    "pass": "원본 margin_B(step) >= 0.5인 모든 단계에서 argmax(엔진) == argmax(원본)"
+  },
+  "V3c_control": {
+    "scope": "같은 프롬프트에서 원본 BF16 greedy vs 원본 FP32(어텐션 bf16 변환만 끈 기준선) greedy",
+    "role": "판정 아님, 참고. 원본끼리 정밀도만 달라도 자유 생성이 얼마나 갈리는지 보여준다"
+  }
+}

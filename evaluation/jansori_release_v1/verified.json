@@ -1,0 +1,46 @@
+{
+  "repo": "pathcosmos/JANSORI",
+  "commit": "e68bfa3cb31e9589f4481a2e31d6d75c731fec9d",
+  "visibility": "public",
+  "license": "apache-2.0",
+  "manifest_sha256": "078feb6603c17f1110c6865a13dda939a5258a7dbdb34cf2c81152096931bf74",
+  "nfs_manifest_sha256": "383b5d8aa9d70e8c087a7a8f74d012e08d4975ae4a71517d5a643d7b757ae73c",
+  "formats": {
+    "Q8_0": {
+      "default_nfs_matches": [
+        6,
+        6
+      ],
+      "matched_settings_nfs_matches": 6,
+      "reload_examples_identical": true,
+      "reload_six_identical": true,
+      "ports_closed": true
+    },
+    "Q4_K_M": {
+      "default_nfs_matches": [
+        6,
+        6
+      ],
+      "matched_settings_nfs_matches": 6,
+      "reload_examples_identical": true,
+      "reload_six_identical": true,
+      "ports_closed": true
+    },
+    "BF16": {
+      "default_nfs_matches": [
+        4,
+        4
+      ],
+      "matched_settings_nfs_matches": 6,
+      "reload_examples_identical": true,
+      "reload_six_identical": true,
+      "ports_closed": true
+    }
+  },
+  "proofs": {
+    "commit.json": "6cedfbb6b82c9a7fa632b6d7f77ce8f199efc4db8c3d2d85bf7de8bd339ee300",
+    "public-snapshot.json": "c6a2d969f4eb6eed667ccefbd7cb369244a99e791e07187ce1a1284196555dfc",
+    "public-metadata.json": "9195e409c9b2ec5152f645ada72b8012c361db0ebe29e15d83097740a4778e18",
+    "ollama-pull.json": "90b1d114fba6e940c5fe9f01a40cc41c6f2a88884df594ccebb428e543b2c701"
+  }
+}

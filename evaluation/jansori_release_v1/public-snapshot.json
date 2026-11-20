@@ -1,0 +1,12 @@
+{
+  "scope": "hub_snapshot",
+  "kind": "combined",
+  "repo": "pathcosmos/JANSORI",
+  "commit": "e68bfa3cb31e9589f4481a2e31d6d75c731fec9d",
+  "private": false,
+  "files": 18,
+  "bytes": 11843985632,
+  "manifest_sha256": "078feb6603c17f1110c6865a13dda939a5258a7dbdb34cf2c81152096931bf74",
+  "local_path": "/tmp/jansori-public-PHB8gIzb/http-public/hub/models--pathcosmos--JANSORI/snapshots/e68bfa3cb31e9589f4481a2e31d6d75c731fec9d",
+  "runtime_verified": false
+}

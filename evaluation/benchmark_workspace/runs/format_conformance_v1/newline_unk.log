@@ -1,0 +1,8 @@
+'\n' [7, 3] ['▁', '\n'] | decode: ''
+'a\nb' [37, 3, 650] ['▁a', '\n', 'b'] | decode: 'ab'
+'a\n\nb' [37, 3, 650] ['▁a', '\n\n', 'b'] | decode: 'ab'
+'\t' [7, 3] ['▁', '\t'] | decode: ''
+'a\tb' [37, 3, 650] ['▁a', '\t', 'b'] | decode: 'ab'
+'  x' [7, 3475] ['▁', '▁x'] | decode: ' x'
+vocab has "\n"? None  "▁\n"? None  <unk>= 3
+SP a\nb -> ['▁a', '\n', 'b']  SP a\tb -> ['▁a', '\t', 'b']

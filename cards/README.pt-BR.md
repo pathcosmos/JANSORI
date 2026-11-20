@@ -1,6 +1,6 @@
-# Korean Dense LLM — Português (Brasil)
+# JANSORI — Português (Brasil)
 
-[한국어](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.ko.md) · [English](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.en.md) · [简体中文](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.zh-CN.md) · [繁體中文](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.zh-TW.md) · [日本語](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.ja.md) · [Français](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.fr.md) · [Deutsch](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.de.md) · [Español](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.es.md) · [Português (Brasil)](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.pt-BR.md) · [हिन्दी](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.hi.md) · [العربية](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.ar.md) · [עברית](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.he.md) · [Русский](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.ru.md)
+[한국어](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.ko.md) · [English](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.en.md) · [简体中文](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.zh-CN.md) · [繁體中文](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.zh-TW.md) · [日本語](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.ja.md) · [Français](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.fr.md) · [Deutsch](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.de.md) · [Español](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.es.md) · [Português (Brasil)](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.pt-BR.md) · [हिन्दी](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.hi.md) · [العربية](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.ar.md) · [עברית](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.he.md) · [Русский](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.ru.md)
 
 ## Visão geral
 
@@ -42,7 +42,7 @@ OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 RAYON_NUM_THREADS=2 python -m pytest -q test
 
 O decodificador denso PyTorch usa RMSNorm, RoPE, GQA e SwiGLU. O caminho3B real usa FSDP2,8GPU e eager: contexto4096, micro batch4, batch global2,097,152tokens, pico LR3e-4 e meta57,000passos. O exemplo CPU micro difere do distribuído. A retomada exata exige modelo, optimizer, RNG e contratos de entrada/configuração.
 
-[examples/3b.observed.json](https://github.com/pathcosmos/korean-dense-llm/blob/main/examples/3b.observed.json) · [examples/3b.fresh.json](https://github.com/pathcosmos/korean-dense-llm/blob/main/examples/3b.fresh.json)
+[examples/3b.observed.json](https://github.com/pathcosmos/JANSORI/blob/main/examples/3b.observed.json) · [examples/3b.fresh.json](https://github.com/pathcosmos/JANSORI/blob/main/examples/3b.fresh.json)
 
 ```bash
 python scripts/hardware_profile.py --output runs/hardware.json
@@ -53,7 +53,7 @@ torchrun --standalone --nproc_per_node=8 --module train.deterministic_train --co
 
 Comparam-se workers, threads, batch, cache SQLite, RAM, local/NFS, eager/compile, precisão e memória GPU. Tempo total, vazão, pico de memória e equivalência de conteúdo/números sustentam adoção ou rejeição:47 campanhas e99 JSON. Velocidade não compensa falha numérica, e uma amostra pequena não prova ótimo global.
 
-[47 / 99](https://github.com/pathcosmos/korean-dense-llm/blob/main/experiments/README.md)
+[47 / 99](https://github.com/pathcosmos/JANSORI/blob/main/experiments/README.md)
 
 ## Validação
 
@@ -63,7 +63,7 @@ A edição GH passou284 testes CPU com9 ignorados; o novo GitHub CPU passou258 c
 
 O código original é MIT e o texto original CC BY4.0. Essas permissões não substituem direitos do conteúdo fonte. Consulte source.json, LICENSE-SCOPE.md e procedência para condições, atribuição, avisos e pendências. Não se afirma redistribuição comercial irrestrita de todo texto original.
 
-[NOTICE.md](https://github.com/pathcosmos/korean-dense-llm/blob/main/NOTICE.md) · [LICENSE](https://github.com/pathcosmos/korean-dense-llm/blob/main/LICENSE)
+[NOTICE.md](https://github.com/pathcosmos/JANSORI/blob/main/NOTICE.md) · [LICENSE](https://github.com/pathcosmos/JANSORI/blob/main/LICENSE)
 
 ## Limitações
 
@@ -71,8 +71,8 @@ Não se garantem deduplicação aproximada global, remoção total de PII/segred
 
 ## Repositórios relacionados
 
-[GitHub](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.pt-BR.md) · [README](https://github.com/pathcosmos/korean-dense-llm)
-[GH / Uso](https://github.com/pathcosmos/korean-dense-llm/blob/main/docs/PUBLIC_GUIDE.md) · [GH / Otimização e medições](https://github.com/pathcosmos/korean-dense-llm/blob/main/experiments/README.md) · [GH / Validação](https://github.com/pathcosmos/korean-dense-llm/blob/main/docs/PUBLIC_VALIDATION.md)
+[GitHub](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.pt-BR.md) · [README](https://github.com/pathcosmos/JANSORI)
+[GH / Uso](https://github.com/pathcosmos/JANSORI/blob/main/docs/PUBLIC_GUIDE.md) · [GH / Otimização e medições](https://github.com/pathcosmos/JANSORI/blob/main/experiments/README.md) · [GH / Validação](https://github.com/pathcosmos/JANSORI/blob/main/docs/PUBLIC_VALIDATION.md)
 
 - [korean-pretrain-corpus](https://huggingface.co/datasets/pathcosmos/korean-pretrain-corpus/blob/main/cards/README.pt-BR.md)
 - [korean-pretrain-training-data](https://huggingface.co/datasets/pathcosmos/korean-pretrain-training-data/blob/main/cards/README.pt-BR.md)
@@ -90,4 +90,4 @@ Não se garantem deduplicação aproximada global, remoção total de PII/segred
 - [owm/](https://huggingface.co/datasets/pathcosmos/korean-pretrain-corpus/tree/main/owm)
 - [github_code_v1/](https://huggingface.co/datasets/pathcosmos/korean-pretrain-corpus/tree/main/github_code_v1)
 
-[한국어](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.ko.md) · [English](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.en.md) · [简体中文](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.zh-CN.md) · [繁體中文](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.zh-TW.md) · [日本語](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.ja.md) · [Français](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.fr.md) · [Deutsch](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.de.md) · [Español](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.es.md) · [Português (Brasil)](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.pt-BR.md) · [हिन्दी](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.hi.md) · [العربية](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.ar.md) · [עברית](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.he.md) · [Русский](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.ru.md)
+[한국어](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.ko.md) · [English](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.en.md) · [简体中文](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.zh-CN.md) · [繁體中文](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.zh-TW.md) · [日本語](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.ja.md) · [Français](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.fr.md) · [Deutsch](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.de.md) · [Español](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.es.md) · [Português (Brasil)](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.pt-BR.md) · [हिन्दी](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.hi.md) · [العربية](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.ar.md) · [עברית](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.he.md) · [Русский](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.ru.md)

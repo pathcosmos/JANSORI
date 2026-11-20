@@ -1,0 +1,64 @@
+/home/work/llm-dense/llm-test/ko-llm-bench-suite/kobench/standard/run.py:153: DeprecationWarning: get_task_dict is deprecated. Use TaskManager.load() instead.
+  get_task_dict([t.task], tm)
+[data] kmmlu_redux 준비됨
+/home/work/llm-dense/llm-test/ko-llm-bench-suite/kobench/standard/run.py:153: DeprecationWarning: get_task_dict is deprecated. Use TaskManager.load() instead.
+  get_task_dict([t.task], tm)
+[data] kmmlu_pro 준비됨
+[data] kobalt_700 준비됨
+Fetching 19 files: 100%|██████████| 19/19 [00:00<00:00, 1829.26it/s]
+[evafrill-mo-3b|A] kmmlu_redux (0-shot, limit=5)
+Overwriting default num_fewshot of kmmlu_redux from None to 0
+100%|██████████| 5/5 [00:00<00:00, 29454.38it/s]
+Tokenizing inputs: 100%|██████████| 20/20 [00:00<00:00, 5271.21it/s]
+evafrill loglikelihood: 100%|██████████| 20/20 [00:05<00:00,  3.43it/s]
+[evafrill-mo-3b|A] kmmlu_pro (0-shot, limit=5)
+Overwriting default num_fewshot of kmmlu_pro from None to 0
+100%|██████████| 5/5 [00:00<00:00, 36033.54it/s]
+Tokenizing inputs: 100%|██████████| 25/25 [00:00<00:00, 2800.53it/s]
+evafrill loglikelihood: 100%|██████████| 25/25 [00:00<00:00, 336.40it/s]
+[evafrill-mo-3b|A] kobalt_700 (0-shot, limit=5)
+Overwriting default num_fewshot of kobalt_700 from None to 0
+100%|██████████| 5/5 [00:00<00:00, 21443.27it/s]
+Tokenizing inputs: 100%|██████████| 50/50 [00:00<00:00, 2634.38it/s]
+evafrill loglikelihood: 100%|██████████| 50/50 [00:00<00:00, 322.30it/s]
+[
+ {
+  "model": "evafrill-mo-3b",
+  "variant": "A",
+  "task": "kmmlu_redux",
+  "wall_s": 8.0,
+  "results": {
+   "name": "kmmlu_redux",
+   "alias": "kmmlu_redux",
+   "sample_len": 5,
+   "acc,none": 0.0,
+   "acc_stderr,none": 0.0
+  }
+ },
+ {
+  "model": "evafrill-mo-3b",
+  "variant": "A",
+  "task": "kmmlu_pro",
+  "wall_s": 2.2,
+  "results": {
+   "name": "kmmlu_pro",
+   "alias": "kmmlu_pro",
+   "sample_len": 5,
+   "acc,none": 0.2,
+   "acc_stderr,none": 0.2
+  }
+ },
+ {
+  "model": "evafrill-mo-3b",
+  "variant": "A",
+  "task": "kobalt_700",
+  "wall_s": 1.7,
+  "results": {
+   "name": "kobalt_700",
+   "alias": "kobalt_700",
+   "sample_len": 5,
+   "acc,none": 0.2,
+   "acc_stderr,none": 0.2
+  }
+ }
+]

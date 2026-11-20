@@ -1,0 +1,28 @@
+Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 1399.42it/s]
+Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 1681.08it/s]
+[pretrain] L=1 V1 pass=True maxE=5.744 maxB=5.744 bitwise=True | V2 pass=True maxE=0.617 maxB=0.613 dis=3
+[pretrain] L=17 V1 pass=True maxE=2.836 maxB=2.836 bitwise=True | V2 pass=True maxE=0.583 maxB=0.618 dis=1
+[pretrain] L=512 V1 pass=True maxE=2.710 maxB=2.710 bitwise=True | V2 pass=True maxE=0.700 maxB=0.684 dis=0
+[pretrain] L=4000 V1 pass=True maxE=2.711 maxB=2.711 bitwise=True | V2 pass=True maxE=0.597 maxB=0.515 dis=1
+[pretrain] V3 identical 1/8 near_tie_ok=True pass=False
+[pretrain] V4 batch 8: identical 8/8 bitwise 8/8 maxdiff=0.0000 strict_pass=True
+[pretrain] V4 batch 32: identical 32/32 bitwise 32/32 maxdiff=0.0000 strict_pass=True
+Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 1437.64it/s]
+Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 2856.51it/s]
+[sft-v2] L=1 V1 pass=True maxE=1.746 maxB=1.746 bitwise=True | V2 pass=True maxE=0.592 maxB=0.402 dis=2
+[sft-v2] L=17 V1 pass=True maxE=0.472 maxB=0.472 bitwise=True | V2 pass=True maxE=0.435 maxB=0.482 dis=1
+[sft-v2] L=512 V1 pass=True maxE=1.409 maxB=1.409 bitwise=True | V2 pass=True maxE=0.544 maxB=0.644 dis=0
+[sft-v2] L=4000 V1 pass=True maxE=1.433 maxB=1.433 bitwise=True | V2 pass=True maxE=0.501 maxB=0.596 dis=1
+[sft-v2] V3 identical 5/8 near_tie_ok=True pass=False
+[sft-v2] V4 batch 8: identical 8/8 bitwise 8/8 maxdiff=0.0000 strict_pass=True
+[sft-v2] V4 batch 32: identical 32/32 bitwise 32/32 maxdiff=0.0000 strict_pass=True
+Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 1226.34it/s]
+Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 2306.25it/s]
+[slerp] L=1 V1 pass=True maxE=1.854 maxB=1.854 bitwise=True | V2 pass=True maxE=0.455 maxB=0.499 dis=1
+[slerp] L=17 V1 pass=True maxE=2.620 maxB=2.620 bitwise=True | V2 pass=True maxE=0.718 maxB=0.530 dis=2
+[slerp] L=512 V1 pass=True maxE=0.447 maxB=0.447 bitwise=True | V2 pass=True maxE=0.498 maxB=0.455 dis=0
+[slerp] L=4000 V1 pass=True maxE=0.555 maxB=0.555 bitwise=True | V2 pass=True maxE=0.438 maxB=0.404 dis=2
+[slerp] V3 identical 6/8 near_tie_ok=True pass=True
+[slerp] V4 batch 8: identical 8/8 bitwise 8/8 maxdiff=0.0000 strict_pass=True
+[slerp] V4 batch 32: identical 32/32 bitwise 32/32 maxdiff=0.0000 strict_pass=True
+verify exit=0

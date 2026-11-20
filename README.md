@@ -1,8 +1,12 @@
-# Korean Dense LLM
+# JANSORI
 
-> **학습 현황 (2026-11-11):** 현재 목표는 50,000스텝이며 학습과 최종 검증이 진행 중입니다. 아래 57,000스텝 설명은 v0.1.1 공개 당시의 설정입니다. [진행 결과와 한계](docs/results/pretraining-progress.md) · [GGUF 검증 준비](docs/deployment/gguf-validation.md)
+**순수 PyTorch로 처음부터 직접 만든 한국어 중심 3B Dense LLM** — 데이터 수집·정제, 토크나이저, FSDP2 사전학습, 평가, 배포까지 전 과정의 소스와 실험 기록
 
-[한국어](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.ko.md) · [English](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.en.md) · [简体中文](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.zh-CN.md) · [繁體中文](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.zh-TW.md) · [日本語](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.ja.md) · [Français](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.fr.md) · [Deutsch](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.de.md) · [Español](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.es.md) · [Português (Brasil)](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.pt-BR.md) · [हिन्दी](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.hi.md) · [العربية](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.ar.md) · [עברית](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.he.md) · [Русский](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.ru.md)
+*A Korean-centric 3B dense LLM built from scratch in pure PyTorch — source code and experiment records for the whole pipeline: data, tokenizer, FSDP2 pretraining, evaluation and release.*
+
+> **현황 (2026-11-20):** 47,000스텝 체크포인트를 [pathcosmos/JANSORI](https://huggingface.co/pathcosmos/JANSORI)로 공개했습니다(BF16 Safetensors·Q8_0·Q4_K_M GGUF, Apache-2.0). 이 저장소 이름은 `korean-dense-llm`에서 `JANSORI`로 바뀌었고 이전 주소는 자동으로 연결됩니다. 공개 후 배포 검증·상세 평가·공개 모델 비교는 [evaluation/](https://github.com/pathcosmos/JANSORI/blob/main/evaluation/README.md)에 있습니다. 아래 57,000스텝 설명은 v0.1.1 공개 당시의 설정입니다. [학습 진행 기록](https://github.com/pathcosmos/JANSORI/blob/main/docs/results/pretraining-progress.md) · [GGUF 검증](https://github.com/pathcosmos/JANSORI/blob/main/docs/deployment/gguf-validation.md)
+
+[한국어](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.ko.md) · [English](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.en.md) · [简体中文](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.zh-CN.md) · [繁體中文](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.zh-TW.md) · [日本語](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.ja.md) · [Français](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.fr.md) · [Deutsch](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.de.md) · [Español](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.es.md) · [Português (Brasil)](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.pt-BR.md) · [हिन्दी](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.hi.md) · [العربية](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.ar.md) · [עברית](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.he.md) · [Русский](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.ru.md)
 
 ## 한국어
 
@@ -46,7 +50,7 @@ OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 RAYON_NUM_THREADS=2 python -m pytest -q test
 
 모델은 RMSNorm·RoPE·GQA·SwiGLU를 사용하는 순수 PyTorch Dense decoder입니다. 실제 3B 경로는 FSDP2·8GPU·eager이며 문맥4096, micro batch4, global batch2,097,152 tokens, peak LR3e-4, 목표57,000step입니다. 예제의 CPU micro 모델과 실제 분산 학습 경로는 다릅니다. 체크포인트 재개에는 모델·optimizer·RNG·입력/설정 계약 검증이 필요합니다.
 
-[examples/3b.observed.json](https://github.com/pathcosmos/korean-dense-llm/blob/main/examples/3b.observed.json) · [examples/3b.fresh.json](https://github.com/pathcosmos/korean-dense-llm/blob/main/examples/3b.fresh.json)
+[examples/3b.observed.json](https://github.com/pathcosmos/JANSORI/blob/main/examples/3b.observed.json) · [examples/3b.fresh.json](https://github.com/pathcosmos/JANSORI/blob/main/examples/3b.fresh.json)
 
 ```bash
 python scripts/hardware_profile.py --output runs/hardware.json
@@ -57,7 +61,11 @@ torchrun --standalone --nproc_per_node=8 --module train.deterministic_train --co
 
 worker·thread·batch·SQLite 캐시·RAM·로컬/NFS와 eager/compile·정밀도·GPU 메모리를 비교했습니다. 총시간·처리량·peak 메모리·내용/수치 동등성을 함께 확인하고 채택·기각 이유를 기록합니다. 47개 캠페인·99개 결과 JSON을 제공하며 빠르더라도 수치 조건에 실패한 후보를 권장하지 않습니다. 짧은 표본의 최적값을 전체 최적값으로 주장하지 않습니다.
 
-[47 / 99](https://github.com/pathcosmos/korean-dense-llm/blob/main/experiments/README.md)
+[47 / 99](https://github.com/pathcosmos/JANSORI/blob/main/experiments/README.md)
+
+### 평가
+
+공개 체크포인트의 배포 검증, 형식별 상세 평가, 공개 base 모델 10종과의 표준 벤치 비교(로그우도 객관식·bits-per-byte PPL, bootstrap 95% CI)는 [evaluation/README.md](https://github.com/pathcosmos/JANSORI/blob/main/evaluation/README.md)에 정리했습니다. 한국어 bits-per-byte는 비교한 base 모델 11종 중 3위이지만 지식형 객관식은 무작위 수준입니다. 평가 코드는 [ko-llm-bench-suite](https://github.com/pathcosmos/ko-llm-bench-suite)에 있습니다.
 
 ### 검증
 
@@ -67,7 +75,7 @@ GH 소스 공개판의 독립 CPU 검사는284통과/9건너뜀, 새 GitHub CPU 
 
 프로젝트 원본 코드는 MIT, 원본 설명문은 CC BY4.0입니다. 이는 원문 데이터의 권리를 대신하지 않습니다. 소스별 라이선스·귀속·고지·알려진 미확정 항목은 source.json, LICENSE-SCOPE.md와 출처 문서를 확인하세요. 모든 원문에 대한 무조건적 상업 재배포 허가를 주장하지 않습니다.
 
-[NOTICE.md](https://github.com/pathcosmos/korean-dense-llm/blob/main/NOTICE.md) · [LICENSE](https://github.com/pathcosmos/korean-dense-llm/blob/main/LICENSE)
+[NOTICE.md](https://github.com/pathcosmos/JANSORI/blob/main/NOTICE.md) · [LICENSE](https://github.com/pathcosmos/JANSORI/blob/main/LICENSE)
 
 ### 한계
 
@@ -75,8 +83,8 @@ GH 소스 공개판의 독립 CPU 검사는284통과/9건너뜀, 새 GitHub CPU 
 
 ### 관련 저장소
 
-[GitHub](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.ko.md) · [README](https://github.com/pathcosmos/korean-dense-llm)
-[GH / 사용법](https://github.com/pathcosmos/korean-dense-llm/blob/main/docs/PUBLIC_GUIDE.md) · [GH / 최적화·벤치마크](https://github.com/pathcosmos/korean-dense-llm/blob/main/experiments/README.md) · [GH / 검증](https://github.com/pathcosmos/korean-dense-llm/blob/main/docs/PUBLIC_VALIDATION.md)
+[GitHub](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.ko.md) · [README](https://github.com/pathcosmos/JANSORI)
+[GH / 사용법](https://github.com/pathcosmos/JANSORI/blob/main/docs/PUBLIC_GUIDE.md) · [GH / 최적화·벤치마크](https://github.com/pathcosmos/JANSORI/blob/main/experiments/README.md) · [GH / 검증](https://github.com/pathcosmos/JANSORI/blob/main/docs/PUBLIC_VALIDATION.md)
 
 - [korean-pretrain-corpus](https://huggingface.co/datasets/pathcosmos/korean-pretrain-corpus/blob/main/cards/README.ko.md)
 - [korean-pretrain-training-data](https://huggingface.co/datasets/pathcosmos/korean-pretrain-training-data/blob/main/cards/README.ko.md)
@@ -137,7 +145,7 @@ OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 RAYON_NUM_THREADS=2 python -m pytest -q test
 
 The model is a plain PyTorch dense decoder with RMSNorm, RoPE, GQA and SwiGLU. The actual3B path uses FSDP2,8GPUs and eager execution: context4096, micro batch4, global batch2,097,152tokens, peak LR3e-4 and target57,000steps. The CPU micro demonstration differs from distributed training. Exact resume requires model, optimizer, RNG and input/configuration contracts.
 
-[examples/3b.observed.json](https://github.com/pathcosmos/korean-dense-llm/blob/main/examples/3b.observed.json) · [examples/3b.fresh.json](https://github.com/pathcosmos/korean-dense-llm/blob/main/examples/3b.fresh.json)
+[examples/3b.observed.json](https://github.com/pathcosmos/JANSORI/blob/main/examples/3b.observed.json) · [examples/3b.fresh.json](https://github.com/pathcosmos/JANSORI/blob/main/examples/3b.fresh.json)
 
 ```bash
 python scripts/hardware_profile.py --output runs/hardware.json
@@ -148,7 +156,11 @@ torchrun --standalone --nproc_per_node=8 --module train.deterministic_train --co
 
 Experiments compare workers, threads, batches, SQLite caches, RAM, local/NFS storage, eager/compile execution, precision and GPU memory. Total time, throughput, peak memory and content/numerical equivalence accompany adoption or rejection decisions.47 campaigns and99 result JSON files are included. Speed alone does not justify a numerically failing candidate, and a small sample does not establish a full-scale optimum.
 
-[47 / 99](https://github.com/pathcosmos/korean-dense-llm/blob/main/experiments/README.md)
+[47 / 99](https://github.com/pathcosmos/JANSORI/blob/main/experiments/README.md)
+
+### Evaluation
+
+Release verification of the public checkpoint, detailed per-format evaluation, and a standard-benchmark comparison with 10 public base models (log-likelihood multiple choice, bits-per-byte perplexity, bootstrap 95% CIs) are in [evaluation/README.md](https://github.com/pathcosmos/JANSORI/blob/main/evaluation/README.md). Korean bits-per-byte ranks 3rd of the 11 base models compared, while knowledge-heavy multiple choice is at chance level. The evaluation code is in [ko-llm-bench-suite](https://github.com/pathcosmos/ko-llm-bench-suite).
 
 ### Validation
 
@@ -158,7 +170,7 @@ The GH source release passed284 independent CPU tests with9 skips; fresh GitHub 
 
 Original project code is MIT and original prose is CC BY4.0. These grants do not replace original-content rights. Consult source.json, LICENSE-SCOPE.md and provenance documents for source-specific conditions, attribution, notices and known unresolved items. Unrestricted commercial redistribution of every original text is not asserted.
 
-[NOTICE.md](https://github.com/pathcosmos/korean-dense-llm/blob/main/NOTICE.md) · [LICENSE](https://github.com/pathcosmos/korean-dense-llm/blob/main/LICENSE)
+[NOTICE.md](https://github.com/pathcosmos/JANSORI/blob/main/NOTICE.md) · [LICENSE](https://github.com/pathcosmos/JANSORI/blob/main/LICENSE)
 
 ### Limitations
 
@@ -166,8 +178,8 @@ Global near-duplicate removal, complete PII/secret removal, contamination-free o
 
 ### Related repositories
 
-[GitHub](https://github.com/pathcosmos/korean-dense-llm/blob/main/cards/README.en.md) · [README](https://github.com/pathcosmos/korean-dense-llm)
-[GH / Usage](https://github.com/pathcosmos/korean-dense-llm/blob/main/docs/PUBLIC_GUIDE.md) · [GH / Optimization and benchmarks](https://github.com/pathcosmos/korean-dense-llm/blob/main/experiments/README.md) · [GH / Validation](https://github.com/pathcosmos/korean-dense-llm/blob/main/docs/PUBLIC_VALIDATION.md)
+[GitHub](https://github.com/pathcosmos/JANSORI/blob/main/cards/README.en.md) · [README](https://github.com/pathcosmos/JANSORI)
+[GH / Usage](https://github.com/pathcosmos/JANSORI/blob/main/docs/PUBLIC_GUIDE.md) · [GH / Optimization and benchmarks](https://github.com/pathcosmos/JANSORI/blob/main/experiments/README.md) · [GH / Validation](https://github.com/pathcosmos/JANSORI/blob/main/docs/PUBLIC_VALIDATION.md)
 
 - [korean-pretrain-corpus](https://huggingface.co/datasets/pathcosmos/korean-pretrain-corpus/blob/main/cards/README.en.md)
 - [korean-pretrain-training-data](https://huggingface.co/datasets/pathcosmos/korean-pretrain-training-data/blob/main/cards/README.en.md)

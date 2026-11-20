@@ -1,0 +1,310 @@
+{
+ "n_texts": 24,
+ "n_chats": 29,
+ "models": {
+  "jansori-bf16": {
+   "formats_encode_text": {
+    "n": 24,
+    "equal": 24,
+    "mismatches": []
+   },
+   "vllm_add_special": {
+    "n": 24,
+    "equal": 24,
+    "mismatches": []
+   },
+   "vllm_no_special": {
+    "n": 24,
+    "equal": 24,
+    "mismatches": []
+   },
+   "lmeval_tok_encode": {
+    "n": 24,
+    "equal": 24,
+    "mismatches": []
+   }
+  },
+  "frankenstallm-bf16": {
+   "formats": {
+    "n": 29,
+    "equal": 29,
+    "mismatches": []
+   },
+   "vllm_chat_template_str": {
+    "n": 29,
+    "equal": 29,
+    "mismatches": []
+   },
+   "vllm_chat_no_special": {
+    "n": 29,
+    "equal": 29,
+    "mismatches": []
+   },
+   "vllm_chat_add_special": {
+    "n": 29,
+    "equal": 29,
+    "mismatches": []
+   },
+   "lmeval_tok_encode": {
+    "n": 29,
+    "equal": 29,
+    "mismatches": []
+   }
+  },
+  "frankenstallm-bf16__pretrain_text": {
+   "formats_encode_text": {
+    "n": 24,
+    "equal": 24,
+    "mismatches": []
+   },
+   "vllm_add_special": {
+    "n": 24,
+    "equal": 24,
+    "mismatches": []
+   },
+   "vllm_no_special": {
+    "n": 24,
+    "equal": 24,
+    "mismatches": []
+   },
+   "lmeval_tok_encode": {
+    "n": 24,
+    "equal": 24,
+    "mismatches": []
+   }
+  },
+  "evafrill-mo-3b": {
+   "formats": {
+    "n": 29,
+    "equal": 29,
+    "mismatches": []
+   },
+   "vllm_chat_template_str": {
+    "n": 29,
+    "equal": 29,
+    "mismatches": []
+   },
+   "vllm_chat_no_special": {
+    "n": 29,
+    "equal": 29,
+    "mismatches": []
+   },
+   "vllm_chat_add_special": {
+    "n": 29,
+    "equal": 29,
+    "mismatches": []
+   },
+   "lmeval_tok_encode": {
+    "n": 29,
+    "equal": 29,
+    "mismatches": []
+   }
+  },
+  "evafrill-mo-3b__pretrain_text": {
+   "formats_encode_text": {
+    "n": 24,
+    "equal": 24,
+    "mismatches": []
+   },
+   "vllm_add_special": {
+    "n": 24,
+    "equal": 24,
+    "mismatches": []
+   },
+   "vllm_no_special": {
+    "n": 24,
+    "equal": 24,
+    "mismatches": []
+   },
+   "lmeval_tok_encode": {
+    "n": 24,
+    "equal": 24,
+    "mismatches": []
+   }
+  }
+ },
+ "old_suite_examples": [
+  {
+   "model": "evafrill-mo-3b",
+   "old_path": "kobench/evafrill_runner.py:217 f'{system}\\n{prompt}' → tokenizer.encode",
+   "old_text": "당신은 한국어 시험 문제에 정확히 답하는 AI입니다. 정답 기호만 출력하세요.\n한국의 수도는 어디인가요?",
+   "old_ids": [
+    11658,
+    2922,
+    2444,
+    10549,
+    4088,
+    4680,
+    62,
+    5142,
+    1745,
+    4,
+    16100,
+    13444,
+    53,
+    6635,
+    13794,
+    4,
+    3,
+    3512,
+    6,
+    388,
+    11,
+    5019,
+    43793,
+    178
+   ],
+   "old_pieces": [
+    "▁당신은",
+    "▁한국어",
+    "▁시험",
+    "▁문제에",
+    "▁정확히",
+    "▁답",
+    "하는",
+    "▁AI",
+    "입니다",
+    ".",
+    "▁정답",
+    "▁기호",
+    "만",
+    "▁출력",
+    "하세요",
+    ".",
+    "<unk>",
+    "한국",
+    "의",
+    "▁수도",
+    "는",
+    "▁어디",
+    "인가요",
+    "?"
+   ],
+   "train_text": "<|user|>\n한국의 수도는 어디인가요?\n<|assistant|>\n",
+   "train_ids": [
+    473,
+    2526,
+    887,
+    201,
+    2526,
+    927,
+    3,
+    3512,
+    6,
+    388,
+    11,
+    5019,
+    43793,
+    178,
+    3,
+    6804,
+    2526,
+    29273,
+    16,
+    24232,
+    2526,
+    927,
+    3
+   ],
+   "train_pieces": [
+    "▁<",
+    "|",
+    "us",
+    "er",
+    "|",
+    ">",
+    "<unk>",
+    "한국",
+    "의",
+    "▁수도",
+    "는",
+    "▁어디",
+    "인가요",
+    "?",
+    "<unk>",
+    "<",
+    "|",
+    "assi",
+    "s",
+    "tant",
+    "|",
+    ">",
+    "<unk>"
+   ]
+  },
+  {
+   "model": "frankenstallm-bf16",
+   "old_path": "modelfiles/Modelfile.v2-*: TEMPLATE {{ .Prompt }} (SYSTEM 무시) + GGUF 기본 BOS",
+   "old_text": "한국의 수도는 어디인가요?",
+   "old_ids": [
+    1,
+    2238,
+    388,
+    11,
+    5019,
+    43793,
+    178
+   ],
+   "old_pieces": [
+    "<s>",
+    "▁한국의",
+    "▁수도",
+    "는",
+    "▁어디",
+    "인가요",
+    "?"
+   ],
+   "train_text": "<|user|>\n한국의 수도는 어디인가요?\n<|assistant|>\n",
+   "train_ids": [
+    473,
+    2526,
+    887,
+    201,
+    2526,
+    927,
+    3,
+    3512,
+    6,
+    388,
+    11,
+    5019,
+    43793,
+    178,
+    3,
+    6804,
+    2526,
+    29273,
+    16,
+    24232,
+    2526,
+    927,
+    3
+   ],
+   "train_pieces": [
+    "▁<",
+    "|",
+    "us",
+    "er",
+    "|",
+    ">",
+    "<unk>",
+    "한국",
+    "의",
+    "▁수도",
+    "는",
+    "▁어디",
+    "인가요",
+    "?",
+    "<unk>",
+    "<",
+    "|",
+    "assi",
+    "s",
+    "tant",
+    "|",
+    ">",
+    "<unk>"
+   ]
+  }
+ ]
+}

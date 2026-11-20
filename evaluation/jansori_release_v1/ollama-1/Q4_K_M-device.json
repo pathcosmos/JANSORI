@@ -1,0 +1,22 @@
+[
+  {
+    "name": "hf.co/pathcosmos/JANSORI:Q4_K_M",
+    "model": "hf.co/pathcosmos/JANSORI:Q4_K_M",
+    "size": 2568623226,
+    "digest": "cc464f5287e008aca2fa5f3fbcd07160f4730540e61c0270e93481402f4e4e59",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "llama",
+      "families": [
+        "llama"
+      ],
+      "parameter_size": "3.22B",
+      "quantization_level": "unknown"
+    },
+    "expires_at": "2026-11-16T22:25:28.694640669+09:00",
+    "size_vram": 2568623226,
+    "context_length": 4096,
+    "runner": "llamacpp"
+  }
+]

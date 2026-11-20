@@ -1,0 +1,87 @@
+{
+ "engine": "EvafrillEngine(batch_invariant=True, max_batch=32, max_len=4608) — 배포 기본값",
+ "criteria_files": {
+  "V1_V2": "tolerance_preregistered.json",
+  "V3": "tolerance_amendment_v3.json (사용자 승인)",
+  "V3b_V3c": "tolerance_supplementary.json",
+  "V4": "tolerance_v4_strict.json (Goal 문구 그대로: 토큰열 동일 + 로짓 비트 동일)"
+ },
+ "ckpts": {
+  "pretrain": {
+   "V1": true,
+   "V1_bitwise_equal_all": true,
+   "V2": true,
+   "V3_amended": true,
+   "V3_preregistered_identical": "1/8",
+   "V3b": true,
+   "V4_strict": true,
+   "V4_detail(tokens,bitwise,n)": {
+    "8": [
+     8,
+     8,
+     8
+    ],
+    "32": [
+     32,
+     32,
+     32
+    ]
+   },
+   "graph_vs_eager": {
+    "tokens_equal": true,
+    "max_logit_diff": 0.0
+   }
+  },
+  "sft-v2": {
+   "V1": true,
+   "V1_bitwise_equal_all": true,
+   "V2": true,
+   "V3_amended": true,
+   "V3_preregistered_identical": "5/8",
+   "V3b": true,
+   "V4_strict": true,
+   "V4_detail(tokens,bitwise,n)": {
+    "8": [
+     8,
+     8,
+     8
+    ],
+    "32": [
+     32,
+     32,
+     32
+    ]
+   },
+   "graph_vs_eager": {
+    "tokens_equal": true,
+    "max_logit_diff": 0.0
+   }
+  },
+  "slerp": {
+   "V1": true,
+   "V1_bitwise_equal_all": true,
+   "V2": true,
+   "V3_amended": true,
+   "V3_preregistered_identical": "6/8",
+   "V3b": true,
+   "V4_strict": true,
+   "V4_detail(tokens,bitwise,n)": {
+    "8": [
+     8,
+     8,
+     8
+    ],
+    "32": [
+     32,
+     32,
+     32
+    ]
+   },
+   "graph_vs_eager": {
+    "tokens_equal": true,
+    "max_logit_diff": 0.0
+   }
+  }
+ },
+ "all_pass": true
+}

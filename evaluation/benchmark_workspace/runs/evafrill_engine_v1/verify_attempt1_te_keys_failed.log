@@ -1,0 +1,17 @@
+Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00,  9.42it/s]
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/work/llm-dense/llm-test/ko-llm-bench-suite/kobench/standard/evafrill_verify.py", line 252, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/home/work/llm-dense/llm-test/ko-llm-bench-suite/kobench/standard/evafrill_verify.py", line 228, in main
+    m16, _ = load(ck, torch.bfloat16)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/work/llm-dense/llm-test/ko-llm-bench-suite/kobench/standard/evafrill_verify.py", line 41, in load
+    m, tok, info = load_evafrill(d, _src(), "cuda", dtype)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/work/llm-dense/llm-test/ko-llm-bench-suite/kobench/standard/evafrill_lm.py", line 66, in load_evafrill
+    raise RuntimeError(f"EVAFRILL 가중치 불일치: missing={missing_params[:10]} unexpected={list(unexpected)[:10]}")
+RuntimeError: EVAFRILL 가중치 불일치: missing=['layers.0.ffn_norm.weight', 'layers.0.ffn.gate_proj.weight', 'layers.0.ffn.up_proj.weight', 'layers.0.ffn.down_proj.weight', 'layers.1.ffn_norm.weight', 'layers.1.ffn.gate_proj.weight', 'layers.1.ffn.up_proj.weight', 'layers.1.ffn.down_proj.weight', 'layers.2.ffn_norm.weight', 'layers.2.ffn.gate_proj.weight'] unexpected=['layers.0.ffn._extra_state', 'layers.0.ffn.fc1_weight', 'layers.0.ffn.fc2_weight', 'layers.0.ffn.layer_norm_weight', 'layers.1.ffn._extra_state', 'layers.1.ffn.fc1_weight', 'layers.1.ffn.fc2_weight', 'layers.1.ffn.layer_norm_weight', 'layers.2.ffn._extra_state', 'layers.2.ffn.fc1_weight']
+exit=1

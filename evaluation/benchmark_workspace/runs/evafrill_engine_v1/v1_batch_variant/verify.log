@@ -1,0 +1,26 @@
+Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 1526.96it/s]
+Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 1754.69it/s]
+[pretrain] L=1 V1 pass=True maxE=5.744 maxB=5.744 bitwise=True | V2 pass=True maxE=0.632 maxB=0.599 dis=3
+[pretrain] L=17 V1 pass=True maxE=2.836 maxB=2.836 bitwise=True | V2 pass=True maxE=0.666 maxB=0.566 dis=3
+[pretrain] L=512 V1 pass=True maxE=2.710 maxB=2.710 bitwise=True | V2 pass=True maxE=0.625 maxB=0.652 dis=0
+[pretrain] L=4000 V1 pass=True maxE=2.711 maxB=2.711 bitwise=True | V2 pass=True maxE=0.582 maxB=0.582 dis=2
+[pretrain] V3 identical 2/8 near_tie_ok=True pass=False
+[pretrain] V4 batch 8: identical 6/8 maxdiff=0.6250 thr=1.028 pass=True
+[pretrain] V4 batch 32: identical 12/32 maxdiff=0.7500 thr=1.028 pass=True
+Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00,  8.34it/s]
+Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 3078.01it/s]
+[sft-v2] L=1 V1 pass=True maxE=1.746 maxB=1.746 bitwise=True | V2 pass=True maxE=0.462 maxB=0.431 dis=2
+[sft-v2] L=17 V1 pass=True maxE=0.472 maxB=0.472 bitwise=True | V2 pass=True maxE=0.452 maxB=0.489 dis=0
+[sft-v2] L=512 V1 pass=True maxE=1.409 maxB=1.409 bitwise=True | V2 pass=True maxE=0.459 maxB=0.574 dis=0
+[sft-v2] L=4000 V1 pass=True maxE=1.433 maxB=1.433 bitwise=True | V2 pass=True maxE=0.449 maxB=0.382 dis=3
+[sft-v2] V3 identical 5/8 near_tie_ok=True pass=False
+Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 948.44it/s]
+Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 1601.18it/s]
+[slerp] L=1 V1 pass=True maxE=1.854 maxB=1.854 bitwise=True | V2 pass=True maxE=0.421 maxB=0.458 dis=1
+[slerp] L=17 V1 pass=True maxE=2.620 maxB=2.620 bitwise=True | V2 pass=True maxE=0.437 maxB=0.517 dis=0
+[slerp] L=512 V1 pass=True maxE=0.466 maxB=0.466 bitwise=True | V2 pass=True maxE=0.547 maxB=0.468 dis=0
+[slerp] L=4000 V1 pass=True maxE=0.547 maxB=0.547 bitwise=True | V2 pass=True maxE=0.439 maxB=0.559 dis=0
+[slerp] V3 identical 2/8 near_tie_ok=True pass=False
+[slerp] V4 batch 8: identical 7/8 maxdiff=0.8242 thr=0.888 pass=True
+[slerp] V4 batch 32: identical 15/32 maxdiff=0.8125 thr=0.888 pass=True
+exit=0

@@ -1,0 +1,8 @@
+{
+  "registered_at": "2026-11-18T20:18:22+09:00",
+  "applies_to": "배치 불변 엔진(EvafrillEngine batch_invariant=True, max_batch 32, max_len 4608)의 V4",
+  "reason": "Goal 문구 '배치 8·32 결과가 배치 1과 동일'을 그대로 적용한다. 이전 V4 기준(근접 동률 분기 허용, tolerance_preregistered.json)은 이전 엔진 판정에만 쓰였다.",
+  "scope": "체크포인트 pretrain, sft-v2, slerp × 배치 8, 32 (길이 5~1000 혼합 프롬프트) × greedy 128 토큰, 배치 1 실행과 비교",
+  "pass": "모든 시퀀스의 토큰열이 배치 1과 완전히 같고, 모든 단계의 로짓이 비트 단위로 같다",
+  "other_criteria": "V1·V2: tolerance_preregistered.json, V3: tolerance_amendment_v3.json(사용자 승인), V3b/V3c: tolerance_supplementary.json — 모두 그대로"
+}

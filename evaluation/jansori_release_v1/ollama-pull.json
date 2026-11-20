@@ -1,0 +1,20 @@
+{
+  "repo": "pathcosmos/JANSORI",
+  "commit": "e68bfa3cb31e9589f4481a2e31d6d75c731fec9d",
+  "snapshot_receipt_sha256": "c6a2d969f4eb6eed667ccefbd7cb369244a99e791e07187ce1a1284196555dfc",
+  "files": {
+    "Q4_K_M": {
+      "filename": "dense-3b-47k-Q4_K_M.gguf",
+      "manifest_sha256": "cc464f5287e008aca2fa5f3fbcd07160f4730540e61c0270e93481402f4e4e59",
+      "blob_sha256": "21f8c90ade582967a8acb1991f73bea5f62757ae2d430500da41ba458f0f52a0",
+      "bytes": 1969663968
+    },
+    "Q8_0": {
+      "filename": "dense-3b-47k-Q8_0.gguf",
+      "manifest_sha256": "3164a73f34f773d23e11282e178d03d9f52bb7874026163a2c024235058a7ace",
+      "blob_sha256": "eb7053112886dab60d6012d4635dc2c7cdd07c902317e202a91ba36da33fed41",
+      "bytes": 3426185184
+    }
+  },
+  "scope": "Downloaded tag-to-blob integrity. Runtime checks are recorded separately."
+}

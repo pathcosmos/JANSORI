@@ -1,0 +1,10 @@
+Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 1422.20it/s]
+Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 1628.12it/s]
+[pretrain] V3b pass=True disagree(any)=8 | V3c 원본 BF16=FP32 greedy 0/8
+Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 1345.05it/s]
+Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 2617.62it/s]
+[sft-v2] V3b pass=True disagree(any)=5 | V3c 원본 BF16=FP32 greedy 3/8
+Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 1313.80it/s]
+Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 2921.84it/s]
+[slerp] V3b pass=True disagree(any)=8 | V3c 원본 BF16=FP32 greedy 6/8
+V3bc exit=0

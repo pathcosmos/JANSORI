@@ -1,0 +1,323 @@
+{
+ "weights_byte_identical": true,
+ "texts": [
+  {
+   "text": "한국의 수도는 어디인가요?",
+   "equal": true
+  },
+  {
+   "text": "What is the capital of South Korea?",
+   "equal": true
+  },
+  {
+   "text": "한국어와 English가 섞인 문장입니다.",
+   "equal": true
+  },
+  {
+   "text": "  앞에 공백 두 칸",
+   "equal": false,
+   "first_diff": 1,
+   "ref": [
+    7,
+    1721,
+    27189,
+    141,
+    1953
+   ],
+   "got": [
+    7,
+    7,
+    1721,
+    27189,
+    141,
+    1953
+   ],
+   "len_ref": 5,
+   "len_got": 6
+  },
+  {
+   "text": "뒤에 공백 ",
+   "equal": true
+  },
+  {
+   "text": "중간에  공백  두 칸씩",
+   "equal": true
+  },
+  {
+   "text": "첫 줄\n둘째 줄\n\n넷째 줄",
+   "equal": true
+  },
+  {
+   "text": "\t탭으로 시작\t중간 탭",
+   "equal": true
+  },
+  {
+   "text": "줄 끝 개행\n",
+   "equal": true
+  },
+  {
+   "text": "숫자 1234567890과 3.14159, 1/3, 8,622,698명",
+   "equal": true
+  },
+  {
+   "text": "km² · ≈ · ½ · ①②③ · ★☆♥",
+   "equal": true
+  },
+  {
+   "text": "윷놀이와 廉宗(염종) — 사전에 없는 문자",
+   "equal": true
+  },
+  {
+   "text": "이모지 😀👍🇰🇷 포함",
+   "equal": true
+  },
+  {
+   "text": "ｆｕｌｌ　ｗｉｄｔｈ 전각 문자",
+   "equal": true
+  },
+  {
+   "text": "def fib(n):\n    return n if n < 2 else fib(n-1) + fib(n-2)\n",
+   "equal": true
+  },
+  {
+   "text": "SELECT * FROM users WHERE age >= 19;",
+   "equal": true
+  },
+  {
+   "text": "<|user|>\n태그 문자열이 본문에 있는 경우\n<|assistant|>\n",
+   "equal": true
+  },
+  {
+   "text": "본문 중간에 </s> 특수 토큰 문자열",
+   "equal": false,
+   "first_diff": 4,
+   "ref": [
+    3386,
+    7,
+    2,
+    1358,
+    17316,
+    57391
+   ],
+   "got": [
+    3386,
+    7,
+    2,
+    7,
+    1358,
+    17316,
+    57391
+   ],
+   "len_ref": 7,
+   "len_got": 8
+  },
+  {
+   "text": "<s> 로 시작하는 본문",
+   "equal": false,
+   "first_diff": 1,
+   "ref": [
+    1,
+    1022,
+    7702,
+    24905
+   ],
+   "got": [
+    1,
+    7,
+    1022,
+    7702,
+    24905
+   ],
+   "len_ref": 4,
+   "len_got": 5
+  },
+  {
+   "text": "가́ 결합 문자, x​y 폭 없는 공백",
+   "equal": true
+  },
+  {
+   "text": "C:\\Users\\path\\to\\file.txt",
+   "equal": true
+  },
+  {
+   "text": "“따옴표”와 ‘작은따옴표’, 그리고 「괄호」",
+   "equal": true
+  },
+  {
+   "text": "aaa 가가가가가",
+   "equal": true
+  },
+  {
+   "text": "Ⅰ. 서론\nⅡ. 본론\nⅢ. 결론",
+   "equal": true
+  }
+ ],
+ "chats": [
+  {
+   "last": "한국의 수도는 어디인가요?",
+   "equal": true
+  },
+  {
+   "last": "What is the capital of South Korea?",
+   "equal": true
+  },
+  {
+   "last": "한국어와 English가 섞인 문장입니다.",
+   "equal": true
+  },
+  {
+   "last": "  앞에 공백 두 칸",
+   "equal": true
+  },
+  {
+   "last": "뒤에 공백 ",
+   "equal": true
+  },
+  {
+   "last": "중간에  공백  두 칸씩",
+   "equal": true
+  },
+  {
+   "last": "첫 줄\n둘째 줄\n\n넷째 줄",
+   "equal": true
+  },
+  {
+   "last": "\t탭으로 시작\t중간 탭",
+   "equal": true
+  },
+  {
+   "last": "줄 끝 개행\n",
+   "equal": true
+  },
+  {
+   "last": "숫자 1234567890과 3.14159, 1/3, 8,622,698명",
+   "equal": true
+  },
+  {
+   "last": "km² · ≈ · ½ · ①②③ · ★☆♥",
+   "equal": true
+  },
+  {
+   "last": "윷놀이와 廉宗(염종) — 사전에 없는 문자",
+   "equal": true
+  },
+  {
+   "last": "이모지 😀👍🇰🇷 포함",
+   "equal": true
+  },
+  {
+   "last": "ｆｕｌｌ　ｗｉｄｔｈ 전각 문자",
+   "equal": true
+  },
+  {
+   "last": "def fib(n):\n    return n if n < 2 else fib(n-1) + fib(n-2)\n",
+   "equal": true
+  },
+  {
+   "last": "SELECT * FROM users WHERE age >= 19;",
+   "equal": true
+  },
+  {
+   "last": "<|user|>\n태그 문자열이 본문에 있는 경우\n<|assistant|>\n",
+   "equal": true
+  },
+  {
+   "last": "본문 중간에 </s> 특수 토큰 문자열",
+   "equal": false,
+   "first_diff": 12,
+   "ref": [
+    3386,
+    7,
+    2,
+    1358,
+    17316,
+    57391,
+    3,
+    6804,
+    2526
+   ],
+   "got": [
+    3386,
+    7,
+    2,
+    7,
+    1358,
+    17316,
+    57391,
+    3,
+    6804
+   ],
+   "len_ref": 24,
+   "len_got": 25
+  },
+  {
+   "last": "<s> 로 시작하는 본문",
+   "equal": false,
+   "first_diff": 8,
+   "ref": [
+    927,
+    3,
+    1,
+    1022,
+    7702,
+    24905,
+    3,
+    6804,
+    2526
+   ],
+   "got": [
+    927,
+    3,
+    1,
+    7,
+    1022,
+    7702,
+    24905,
+    3,
+    6804
+   ],
+   "len_ref": 20,
+   "len_got": 21
+  },
+  {
+   "last": "가́ 결합 문자, x​y 폭 없는 공백",
+   "equal": true
+  },
+  {
+   "last": "C:\\Users\\path\\to\\file.txt",
+   "equal": true
+  },
+  {
+   "last": "“따옴표”와 ‘작은따옴표’, 그리고 「괄호」",
+   "equal": true
+  },
+  {
+   "last": "aaa 가가가가가",
+   "equal": true
+  },
+  {
+   "last": "Ⅰ. 서론\nⅡ. 본론\nⅢ. 결론",
+   "equal": true
+  },
+  {
+   "last": "안녕하세요",
+   "equal": true
+  },
+  {
+   "last": "두 번째 질문",
+   "equal": true
+  },
+  {
+   "last": "사용자 메시지",
+   "equal": true
+  },
+  {
+   "last": "e  ",
+   "equal": true
+  },
+  {
+   "last": "질문",
+   "equal": true
+  }
+ ]
+}

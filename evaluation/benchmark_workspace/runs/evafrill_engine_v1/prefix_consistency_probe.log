@@ -1,0 +1,8 @@
+원본 forward: 같은 위치의 로짓이 입력 길이에 따라 달라지는가 (위치 = 프롬프트 마지막)
+  len=  23 vs len=63: max|Δlogit| at pos 22 = 0.1875  bitwise=False
+  len=  24 vs len=63: max|Δlogit| at pos 22 = 0.1875  bitwise=False
+  len=  25 vs len=63: max|Δlogit| at pos 22 = 0.2812  bitwise=False
+  len=  28 vs len=63: max|Δlogit| at pos 22 = 0.2812  bitwise=False
+  len=  33 vs len=63: max|Δlogit| at pos 22 = 0.1875  bitwise=False
+  len=  63 vs len=63: max|Δlogit| at pos 22 = 0.0000  bitwise=True
+in_proj 같은 행, M=512 vs M=11 bitwise True  vs M=1 bitwise True  max 0.0

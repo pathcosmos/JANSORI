@@ -1,0 +1,14 @@
+{
+  "approved_at": "2026-11-18T20:13:28+09:00",
+  "approved_by": "사용자 (AskUserQuestion 응답: 'V3 기준 변경 승인')",
+  "supersedes": "tolerance_preregistered.json의 V3_greedy 판정 기준만 (V1·V2·V4와 원래 파일은 변경 없음, 원래 V3 결과는 '불통과'로 보존)",
+  "reason": [
+    "원래 V3 결과: 동일 2/8, 5/8, 2/8, 분기는 모두 원본 margin 0.0~0.125 (verification.json)",
+    "원본 자신도 같은 위치 로짓이 입력 길이에 따라 최대 0.28 달라진다 (prefix_consistency_probe.log) → 캐시를 쓰는 엔진은 원본의 길이 의존 동률 깨기를 원리적으로 재현할 수 없다",
+    "대조군 V3c: 원본 BF16 vs FP32 greedy 동일 0/8, 3/8, 6/8 (verification_V3bc.json)"
+  ],
+  "V3_amended": {
+    "pass": "체크포인트별로 (a) V3b 교사 강제: 원본 margin_B >= 0.5인 모든 단계에서 argmax(엔진) == argmax(원본), 그리고 (b) 자유 greedy가 원본과 갈린 모든 프롬프트의 첫 분기 지점에서 원본 margin_B < 0.5",
+    "data": "verification.json(V3 rows) + verification_V3bc.json(V3b) — 새 측정 없음"
+  }
+}

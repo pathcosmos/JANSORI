@@ -1,0 +1,10 @@
+{
+  "visible": "0",
+  "own_pids": [
+    154958,
+    156750,
+    156751
+  ],
+  "compute_apps": "156751, GPU-262fc2bd-aa7a-dc10-2658-18e1bc39a05f\n",
+  "memory_by_uuid": "0, GPU-262fc2bd-aa7a-dc10-2658-18e1bc39a05f, 130149\n1, GPU-a3525c85-bdc5-832f-6446-939715de472e, 0\n"
+}

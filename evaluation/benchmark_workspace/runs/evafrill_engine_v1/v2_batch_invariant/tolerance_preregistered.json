@@ -1,0 +1,30 @@
+{
+  "registered_at": "2026-11-18T19:27:37+09:00",
+  "note": "측정 전에 정한 허용 오차. 측정 후 변경 금지 — 바꿔야 하면 근거와 함께 사용자에게 묻는다.",
+  "symbols": {
+    "R": "FP32 기준선: 원본 LLM을 FP32 가중치로, 원본 어텐션의 bf16 강제 변환만 끄고(TF32 off) 전체 forward",
+    "B": "원본 BF16 전체 forward (원본 코드 그대로, flash_attn 없음 → _standard_attention, mamba_ssm/causal_conv1d CUDA 경로)",
+    "E": "증분 디코딩 엔진 BF16 (prefill 또는 decode)",
+    "eB_p": "위치 p에서 max_v |B_p - R_p|",
+    "eE_p": "위치 p에서 max_v |E_p - R_p|",
+    "rB_p, rE_p": "위치 p에서 어휘 축 RMS(|B_p-R_p|), RMS(|E_p-R_p|)",
+    "margin_B(p)": "B_p의 top1 - top2 로짓 차"
+  },
+  "criteria": {
+    "V1_prefill_and_V2_decode": {
+      "scope": "체크포인트 pretrain, sft-v2, slerp × 프롬프트 길이 1/17/512/4000; V1=프롬프트의 모든 위치, V2=이후 256 decode 단계 (B·R은 최종 전체 시퀀스 한 번의 forward에서 해당 위치 로짓)",
+      "T1": "max_p eE_p <= 1.5 * max_p eB_p + 0.05",
+      "T2": "mean_p rE_p <= 1.25 * mean_p rB_p + 0.01",
+      "T3": "argmax(E_p) == argmax(B_p) for all p with margin_B(p) >= 0.5"
+    },
+    "V3_greedy": {
+      "scope": "8개 프롬프트(sft-v2·slerp는 학습 chat 형식, pretrain은 원문) × 256 토큰, 체크포인트 3개 각각",
+      "pass": "체크포인트별로 8개 중 6개 이상이 원본 방식(매 단계 BF16 전체 forward) greedy와 토큰열 완전 동일, 그리고 모든 분기 지점에서 원본의 margin_B < 0.5 (근접 동률)"
+    },
+    "V4_batch": {
+      "scope": "배치 8, 32 (길이 5~1000 토큰 혼합 프롬프트) × greedy 128 토큰, 체크포인트 slerp + pretrain",
+      "pass": "각 시퀀스의 토큰열이 배치 1 실행과 동일하거나, 분기가 배치 1 로짓 margin < 0.5인 지점에서만 발생; 분기 전 모든 단계에서 max_v |E_batch - E_1| <= 1.5 * (같은 체크포인트 V2의 max_p eB_p) + 0.05"
+    }
+  },
+  "environment_rules": ["torch.backends.cuda.matmul.allow_tf32=False", "torch.backends.cudnn.allow_tf32=False", "seed 1234"]
+}

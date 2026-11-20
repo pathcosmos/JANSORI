@@ -1,0 +1,16 @@
+{
+  "command": [
+    "ollama",
+    "serve"
+  ],
+  "revision": "e68bfa3cb31e9589f4481a2e31d6d75c731fec9d",
+  "pid": 150285,
+  "physical_device": {
+    "index": 1,
+    "uuid": "GPU-a3525c85-bdc5-832f-6446-939715de472e",
+    "bus": "0000:cb:00.0"
+  },
+  "port": 39077,
+  "port_closed": true,
+  "rc": 0
+}

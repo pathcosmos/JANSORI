@@ -1,0 +1,9 @@
+{
+  "repo": "pathcosmos/JANSORI",
+  "parent": "e68bfa3cb31e9589f4481a2e31d6d75c731fec9d",
+  "commit": "82f5b3edb19c4a601d1f35ced9607e6c9e4e73ee",
+  "files": {
+    "README.md": "57b502f333dc02f6fb6064a6cae1626876501ebc7f6a6f9fd950da9bb3d15d91",
+    "SHA256SUMS": "da92592a79502043260a886454016c28cb73ff5d5a5b32dbb09c4b061c673d89"
+  }
+}

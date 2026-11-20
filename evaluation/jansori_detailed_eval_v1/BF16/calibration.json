@@ -1,0 +1,17 @@
+{
+ "model": "pathcosmos/JANSORI",
+ "offset": 0,
+ "probe": {
+  "text": " and white.\n",
+  "n": 4,
+  "k": 3,
+  "reason": "length",
+  "start": 3134263.022102716,
+  "end": 3134263.075888332,
+  "latency": 0.05378561606630683,
+  "ttft": null,
+  "server": {}
+ },
+ "gpu": "GPU-262fc2bd-aa7a-dc10-2658-18e1bc39a05f",
+ "pid": 167972
+}

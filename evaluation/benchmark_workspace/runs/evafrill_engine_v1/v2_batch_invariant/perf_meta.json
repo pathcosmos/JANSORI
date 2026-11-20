@@ -1,0 +1,12 @@
+{
+ "ckpt": "slerp",
+ "gpu": "NVIDIA H200",
+ "torch": "2.14.0+cu130",
+ "weights_alloc_gib": 5.574464797973633,
+ "tf32": false,
+ "dtype": "bfloat16",
+ "notes": [
+  "원본은 flash_attn 없이 _standard_attention(전체 T×T 점수 행렬)",
+  "엔진 VRAM은 설정 크기에 맞춘 상태 텐서 포함, peak_alloc은 torch 할당 기준(가중치 포함)"
+ ]
+}
